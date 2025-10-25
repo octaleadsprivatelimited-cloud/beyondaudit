@@ -6,3 +6,4 @@ frontend/build/
 *.log
 .vscode/
 .idea/
+frontend/node_modules/.cache/
