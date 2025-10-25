@@ -1,0 +1,107 @@
+.approach-page {
+  margin-top: 0;
+}
+
+.approach-hero {
+  background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+  color: white;
+  padding: 6rem 8%;
+  text-align: center;
+}
+
+.approach-hero-content h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.approach-hero-content p {
+  font-size: 1.3rem;
+  opacity: 0.95;
+}
+
+.approach-intro {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 8%;
+  text-align: center;
+}
+
+.approach-intro h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--navy);
+}
+
+.approach-intro p {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  line-height: 1.8;
+}
+
+.approach-steps {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 8% 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.approach-step {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  background: white;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.step-number {
+  font-size: 4rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--secondary-blue), var(--primary-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  flex-shrink: 0;
+}
+
+.step-content h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--navy);
+}
+
+.step-content p {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .approach-hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .approach-step {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .step-number {
+    font-size: 3rem;
+  }
+
+  .step-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .approach-intro,
+  .approach-steps {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+

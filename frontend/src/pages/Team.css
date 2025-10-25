@@ -1,0 +1,268 @@
+.team-page {
+  margin-top: 0;
+}
+
+.team-hero {
+  background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+  color: white;
+  padding: 6rem 8%;
+  text-align: center;
+}
+
+.team-hero-content h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.team-hero-content p {
+  font-size: 1.3rem;
+  opacity: 0.95;
+}
+
+.team-intro {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 8%;
+  text-align: center;
+}
+
+.team-intro h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--navy);
+}
+
+.team-intro p {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  line-height: 1.8;
+}
+
+.leadership-section {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 4rem 8%;
+}
+
+.leadership-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: var(--navy);
+}
+
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+}
+
+.team-member-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.team-member-card:hover {
+  transform: translateY(-10px);
+}
+
+.member-avatar {
+  margin-bottom: 1.5rem;
+}
+
+.avatar-placeholder {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, var(--secondary-blue), var(--primary-blue));
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.team-member-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--navy);
+}
+
+.member-role {
+  font-size: 1rem;
+  color: var(--secondary-blue);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.member-bio {
+  font-size: 1rem;
+  color: var(--text-light);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.member-expertise {
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+}
+
+.member-social {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.social-btn {
+  width: 40px;
+  height: 40px;
+  background: var(--light-gray);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary-blue);
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+  background: var(--secondary-blue);
+  color: white;
+  transform: translateY(-3px);
+}
+
+.consultants-section {
+  background: var(--light-gray);
+  padding: 4rem 8%;
+}
+
+.consultants-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: var(--navy);
+}
+
+.consultants-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.consultant-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.consultant-card:hover {
+  transform: translateX(5px);
+}
+
+.consultant-avatar {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--light-blue), var(--secondary-blue));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+  flex-shrink: 0;
+}
+
+.consultant-info h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+  color: var(--navy);
+}
+
+.consultant-role {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: 0.3rem;
+}
+
+.consultant-specialty {
+  font-size: 0.85rem;
+  color: var(--secondary-blue);
+  font-weight: 600;
+}
+
+.join-team {
+  background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+  padding: 5rem 8%;
+  text-align: center;
+  color: white;
+}
+
+.join-team h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.join-team p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+  margin-bottom: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .leadership-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .consultants-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .team-hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .team-hero-content p {
+    font-size: 1.1rem;
+  }
+
+  .leadership-grid,
+  .consultants-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-intro,
+  .leadership-section,
+  .consultants-section {
+    padding: 3rem 4%;
+  }
+
+  .join-team {
+    padding: 3rem 4%;
+  }
+
+  .join-team h2 {
+    font-size: 1.8rem;
+  }
+}
+

@@ -1,0 +1,183 @@
+.case-detail-page {
+  margin-top: 0;
+}
+
+.case-detail-hero {
+  background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+  color: white;
+  padding: 6rem 8%;
+}
+
+.case-detail-hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  opacity: 0.9;
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+  transition: opacity 0.3s ease;
+}
+
+.back-link:hover {
+  opacity: 1;
+}
+
+.detail-category {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.case-detail-hero h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.case-meta {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  opacity: 0.95;
+}
+
+.case-meta span strong {
+  font-weight: 600;
+}
+
+.case-detail-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 8%;
+}
+
+.detail-section {
+  margin-bottom: 4rem;
+}
+
+.detail-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: var(--navy);
+}
+
+.detail-section p {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  line-height: 1.8;
+}
+
+.detail-list {
+  list-style: none;
+  padding: 0;
+}
+
+.detail-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 0;
+  font-size: 1.05rem;
+  color: var(--text-dark);
+  line-height: 1.7;
+}
+
+.list-icon {
+  color: var(--success-green);
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.impact-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 2rem 0 3rem;
+}
+
+.impact-card {
+  background: linear-gradient(135deg, var(--secondary-blue), var(--primary-blue));
+  padding: 2.5rem;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+}
+
+.impact-card h3 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.impact-card p {
+  font-size: 1rem;
+  color: white !important;
+  opacity: 0.95;
+}
+
+.case-detail-cta {
+  background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+  padding: 5rem 8%;
+  text-align: center;
+  color: white;
+}
+
+.case-detail-cta h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.case-detail-cta p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+  margin-bottom: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .impact-metrics {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .case-detail-hero h1 {
+    font-size: 2rem;
+  }
+
+  .case-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .case-detail-content {
+    padding: 3rem 4%;
+  }
+
+  .detail-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .case-detail-cta {
+    padding: 3rem 4%;
+  }
+
+  .case-detail-cta h2 {
+    font-size: 1.8rem;
+  }
+}
+

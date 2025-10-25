@@ -1,0 +1,128 @@
+.blog-post-page {
+  margin-top: 0;
+}
+
+.blog-post-hero {
+  background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+  color: white;
+  padding: 6rem 8%;
+}
+
+.blog-post-hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.post-category {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.blog-post-hero h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.post-meta {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  opacity: 0.95;
+}
+
+.post-meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.blog-post-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 5rem 8%;
+}
+
+.lead-paragraph {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: var(--text-dark);
+  margin-bottom: 3rem;
+  font-weight: 400;
+}
+
+.blog-post-content h2 {
+  font-size: 2rem;
+  color: var(--navy);
+  margin: 2.5rem 0 1rem;
+}
+
+.blog-post-content p {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+}
+
+.blog-post-cta {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 8% 5rem;
+  text-align: center;
+  background: var(--light-gray);
+  padding: 3rem;
+  border-radius: 20px;
+  margin-bottom: 5rem;
+}
+
+.blog-post-cta h3 {
+  font-size: 2rem;
+  color: var(--navy);
+  margin-bottom: 1rem;
+}
+
+.blog-post-cta p {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .blog-post-hero h1 {
+    font-size: 2rem;
+  }
+
+  .post-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .blog-post-content {
+    padding: 3rem 4%;
+  }
+
+  .lead-paragraph {
+    font-size: 1.1rem;
+  }
+
+  .blog-post-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .blog-post-content p {
+    font-size: 1rem;
+  }
+
+  .blog-post-cta {
+    padding: 2rem;
+  }
+}
+

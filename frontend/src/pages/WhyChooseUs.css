@@ -1,0 +1,81 @@
+.why-choose-page {
+  margin-top: 0;
+}
+
+.why-choose-hero {
+  background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+  color: white;
+  padding: 6rem 8%;
+  text-align: center;
+}
+
+.why-choose-hero-content h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.why-choose-hero-content p {
+  font-size: 1.3rem;
+  opacity: 0.95;
+}
+
+.why-choose-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 5rem 8%;
+}
+
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+}
+
+.reason-card {
+  background: white;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.reason-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--secondary-blue), var(--primary-blue));
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: white;
+  margin: 0 auto 2rem;
+}
+
+.reason-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--navy);
+}
+
+.reason-card p {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .why-choose-hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .reasons-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-choose-content {
+    padding: 3rem 4%;
+  }
+}
+

@@ -1,0 +1,855 @@
+.home {
+  margin-top: 0;
+  background: var(--white);
+}
+
+@media (max-width: 1024px) {
+  .home {
+    margin-top: 60px;
+  }
+}
+
+/* Deloitte-Inspired Hero Section */
+.hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  padding: 100px 8% 80px;
+  background: 
+    linear-gradient(135deg, #0a1128 0%, #1a2847 50%, #0a1128 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: 
+    linear-gradient(120deg, transparent 0%, rgba(134, 188, 37, 0.08) 100%);
+  pointer-events: none;
+}
+
+.hero-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.hero-content {
+  z-index: 10;
+  animation: fadeInUp 1s ease-out;
+}
+
+.hero-tagline {
+  font-size: 0.95rem;
+  color: #86bc25;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  line-height: 1.15;
+  margin-bottom: 1.8rem;
+  color: white;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  font-family: 'Inter', sans-serif;
+}
+
+.hero-accent {
+  color: #86bc25;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.hero-subtitle {
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 2.5rem;
+  line-height: 1.75;
+  font-weight: 300;
+  max-width: 650px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* Hero Links Section */
+.hero-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hero-link {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 3px solid transparent;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.hero-link:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-left-color: #86bc25;
+  transform: translateX(8px);
+}
+
+.hero-link-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(134, 188, 37, 0.15);
+  color: #86bc25;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.hero-link:hover .hero-link-icon {
+  background: #86bc25;
+  color: white;
+  transform: scale(1.1);
+}
+
+.hero-link h3 {
+  font-size: 1.1rem;
+  color: white;
+  margin: 0 0 0.3rem 0;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.hero-link:hover h3 {
+  color: #86bc25;
+}
+
+.hero-link p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Responsive Hero */
+@media (max-width: 1024px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .hero-links {
+    gap: 1.2rem;
+  }
+
+  .hero-link {
+    padding: 1.2rem;
+  }
+
+  .hero-link-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 5% 50px;
+    min-height: auto;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-tagline {
+    font-size: 0.85rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-links {
+    gap: 1rem;
+  }
+
+  .hero-link {
+    padding: 1rem;
+  }
+
+  .hero-link h3 {
+    font-size: 1rem;
+  }
+
+  .hero-link p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Deloitte-Style Buttons */
+.btn {
+  padding: 1rem 2.5rem;
+  border-radius: 0;
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  transition: all 0.2s ease;
+  text-align: center;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #86bc25;
+  color: white;
+  box-shadow: none;
+  border-radius: 0;
+  font-weight: 600;
+  padding: 1rem 2.5rem;
+}
+
+.btn-primary:hover {
+  background: #75a621;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(134, 188, 37, 0.3);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  backdrop-filter: none;
+  box-shadow: none;
+  border-radius: 0;
+  font-weight: 600;
+  padding: 1rem 2.5rem;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #86bc25;
+  color: #86bc25;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: #0a1128;
+  border: 2px solid #0a1128;
+}
+
+.btn-outline:hover {
+  background: #0a1128;
+  color: white;
+}
+
+.btn-white {
+  background: white;
+  color: #0a1128;
+}
+
+.btn-white:hover {
+  background: #f5f5f5;
+}
+
+.hero-visual {
+  flex: 1;
+  position: relative;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-card {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  padding: 2.5rem 3.2rem;
+  border-radius: 24px;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.3rem;
+  animation: float-premium 6s ease-in-out infinite;
+  z-index: 15;
+  min-width: 240px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.hero-card h3 {
+  font-size: 1.5rem;
+  color: var(--navy);
+  font-weight: 800;
+  white-space: nowrap;
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.card-icon {
+  font-size: 3.2rem;
+  background: linear-gradient(135deg, #3b82f6, #1e40af);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card-1 {
+  top: 10%;
+  left: 8%;
+  animation-delay: 0s;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(251, 251, 251, 0.95));
+}
+
+.card-2 {
+  top: 45%;
+  right: 10%;
+  animation-delay: 2s;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.03), rgba(255, 255, 255, 0.98));
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.25);
+}
+
+.card-3 {
+  bottom: 12%;
+  left: 20%;
+  animation-delay: 4s;
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.08), rgba(255, 255, 255, 0.98));
+}
+
+@keyframes float-premium {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  33% {
+    transform: translateY(-30px) rotate(2deg);
+  }
+  66% {
+    transform: translateY(-15px) rotate(-2deg);
+  }
+}
+
+/* Premium Stats Section */
+/* Deloitte-Style Stats Section */
+.stats-section {
+  padding: 5rem 8%;
+  background: white;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.stat-number {
+  font-size: 3.5rem;
+  color: #86bc25;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #0a1128;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+/* Deloitte-Style Services Section */
+.services-section {
+  padding: 7rem 8%;
+  background: #f9f9f9;
+}
+
+.section-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+}
+
+.section-subtitle {
+  color: #86bc25;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  margin: 1rem 0;
+  color: #0a1128;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+/* Deloitte-Style Service Cards */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto 3rem;
+}
+
+.service-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border-left: 4px solid transparent;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-left-color: #86bc25;
+}
+
+.service-icon {
+  width: 70px;
+  height: 70px;
+  background: rgba(134, 188, 37, 0.1);
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #86bc25;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+  background: #86bc25;
+  color: white;
+}
+
+.service-title {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #0a1128;
+  font-weight: 600;
+}
+
+.service-description {
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.service-link {
+  color: #86bc25;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.service-link:hover {
+  color: #75a621;
+  gap: 0.8rem;
+}
+
+.section-footer {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+/* Deloitte-Style Why Choose Us Section */
+.why-choose-section {
+  padding: 7rem 8%;
+  background: white;
+}
+
+.why-choose-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.why-choose-text h2 {
+  color: #0a1128;
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.why-choose-text .section-subtitle {
+  color: #86bc25;
+}
+
+.why-choose-text p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.7;
+  margin: 1.5rem 0;
+}
+
+.why-choose-list {
+  list-style: none;
+  margin: 2rem 0;
+}
+
+.why-choose-list li {
+  padding: 0.8rem 0;
+  font-size: 1.05rem;
+  color: #0a1128;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 400;
+}
+
+.why-choose-list li::before {
+  content: '✓';
+  width: 24px;
+  height: 24px;
+  background: #86bc25;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  flex-shrink: 0;
+  font-size: 0.9rem;
+}
+
+.why-choose-visual {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.visual-stat {
+  background: #f9f9f9;
+  padding: 2.5rem;
+  border-radius: 0;
+  text-align: center;
+  color: #0a1128;
+  border-left: 4px solid #86bc25;
+  transition: all 0.3s ease;
+}
+
+.visual-stat:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.visual-stat h3 {
+  font-size: 3rem;
+  color: #86bc25;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.visual-stat p {
+  font-size: 1rem;
+  opacity: 0.9;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.visual-stat:nth-child(3) {
+  grid-column: 1 / -1;
+  max-width: 400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Deloitte-Style Testimonials Section */
+.testimonials-section {
+  padding: 7rem 8%;
+  background: #f9f9f9;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto 4rem;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #86bc25;
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.testimonial-stars {
+  display: flex;
+  gap: 0.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.star {
+  color: #86bc25;
+  font-size: 1.2rem;
+}
+
+.testimonial-text {
+  font-size: 1.1rem;
+  color: #0a1128;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.testimonial-author h4 {
+  color: #0a1128;
+  margin-bottom: 0.3rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.testimonial-author p {
+  color: #666;
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+/* Deloitte-Style CTA Section */
+.cta-section {
+  padding: 7rem 8%;
+  background: #0a1128;
+  text-align: center;
+}
+
+.cta-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.cta-content h2 {
+  font-size: 2.8rem;
+  color: white;
+  margin-bottom: 1.2rem;
+  font-weight: 400;
+}
+
+.cta-content p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 2.5rem;
+  font-weight: 300;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 4rem 5%;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-visual {
+    height: 400px;
+    width: 100%;
+  }
+  
+  .hero-card {
+    padding: 1.5rem 2rem;
+    min-width: 150px;
+  }
+  
+  .hero-card h3 {
+    font-size: 1rem;
+  }
+  
+  .card-icon {
+    font-size: 2rem;
+  }
+  
+  .card-1 {
+    top: 5%;
+    left: 5%;
+  }
+  
+  .card-2 {
+    top: 40%;
+    right: 5%;
+  }
+  
+  .card-3 {
+    bottom: 5%;
+    left: 10%;
+  }
+
+  .why-choose-content {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 4%;
+    min-height: 70vh;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .services-section,
+  .why-choose-section,
+  .testimonials-section {
+    padding: 4rem 4%;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .hero-visual {
+    height: 300px;
+    width: 100%;
+  }
+
+  .hero-card {
+    padding: 1rem 1.5rem;
+    min-width: 120px;
+  }
+
+  .hero-card h3 {
+    font-size: 0.85rem;
+  }
+  
+  .card-icon {
+    font-size: 1.5rem;
+  }
+  
+  .card-1 {
+    top: 3%;
+    left: 3%;
+  }
+  
+  .card-2 {
+    top: 38%;
+    right: 3%;
+  }
+  
+  .card-3 {
+    bottom: 3%;
+    left: 5%;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

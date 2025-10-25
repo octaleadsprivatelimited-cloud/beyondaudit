@@ -1,0 +1,245 @@
+.contact-page {
+  margin-top: 0;
+}
+
+.contact-hero {
+  background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+  color: white;
+  padding: 6rem 8%;
+  text-align: center;
+}
+
+.contact-hero-content h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.contact-hero-content p {
+  font-size: 1.3rem;
+  opacity: 0.95;
+}
+
+.contact-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 5rem 8%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+}
+
+.contact-form-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: var(--navy);
+}
+
+.contact-form {
+  background: white;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.9rem 1.2rem;
+  border: 2px solid var(--medium-gray);
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--secondary-blue);
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.form-message {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.form-message.success {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.form-message.error {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.contact-info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.info-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.info-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, var(--secondary-blue), var(--primary-blue));
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
+  margin: 0 auto 1rem;
+  padding: 0.8rem;
+}
+
+.info-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  color: var(--navy);
+}
+
+.info-card p {
+  color: var(--text-dark);
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.info-detail {
+  color: var(--text-light) !important;
+  font-size: 0.9rem !important;
+}
+
+.offices-section {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 5rem 8%;
+  background: var(--light-gray);
+}
+
+.offices-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: var(--navy);
+}
+
+.offices-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.office-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.office-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--navy);
+}
+
+.office-card p {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--text-light);
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+}
+
+.office-card svg {
+  color: var(--secondary-blue);
+  flex-shrink: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    padding: 4rem 5%;
+  }
+
+  .contact-info-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .info-card {
+    flex: 1;
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .contact-hero-content p {
+    font-size: 1.1rem;
+  }
+
+  .contact-content {
+    padding: 3rem 4%;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info-section {
+    flex-direction: column;
+  }
+
+  .offices-section {
+    padding: 3rem 4%;
+  }
+
+  .offices-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
