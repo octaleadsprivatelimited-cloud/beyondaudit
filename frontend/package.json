@@ -17,7 +17,8 @@
     "build": "CI=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "postbuild": "echo 'Build completed successfully!'"
+    "postbuild": "echo 'Build completed successfully!'",
+    "vercel-build": "CI=false npm run build"
   },
   "engines": {
     "node": ">=18.0.0",
