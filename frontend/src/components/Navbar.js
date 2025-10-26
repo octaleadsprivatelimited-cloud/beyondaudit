@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FaTimes, FaChevronDown, FaPhone, FaEnvelope } from 'react-icons/fa';
+import { FaChevronDown, FaPhone, FaEnvelope } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
 import './Navbar.css';
 

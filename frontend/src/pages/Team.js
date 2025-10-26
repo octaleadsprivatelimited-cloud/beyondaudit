@@ -80,8 +80,8 @@ const Team = () => {
               <p className="member-bio">{leader.bio}</p>
               <p className="member-expertise"><strong>Expertise:</strong> {leader.expertise}</p>
               <div className="member-social">
-                <a href="#" className="social-btn"><FaLinkedin /></a>
-                <a href="#" className="social-btn"><FaEnvelope /></a>
+                <button className="social-btn" aria-label="LinkedIn"><FaLinkedin /></button>
+                <button className="social-btn" aria-label="Email"><FaEnvelope /></button>
               </div>
             </div>
           ))}

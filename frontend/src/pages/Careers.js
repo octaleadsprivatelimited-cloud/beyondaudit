@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaBriefcase, FaMapMarkerAlt, FaClock } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaClock } from 'react-icons/fa';
 import './Careers.css';
 
 const Careers = () => {
