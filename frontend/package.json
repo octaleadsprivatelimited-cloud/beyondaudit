@@ -22,7 +22,7 @@
     "vercel-build": "cross-env CI=false npm run build"
   },
   "engines": {
-    "node": "18.x",
+    "node": "22.x",
     "npm": ">=8.0.0"
   },
   "devDependencies": {
