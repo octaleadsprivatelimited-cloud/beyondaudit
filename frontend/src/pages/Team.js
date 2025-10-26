@@ -43,15 +43,12 @@ const Team = () => {
 
   return (
     <div className="team-page">
-      <section className="team-hero" style={{
-        backgroundImage: 'linear-gradient(rgba(10, 17, 40, 0.7), rgba(10, 17, 40, 0.7)), url(https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
-      }}>
-        <div className="team-hero-content">
+      <section className="team-hero">
+        <div className="hero-background-overlay"></div>
+        <div className="team-hero-container">
+          <div className="hero-tagline">OUR TEAM</div>
           <h1>Our Team</h1>
-          <p>Meet the experienced chartered accountants dedicated to your financial success</p>
+          <p className="hero-description">Meet the experienced chartered accountants dedicated to your financial success</p>
         </div>
       </section>
 
@@ -106,11 +103,6 @@ const Team = () => {
         </div>
       </section>
 
-      <section className="join-team">
-        <h2>Join Our Team</h2>
-        <p>We're always looking for qualified Chartered Accountants and accounting professionals to join our growing team</p>
-        <a href="/careers" className="btn btn-primary">View Open Positions</a>
-      </section>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FaChevronDown, FaPhone, FaEnvelope } from 'react-icons/fa';
+import { FaChevronDown, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
 import './Navbar.css';
 
@@ -69,11 +69,6 @@ const Navbar = () => {
               </span>
               <div className={`dropdown-menu ${servicesDropdown ? 'show' : ''}`}>
                 <div className="dropdown-content">
-                  <Link to="/services" className="dropdown-item featured">
-                    <strong>All Services</strong>
-                    <span className="item-desc">Complete overview</span>
-                  </Link>
-                  <div className="dropdown-divider"></div>
                   <Link to="/services/tax-planning" className="dropdown-item">
                     <strong>Tax Planning & Compliance</strong>
                     <span className="item-desc">Expert tax strategies</span>
@@ -188,10 +183,6 @@ const Navbar = () => {
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.1 }}
                       >
-                        <Link to="/services" className="mobile-dropdown-item">
-                          <div className="dropdown-dot"></div>
-                          All Services
-                        </Link>
                         <Link to="/services/tax-planning" className="mobile-dropdown-item">
                           <div className="dropdown-dot"></div>
                           Tax Planning & Compliance
@@ -268,9 +259,6 @@ const Navbar = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.4, type: 'spring', stiffness: 100 }}
               >
-                <Link to="/contact" className="mobile-cta">
-                  Get In Touch
-                </Link>
                 <div className="mobile-contact-info">
                   <motion.p
                     initial={{ opacity: 0, y: 10 }}
@@ -286,7 +274,43 @@ const Navbar = () => {
                   >
                     <FaEnvelope /> mail@beyondaudit.in
                   </motion.p>
+                  <motion.p
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.6 }}
+                  >
+                    <FaMapMarkerAlt /> Vishakapatnam
+                  </motion.p>
+                  <motion.p
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.65 }}
+                  >
+                    <FaMapMarkerAlt /> Andhra Pradesh, India
+                  </motion.p>
                 </div>
+                <motion.div
+                  className="mobile-maps-section"
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.7 }}
+                >
+                  <div className="maps-title">
+                    <FaMapMarkerAlt /> Our Location
+                  </div>
+                  <div className="maps-embed">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.1234567890!2d83.2185!3d17.6868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a395b8b8b8b8b8b%3A0x8b8b8b8b8b8b8b8b!2sVishakapatnam%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                      width="100%"
+                      height="100"
+                      style={{ border: 0 }}
+                      allowFullScreen=""
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="Beyond Audit Location - Vishakapatnam"
+                    ></iframe>
+                  </div>
+                </motion.div>
               </motion.div>
             </div>
           </motion.div>

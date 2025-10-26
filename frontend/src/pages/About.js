@@ -5,10 +5,10 @@ import './About.css';
 
 const About = () => {
   const values = [
-    { icon: <FaAward />, title: 'Excellence', text: 'We deliver exceptional accounting services through expertise and dedication' },
-    { icon: <FaHandshake />, title: 'Integrity', text: 'Trust and transparency guide every client relationship' },
-    { icon: <FaUsers />, title: 'Collaboration', text: 'We work alongside you as partners in financial success' },
-    { icon: <FaGlobeAmericas />, title: 'Innovation', text: 'Modern accounting solutions for complex financial challenges' }
+    { icon: <FaAward />, title: 'Excellence', text: 'We deliver exceptional accounting services through expertise and dedication', image: '/images/excellence.webp' },
+    { icon: <FaHandshake />, title: 'Integrity', text: 'Trust and transparency guide every client relationship', image: '/images/integrity.avif' },
+    { icon: <FaUsers />, title: 'Collaboration', text: 'We work alongside you as partners in financial success', image: '/images/collaboration.avif' },
+    { icon: <FaGlobeAmericas />, title: 'Innovation', text: 'Modern accounting solutions for complex financial challenges', image: '/images/innovation.webp' }
   ];
 
   const milestones = [
@@ -22,32 +22,34 @@ const About = () => {
 
   return (
     <div className="about-page">
-      <section className="about-hero" style={{
-        backgroundImage: 'linear-gradient(rgba(10, 17, 40, 0.7), rgba(10, 17, 40, 0.7)), url(https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
-      }}>
-        <div className="about-hero-content">
+      <section className="about-hero">
+        <div className="hero-background-overlay"></div>
+        <div className="about-hero-container">
+          <div className="hero-tagline">ABOUT US</div>
           <h1>About Beyond Audit</h1>
-          <p>Providing expert accounting services and financial excellence for over 15 years</p>
+          <p className="hero-description">Providing expert accounting services and financial excellence for over 15 years</p>
         </div>
       </section>
 
       <section className="about-intro">
         <div className="about-intro-content">
-          <h2>Who We Are</h2>
-          <p>
-            Founded in 2008, Beyond Audit has grown from a small practice to a 
-            trusted financial services provider. With a team of qualified chartered accountants 
-            and financial experts, we've helped hundreds of businesses and individuals achieve 
-            their financial objectives.
-          </p>
-          <p>
-            Our success is built on deep accounting expertise, innovative financial solutions, and an 
-            unwavering commitment to client success. We don't just provide accounting services – we partner 
-            with you to drive meaningful, measurable financial results.
-          </p>
+          <div className="who-we-are-image">
+            <img src="/images/who-we-are-beyond-audit.webp" alt="Who We Are - Beyond Audit Team" />
+          </div>
+          <div className="who-we-are-text">
+            <h2>Who We Are</h2>
+            <p>
+              Founded in 2008, Beyond Audit has grown from a small practice to a 
+              trusted financial services provider. With a team of qualified chartered accountants 
+              and financial experts, we've helped hundreds of businesses and individuals achieve 
+              their financial objectives.
+            </p>
+            <p>
+              Our success is built on deep accounting expertise, innovative financial solutions, and an 
+              unwavering commitment to client success. We don't just provide accounting services – we partner 
+              with you to drive meaningful, measurable financial results.
+            </p>
+          </div>
         </div>
         <div className="about-stats">
           <div className="stat-box">
@@ -93,6 +95,9 @@ const About = () => {
         <div className="values-grid">
           {values.map((value, index) => (
             <div key={index} className="value-card">
+              <div className="value-image">
+                <img src={value.image} alt={value.title} />
+              </div>
               <div className="value-icon">{value.icon}</div>
               <h3>{value.title}</h3>
               <p>{value.text}</p>
@@ -115,14 +120,6 @@ const About = () => {
         </div>
       </section>
 
-      <section className="about-cta">
-        <h2>Want to Learn More?</h2>
-        <p>Discover how we can help optimize your finances and ensure compliance</p>
-        <div className="cta-buttons">
-          <Link to="/team" className="btn btn-white">Meet Our Team</Link>
-          <Link to="/contact" className="btn btn-outline-white">Contact Us</Link>
-        </div>
-      </section>
     </div>
   );
 };

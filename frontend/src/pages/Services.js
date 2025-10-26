@@ -10,49 +10,51 @@ const Services = () => {
       title: 'Tax Planning & Compliance',
       description: 'Expert tax strategies and compliance services to optimize your financial position. We help minimize tax liability while ensuring full regulatory compliance.',
       features: ['Tax Planning', 'Return Filing', 'Compliance Management', 'Tax Advisory'],
-      link: '/services/tax-planning'
+      link: '/services/tax-planning',
+      image: '/images/tax-advisory.png'
     },
     {
       icon: <FaFileInvoice />,
       title: 'Audit & Assurance',
       description: 'Comprehensive audit services ensuring financial accuracy and regulatory compliance. We provide independent verification of your financial statements.',
       features: ['Financial Audits', 'Internal Audits', 'Compliance Audits', 'Risk Assessment'],
-      link: '/services/audit-assurance'
+      link: '/services/audit-assurance',
+      image: '/images/audit-and-assurance-services.png'
     },
     {
       icon: <FaChartBar />,
       title: 'Financial Advisory',
       description: 'Strategic financial planning and advisory services for business growth. We help you make informed financial decisions for long-term success.',
       features: ['Financial Planning', 'Investment Advisory', 'Budgeting', 'Cash Flow Management'],
-      link: '/services/financial-advisory'
+      link: '/services/financial-advisory',
+      image: '/images/financial-services.webp'
     },
     {
       icon: <FaShieldAlt />,
       title: 'Business Setup & Compliance',
       description: 'Complete business registration and ongoing compliance management. From company formation to regulatory compliance, we handle it all.',
       features: ['Company Registration', 'GST Registration', 'Compliance Management', 'Regulatory Filings'],
-      link: '/services/business-setup'
+      link: '/services/business-setup',
+      image: '/images/business-setup-compliance.png'
     },
     {
       icon: <FaCog />,
       title: 'Additional Services',
       description: 'Comprehensive accounting solutions including bookkeeping, payroll management, financial reporting, and business advisory services.',
       features: ['Bookkeeping', 'Payroll Management', 'Financial Reporting', 'Business Advisory'],
-      link: '/services/additional-services'
+      link: '/services/additional-services',
+      image: '/images/additional-services.webp'
     }
   ];
 
   return (
     <div className="services-page">
-      <section className="services-hero" style={{
-        backgroundImage: 'linear-gradient(rgba(10, 17, 40, 0.7), rgba(10, 17, 40, 0.7)), url(https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
-      }}>
-        <div className="services-hero-content">
+      <section className="services-hero">
+        <div className="hero-background-overlay"></div>
+        <div className="services-hero-container">
+          <div className="hero-tagline">OUR SERVICES</div>
           <h1>Beyond Audit Services</h1>
-          <p>Professional accounting and financial services designed to optimize your business performance</p>
+          <p className="hero-description">Professional accounting and financial services designed to optimize your business performance</p>
         </div>
       </section>
 
@@ -69,6 +71,9 @@ const Services = () => {
         <div className="services-list">
           {services.map((service, index) => (
             <div key={index} className="service-detail-card">
+              <div className="service-image">
+                <img src={service.image} alt={service.title} />
+              </div>
               <div className="service-detail-icon">{service.icon}</div>
               <div className="service-detail-content">
                 <h3>{service.title}</h3>

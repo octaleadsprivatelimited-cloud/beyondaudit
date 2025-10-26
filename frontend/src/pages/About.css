@@ -3,23 +3,60 @@
 }
 
 .about-hero {
-  background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
-  color: white;
-  padding: 6rem 8%;
-  text-align: center;
+  position: relative;
+  background: linear-gradient(rgba(10, 17, 40, 0.7), rgba(10, 17, 40, 0.7)), url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop') center/cover;
+  padding: 6rem 8% 5rem;
+  border-bottom: 1px solid #e9ecef;
+  overflow: hidden;
 }
 
-.about-hero-content h1 {
-  font-size: 3rem;
-  color: white;
-  margin-bottom: 1rem;
+.hero-background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 17, 40, 0.4);
+  z-index: 1;
 }
 
-.about-hero-content p {
-  font-size: 1.3rem;
-  opacity: 0.95;
-  max-width: 700px;
+.about-hero-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+.hero-tagline {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  background: #86bc25;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  border-radius: 3px;
+}
+
+.about-hero-container h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: white;
+  margin: 0 0 1.5rem 0;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero-description {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.95);
+  max-width: 900px;
+  margin: 0;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .about-intro {
@@ -32,6 +69,14 @@
   align-items: center;
 }
 
+.about-intro-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  grid-column: 1 / -1;
+}
+
 .about-intro-content h2 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
@@ -39,6 +84,37 @@
 }
 
 .about-intro-content p {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.who-we-are-image {
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.who-we-are-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.who-we-are-image:hover img {
+  transform: scale(1.02);
+}
+
+.who-we-are-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--navy);
+}
+
+.who-we-are-text p {
   font-size: 1.1rem;
   color: var(--text-light);
   line-height: 1.8;
@@ -68,6 +144,7 @@
 .stat-box p {
   font-size: 1rem;
   opacity: 0.95;
+  color: white;
 }
 
 .mission-vision {
@@ -124,10 +201,31 @@
   border-radius: 15px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
 .value-card:hover {
   transform: translateY(-10px);
+}
+
+.value-image {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.value-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.value-image:hover img {
+  transform: scale(1.05);
 }
 
 .value-icon {
@@ -222,31 +320,6 @@
   margin: 0;
 }
 
-.about-cta {
-  background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
-  padding: 5rem 8%;
-  text-align: center;
-  color: white;
-}
-
-.about-cta h2 {
-  font-size: 2.5rem;
-  color: white;
-  margin-bottom: 1rem;
-}
-
-.about-cta p {
-  font-size: 1.2rem;
-  opacity: 0.95;
-  margin-bottom: 2rem;
-}
-
-.cta-buttons {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
 
 .btn-outline-white {
   background: transparent;
@@ -301,16 +374,34 @@
 }
 
 @media (max-width: 768px) {
-  .about-hero-content h1 {
-    font-size: 2rem;
+  .about-hero {
+    padding: 4rem 5% 3rem;
   }
 
-  .about-hero-content p {
-    font-size: 1.1rem;
+  .about-hero-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-tagline {
+    font-size: 0.7rem;
+    padding: 0.4rem 1rem;
   }
 
   .about-stats {
     grid-template-columns: 1fr;
+  }
+
+  .about-intro-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .who-we-are-image {
+    margin-bottom: 1.5rem;
   }
 
   .values-grid {
@@ -323,12 +414,5 @@
     padding: 3rem 4%;
   }
 
-  .about-cta {
-    padding: 3rem 4%;
-  }
-
-  .about-cta h2 {
-    font-size: 1.8rem;
-  }
 }
 

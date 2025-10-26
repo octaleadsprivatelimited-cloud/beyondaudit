@@ -39,12 +39,11 @@ const BusinessSetup = () => {
   return (
     <div className="service-page">
       <section className="service-hero">
-        <div className="service-hero-content">
-          <div className="service-icon-large">
-            <FaShieldAlt />
-          </div>
+        <div className="hero-background-overlay"></div>
+        <div className="service-hero-container">
+          <div className="hero-tagline">BUSINESS SERVICES</div>
           <h1>Business Setup & Compliance</h1>
-          <p>Complete business registration and ongoing compliance management services to ensure your business operates smoothly.</p>
+          <p className="hero-description">Complete business registration and ongoing compliance management services to ensure your business operates smoothly.</p>
         </div>
       </section>
 

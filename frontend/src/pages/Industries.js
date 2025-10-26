@@ -47,11 +47,6 @@ const Industries = () => {
         </div>
       </section>
 
-      <section className="industries-cta">
-        <h2>Your Industry, Our Expertise</h2>
-        <p>Contact us to learn how we can help your business</p>
-        <a href="/contact" className="btn btn-white">Get in Touch</a>
-      </section>
     </div>
   );
 };

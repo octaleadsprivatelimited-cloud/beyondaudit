@@ -27,9 +27,11 @@ const TalentAcquisition = () => {
   return (
     <div className="service-page">
       <section className="service-hero">
-        <div className="service-hero-content">
+        <div className="hero-background-overlay"></div>
+        <div className="service-hero-container">
+          <div className="hero-tagline">TALENT SERVICES</div>
           <h1>Talent Acquisition Services</h1>
-          <p>Finding and securing top-tier talent for your organization</p>
+          <p className="hero-description">Finding and securing top-tier talent for your organization</p>
         </div>
       </section>
 

@@ -217,7 +217,6 @@ const Footer = () => {
         <div className="footer-bottom-content">
           <p>&copy; 2025 Beyond Audit. Developed By <a href="https://www.octaleads.com/" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}}>Octaleads Pvt Ltd</a>.</p>
           <div className="footer-bottom-links">
-            <span>Trusted by leading businesses worldwide</span>
           </div>
         </div>
       </div>

@@ -46,9 +46,11 @@ const OtherServices = () => {
   return (
     <div className="service-page">
       <section className="service-hero">
-        <div className="service-hero-content">
+        <div className="hero-background-overlay"></div>
+        <div className="service-hero-container">
+          <div className="hero-tagline">SPECIALIZED SERVICES</div>
           <h1>Additional Services</h1>
-          <p>Comprehensive solutions for all your business needs</p>
+          <p className="hero-description">Comprehensive solutions for all your business needs</p>
         </div>
       </section>
 

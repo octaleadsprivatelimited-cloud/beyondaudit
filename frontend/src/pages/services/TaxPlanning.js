@@ -39,9 +39,11 @@ const TaxPlanning = () => {
   return (
     <div className="service-page">
       <section className="service-hero">
-        <div className="service-hero-content">
+        <div className="hero-background-overlay"></div>
+        <div className="service-hero-container">
+          <div className="hero-tagline">TAX SERVICES</div>
           <h1>Tax Planning & Compliance</h1>
-          <p>Expert tax strategies and compliance services to optimize your financial position and ensure regulatory compliance.</p>
+          <p className="hero-description">Expert tax strategies and compliance services to optimize your financial position and ensure regulatory compliance.</p>
           <div className="hero-cta-buttons">
             <Link to="/contact" className="btn-hero-primary">
               Get Started Free

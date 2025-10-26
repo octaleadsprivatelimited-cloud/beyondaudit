@@ -39,12 +39,11 @@ const AuditAssurance = () => {
   return (
     <div className="service-page">
       <section className="service-hero">
-        <div className="service-hero-content">
-          <div className="service-icon-large">
-            <FaFileInvoice />
-          </div>
+        <div className="hero-background-overlay"></div>
+        <div className="service-hero-container">
+          <div className="hero-tagline">AUDIT SERVICES</div>
           <h1>Audit & Assurance</h1>
-          <p>Comprehensive audit services ensuring financial accuracy and regulatory compliance for your business.</p>
+          <p className="hero-description">Comprehensive audit services ensuring financial accuracy and regulatory compliance for your business.</p>
         </div>
       </section>
 

@@ -23,9 +23,11 @@ const MergersAcquisitions = () => {
   return (
     <div className="service-page">
       <section className="service-hero">
-        <div className="service-hero-content">
+        <div className="hero-background-overlay"></div>
+        <div className="service-hero-container">
+          <div className="hero-tagline">M&A SERVICES</div>
           <h1>Mergers & Acquisitions</h1>
-          <p>Strategic guidance through complex M&A transactions with proven success</p>
+          <p className="hero-description">Strategic guidance through complex M&A transactions with proven success</p>
         </div>
       </section>
 

@@ -44,15 +44,12 @@ const Contact = () => {
 
   return (
     <div className="contact-page">
-      <section className="contact-hero" style={{
-        backgroundImage: 'linear-gradient(rgba(10, 17, 40, 0.7), rgba(10, 17, 40, 0.7)), url(https://images.unsplash.com/photo-1423666639041-f56000c27a9a?q=80&w=2074&auto=format&fit=crop)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
-      }}>
-        <div className="contact-hero-content">
+      <section className="contact-hero">
+        <div className="hero-background-overlay"></div>
+        <div className="contact-hero-container">
+          <div className="hero-tagline">CONTACT US</div>
           <h1>Get in Touch</h1>
-          <p>Let's discuss how we can help transform your business</p>
+          <p className="hero-description">Let's discuss how we can help transform your business</p>
         </div>
       </section>
 

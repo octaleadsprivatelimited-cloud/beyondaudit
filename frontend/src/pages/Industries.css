@@ -113,24 +113,6 @@
   line-height: 1.7;
 }
 
-.industries-cta {
-  background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
-  padding: 5rem 8%;
-  text-align: center;
-  color: white;
-}
-
-.industries-cta h2 {
-  font-size: 2.5rem;
-  color: white;
-  margin-bottom: 1rem;
-}
-
-.industries-cta p {
-  font-size: 1.2rem;
-  opacity: 0.95;
-  margin-bottom: 2rem;
-}
 
 /* Responsive Design */
 @media (max-width: 1024px) {
@@ -175,9 +157,6 @@
     padding-right: 4%;
   }
 
-  .industries-cta {
-    padding: 3rem 4%;
-  }
 }
 
 @media (max-width: 480px) {

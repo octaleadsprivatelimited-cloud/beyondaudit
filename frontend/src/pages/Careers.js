@@ -43,15 +43,12 @@ const Careers = () => {
 
   return (
     <div className="careers-page">
-      <section className="careers-hero" style={{
-        backgroundImage: 'linear-gradient(rgba(10, 17, 40, 0.7), rgba(10, 17, 40, 0.7)), url(https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=2070&auto=format&fit=crop)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
-      }}>
-        <div className="careers-hero-content">
+      <section className="careers-hero">
+        <div className="hero-background-overlay"></div>
+        <div className="careers-hero-container">
+          <div className="hero-tagline">CAREERS</div>
           <h1>Join Our Team</h1>
-          <p>Build your career with a leading global consulting firm</p>
+          <p className="hero-description">Build your career with a leading global consulting firm</p>
         </div>
       </section>
 

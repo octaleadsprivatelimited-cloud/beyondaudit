@@ -56,10 +56,14 @@ const Home = () => {
   return (
     <div className="home">
       {/* Hero Section - Deloitte Inspired */}
-      <section className="hero">
+      <section className="hero" style={{
+        backgroundImage: 'linear-gradient(rgba(10, 17, 40, 0.85), rgba(10, 17, 40, 0.85)), url(/images/homepage-hero-consulting.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed'
+      }}>
         <div className="hero-container">
           <div className="hero-content animate-fade-in">
-            <div className="hero-tagline">Beyond Audit - Your Trusted Financial Partner</div>
             <h1 className="hero-title">
               Expert Accounting<br />
               <span className="hero-accent">Services</span>
@@ -102,23 +106,10 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="stats-section">
-        <div className="stats-grid">
-          {stats.map((stat, index) => (
-            <div key={index} className="stat-card animate-fade-in">
-              <h2 className="stat-number">{stat.number}</h2>
-              <p className="stat-label">{stat.label}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* Services Section */}
       <section className="services-section">
         <div className="section-header">
-          <span className="section-subtitle">What We Offer</span>
-          <h2 className="section-title">Our Services</h2>
+          <h2 className="section-title">What We Offer</h2>
           <p className="section-description">
             Comprehensive consulting solutions tailored to your business needs
           </p>
@@ -135,10 +126,17 @@ const Home = () => {
             </div>
           ))}
         </div>
-        <div className="section-footer">
-          <Link to="/services" className="btn btn-outline">
-            View All Services
-          </Link>
+      </section>
+
+      {/* Stats Section */}
+      <section className="stats-section">
+        <div className="stats-grid">
+          {stats.map((stat, index) => (
+            <div key={index} className="stat-card animate-fade-in">
+              <h2 className="stat-number">{stat.number}</h2>
+              <p className="stat-label">{stat.label}</p>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -209,16 +207,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="cta-section">
-        <div className="cta-content">
-          <h2>Ready to Optimize Your Finances?</h2>
-          <p>Let's discuss how we can help you achieve your financial goals and ensure compliance</p>
-          <Link to="/contact" className="btn btn-white">
-            Schedule a Consultation
-          </Link>
-        </div>
-      </section>
     </div>
   );
 };

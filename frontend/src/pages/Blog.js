@@ -12,7 +12,8 @@ const Blog = () => {
       author: 'Robert Anderson',
       date: 'October 15, 2025',
       category: 'M&A',
-      readTime: '5 min read'
+      readTime: '5 min read',
+      image: '/images/future-ma-2025-trends-predictions.webp'
     },
     {
       id: 2,
@@ -21,7 +22,8 @@ const Blog = () => {
       author: 'Sarah Williams',
       date: 'October 10, 2025',
       category: 'Fundraising',
-      readTime: '7 min read'
+      readTime: '7 min read',
+      image: '/images/successful-fundraising-strategies-startups.webp'
     },
     {
       id: 3,
@@ -30,7 +32,8 @@ const Blog = () => {
       author: 'David Chen',
       date: 'October 5, 2025',
       category: 'Strategy',
-      readTime: '6 min read'
+      readTime: '6 min read',
+      image: '/images/digital-transformation-technology.webp'
     },
     {
       id: 4,
@@ -39,7 +42,8 @@ const Blog = () => {
       author: 'Jennifer Martinez',
       date: 'September 28, 2025',
       category: 'Talent',
-      readTime: '4 min read'
+      readTime: '4 min read',
+      image: '/images/building-high-performance-teams-remote.webp'
     },
     {
       id: 5,
@@ -48,7 +52,8 @@ const Blog = () => {
       author: 'Robert Anderson',
       date: 'September 20, 2025',
       category: 'Strategy',
-      readTime: '8 min read'
+      readTime: '8 min read',
+      image: '/images/navigating-market-uncertainty-strategic-guide.webp'
     },
     {
       id: 6,
@@ -57,21 +62,19 @@ const Blog = () => {
       author: 'David Chen',
       date: 'September 15, 2025',
       category: 'Strategy',
-      readTime: '5 min read'
+      readTime: '5 min read',
+      image: '/images/rise-esg-business-strategy.webp'
     }
   ];
 
   return (
     <div className="blog-page">
-      <section className="blog-hero" style={{
-        backgroundImage: 'linear-gradient(rgba(10, 17, 40, 0.7), rgba(10, 17, 40, 0.7)), url(https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=2070&auto=format&fit=crop)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
-      }}>
-        <div className="blog-hero-content">
+      <section className="blog-hero">
+        <div className="hero-background-overlay"></div>
+        <div className="blog-hero-container">
+          <div className="hero-tagline">BLOG & INSIGHTS</div>
           <h1>Insights & Perspectives</h1>
-          <p>Expert analysis and thought leadership on business strategy, M&A, and market trends</p>
+          <p className="hero-description">Expert analysis and thought leadership on business strategy, M&A, and market trends</p>
         </div>
       </section>
 
@@ -79,6 +82,9 @@ const Blog = () => {
         <div className="blog-grid">
           {posts.map((post) => (
             <article key={post.id} className="blog-card">
+              <div className="blog-image">
+                <img src={post.image} alt={post.title} />
+              </div>
               <span className="blog-category">{post.category}</span>
               <h3>{post.title}</h3>
               <p className="blog-excerpt">{post.excerpt}</p>

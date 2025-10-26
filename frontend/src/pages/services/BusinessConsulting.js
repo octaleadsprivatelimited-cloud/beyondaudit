@@ -27,9 +27,11 @@ const BusinessConsulting = () => {
   return (
     <div className="service-page">
       <section className="service-hero">
-        <div className="service-hero-content">
+        <div className="hero-background-overlay"></div>
+        <div className="service-hero-container">
+          <div className="hero-tagline">CONSULTING</div>
           <h1>Business Consulting</h1>
-          <p>Comprehensive business strategies to drive growth and efficiency</p>
+          <p className="hero-description">Comprehensive business strategies to drive growth and efficiency</p>
         </div>
       </section>
 

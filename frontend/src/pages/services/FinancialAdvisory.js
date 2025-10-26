@@ -39,12 +39,11 @@ const FinancialAdvisory = () => {
   return (
     <div className="service-page">
       <section className="service-hero">
-        <div className="service-hero-content">
-          <div className="service-icon-large">
-            <FaChartBar />
-          </div>
+        <div className="hero-background-overlay"></div>
+        <div className="service-hero-container">
+          <div className="hero-tagline">FINANCIAL SERVICES</div>
           <h1>Financial Advisory</h1>
-          <p>Strategic financial planning and advisory services to help you make informed financial decisions and achieve your goals.</p>
+          <p className="hero-description">Strategic financial planning and advisory services to help you make informed financial decisions and achieve your goals.</p>
         </div>
       </section>
 

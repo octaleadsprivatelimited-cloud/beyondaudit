@@ -24,9 +24,11 @@ const FundRaise = () => {
   return (
     <div className="service-page">
       <section className="service-hero">
-        <div className="service-hero-content">
+        <div className="hero-background-overlay"></div>
+        <div className="service-hero-container">
+          <div className="hero-tagline">FUNDRAISING</div>
           <h1>Fund Raise Services</h1>
-          <p>Expert support in securing capital and navigating investment landscapes</p>
+          <p className="hero-description">Expert support in securing capital and navigating investment landscapes</p>
         </div>
       </section>
 

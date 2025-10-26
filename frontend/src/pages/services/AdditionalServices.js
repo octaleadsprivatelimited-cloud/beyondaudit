@@ -39,12 +39,11 @@ const AdditionalServices = () => {
   return (
     <div className="service-page">
       <section className="service-hero">
-        <div className="service-hero-content">
-          <div className="service-icon-large">
-            <FaCog />
-          </div>
+        <div className="hero-background-overlay"></div>
+        <div className="service-hero-container">
+          <div className="hero-tagline">ADDITIONAL SERVICES</div>
           <h1>Additional Services</h1>
-          <p>Comprehensive accounting solutions including bookkeeping, payroll management, and business advisory services.</p>
+          <p className="hero-description">Comprehensive accounting solutions including bookkeeping, payroll management, and business advisory services.</p>
         </div>
       </section>
 
