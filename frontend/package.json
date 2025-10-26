@@ -22,8 +22,8 @@
     "vercel-build": "cross-env CI=false npm run build"
   },
   "engines": {
-    "node": "20.x",
-    "npm": ">=10.0.0"
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
   },
   "eslintConfig": {
     "extends": [
