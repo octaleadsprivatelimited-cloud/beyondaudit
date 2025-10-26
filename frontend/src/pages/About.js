@@ -75,17 +75,19 @@ const About = () => {
         <div className="mv-card">
           <h2>Our Mission</h2>
           <p>
-            To empower businesses and individuals with expert accounting services and financial guidance, 
-            enabling them to achieve sustainable growth and financial success. Beyond Audit is committed 
-            to delivering excellence in every engagement.
+            Our mission is to redefine the audit and compliance ecosystem by delivering flawless, data-driven field verification powered by precision, integrity, and intelligence.
+            Through our robust pan-India network of over 10,000 qualified professionals — including Chartered Accountants, CMAs, and finance specialists — we execute audits with unmatched accuracy, transparency, and efficiency.
+            We are committed to operational excellence, technological adoption, and end-to-end service delivery, ensuring that every asset, stock, and process we verify strengthens our clients' confidence and control.
+            Beyond Audit exists to empower organizations with insights they can trust and professionals who deliver measurable impact.
           </p>
         </div>
         <div className="mv-card">
           <h2>Our Vision</h2>
           <p>
-            To be the most trusted chartered accounting firm, known for providing exceptional 
-            financial services and creating value that endures for generations. Beyond Audit 
-            strives to go beyond traditional accounting to deliver comprehensive financial solutions.
+            To be India's pacesetter in field verification and audit intelligence — setting new benchmarks in speed, reliability, and technological integration.
+            We envision transforming Beyond Audit into a holistic data assurance and staffing platform that connects enterprises with verified audit professionals across the nation.
+            Our vision is to lead the industry's evolution from manpower dependency to intelligence-driven assurance, combining human expertise with digital precision.
+            Beyond Audit aspires to be synonymous with trust, innovation, and excellence in every audit we undertake.
           </p>
         </div>
       </section>
