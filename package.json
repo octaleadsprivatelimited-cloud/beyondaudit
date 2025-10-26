@@ -4,7 +4,7 @@
   "description": "Beyond Audit - Professional accounting services website with Node.js and React",
   "main": "server.js",
   "engines": {
-    "node": ">=18.0.0",
+    "node": "18.x",
     "npm": ">=8.0.0"
   },
   "scripts": {
