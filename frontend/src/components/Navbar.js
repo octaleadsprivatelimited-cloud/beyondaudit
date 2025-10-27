@@ -69,25 +69,37 @@ const Navbar = () => {
               </span>
               <div className={`dropdown-menu ${servicesDropdown ? 'show' : ''}`}>
                 <div className="dropdown-content">
-                  <Link to="/services/tax-planning" className="dropdown-item">
-                    <strong>Tax Planning & Compliance</strong>
-                    <span className="item-desc">Expert tax strategies</span>
+                  <Link to="/services/stock-audit" className="dropdown-item">
+                    <strong>Stock Audit</strong>
+                    <span className="item-desc">Physical inventory verification</span>
                   </Link>
-                  <Link to="/services/audit-assurance" className="dropdown-item">
-                    <strong>Audit & Assurance</strong>
-                    <span className="item-desc">Financial audit services</span>
+                  <Link to="/services/quality-audit" className="dropdown-item">
+                    <strong>Quality Audit</strong>
+                    <span className="item-desc">Process integrity assessment</span>
                   </Link>
-                  <Link to="/services/financial-advisory" className="dropdown-item">
-                    <strong>Financial Advisory</strong>
-                    <span className="item-desc">Strategic financial planning</span>
+                  <Link to="/services/distributor-audit" className="dropdown-item">
+                    <strong>Distributor Audit</strong>
+                    <span className="item-desc">Operations & compliance evaluation</span>
                   </Link>
-                  <Link to="/services/business-setup" className="dropdown-item">
-                    <strong>Business Setup & Compliance</strong>
-                    <span className="item-desc">Company registration & compliance</span>
+                  <Link to="/services/nbfc-audit" className="dropdown-item">
+                    <strong>NBFC Audit</strong>
+                    <span className="item-desc">Financial operations review</span>
                   </Link>
-                  <Link to="/services/additional-services" className="dropdown-item">
-                    <strong>Additional Services</strong>
-                    <span className="item-desc">Bookkeeping & payroll</span>
+                  <Link to="/services/retail-audit" className="dropdown-item">
+                    <strong>Retail Audit</strong>
+                    <span className="item-desc">Store operations assessment</span>
+                  </Link>
+                  <Link to="/services/internal-audit" className="dropdown-item">
+                    <strong>Internal Audit</strong>
+                    <span className="item-desc">Control framework evaluation</span>
+                  </Link>
+                  <Link to="/services/compliance-audit" className="dropdown-item">
+                    <strong>Compliance Audit</strong>
+                    <span className="item-desc">Regulatory adherence review</span>
+                  </Link>
+                  <Link to="/services/forensic-audit" className="dropdown-item">
+                    <strong>Forensic Audit</strong>
+                    <span className="item-desc">Fraud investigation</span>
                   </Link>
                 </div>
               </div>
@@ -183,25 +195,37 @@ const Navbar = () => {
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.1 }}
                       >
-                        <Link to="/services/tax-planning" className="mobile-dropdown-item">
+                        <Link to="/services/stock-audit" className="mobile-dropdown-item">
                           <div className="dropdown-dot"></div>
-                          Tax Planning & Compliance
+                          Stock Audit
                         </Link>
-                        <Link to="/services/audit-assurance" className="mobile-dropdown-item">
+                        <Link to="/services/quality-audit" className="mobile-dropdown-item">
                           <div className="dropdown-dot"></div>
-                          Audit & Assurance
+                          Quality Audit
                         </Link>
-                        <Link to="/services/financial-advisory" className="mobile-dropdown-item">
+                        <Link to="/services/distributor-audit" className="mobile-dropdown-item">
                           <div className="dropdown-dot"></div>
-                          Financial Advisory
+                          Distributor Audit
                         </Link>
-                        <Link to="/services/business-setup" className="mobile-dropdown-item">
+                        <Link to="/services/nbfc-audit" className="mobile-dropdown-item">
                           <div className="dropdown-dot"></div>
-                          Business Setup & Compliance
+                          NBFC Audit
                         </Link>
-                        <Link to="/services/additional-services" className="mobile-dropdown-item">
+                        <Link to="/services/retail-audit" className="mobile-dropdown-item">
                           <div className="dropdown-dot"></div>
-                          Additional Services
+                          Retail Audit
+                        </Link>
+                        <Link to="/services/internal-audit" className="mobile-dropdown-item">
+                          <div className="dropdown-dot"></div>
+                          Internal Audit
+                        </Link>
+                        <Link to="/services/compliance-audit" className="mobile-dropdown-item">
+                          <div className="dropdown-dot"></div>
+                          Compliance Audit
+                        </Link>
+                        <Link to="/services/forensic-audit" className="mobile-dropdown-item">
+                          <div className="dropdown-dot"></div>
+                          Forensic Audit
                         </Link>
                       </motion.div>
                     </motion.div>

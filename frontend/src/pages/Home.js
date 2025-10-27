@@ -1,41 +1,101 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaCalculator, FaFileInvoice, FaChartBar, FaShieldAlt, FaArrowRight, FaStar } from 'react-icons/fa';
+import { FaBoxes, FaCheckCircle, FaTruck, FaClipboardList, FaUniversity, FaStore, FaSearch, FaBuilding, FaWarehouse, FaExclamationTriangle, FaShieldAlt, FaBroom, FaUserSecret, FaHandshake, FaArrowRight, FaStar, FaCalculator, FaFileInvoice, FaChartBar } from 'react-icons/fa';
 import './Home.css';
 
 const Home = () => {
   const services = [
     {
-      icon: <FaCalculator />,
-      title: 'Tax Planning & Compliance',
-      description: 'Expert tax strategies and compliance services to optimize your financial position.',
-      link: '/services/tax-planning'
+      icon: <FaBoxes />,
+      title: 'Stock Audit',
+      description: 'Exhaustive verification of physical inventory vis-à-vis book records for precision and transparency.',
+      link: '/services/stock-audit'
     },
     {
-      icon: <FaFileInvoice />,
-      title: 'Audit & Assurance',
-      description: 'Comprehensive audit services ensuring financial accuracy and regulatory compliance.',
-      link: '/services/audit-assurance'
+      icon: <FaCheckCircle />,
+      title: 'Quality Audit',
+      description: 'Holistic assessment of process integrity and product excellence across production lines.',
+      link: '/services/quality-audit'
     },
     {
-      icon: <FaChartBar />,
-      title: 'Financial Advisory',
-      description: 'Strategic financial planning and advisory services for business growth.',
-      link: '/services/financial-advisory'
+      icon: <FaTruck />,
+      title: 'Distributor Audit',
+      description: 'Comprehensive evaluation of distributor operations and compliance with organizational policies.',
+      link: '/services/distributor-audit'
+    },
+    {
+      icon: <FaClipboardList />,
+      title: 'Checklist-Based Audit',
+      description: 'Structured, metric-driven approach measuring performance against defined control parameters.',
+      link: '/services/checklist-audit'
+    },
+    {
+      icon: <FaUniversity />,
+      title: 'NBFC Audit',
+      description: 'In-depth review of financial operations and regulatory adherence for Non-Banking Financial Companies.',
+      link: '/services/nbfc-audit'
+    },
+    {
+      icon: <FaStore />,
+      title: 'Retail Audit',
+      description: 'Granular assessment of store operations, merchandising effectiveness, and policy compliance.',
+      link: '/services/retail-audit'
+    },
+    {
+      icon: <FaSearch />,
+      title: 'Internal Audit',
+      description: 'Independent evaluation of internal control frameworks and governance processes.',
+      link: '/services/internal-audit'
+    },
+    {
+      icon: <FaBuilding />,
+      title: 'Fixed Asset Audit',
+      description: 'Complete verification of asset existence, ownership, condition, and valuation.',
+      link: '/services/fixed-asset-audit'
+    },
+    {
+      icon: <FaWarehouse />,
+      title: 'Warehouse Audit',
+      description: 'Thorough examination of storage practices, stock handling, and operational efficiency.',
+      link: '/services/warehouse-audit'
+    },
+    {
+      icon: <FaExclamationTriangle />,
+      title: 'Damage & Expiry Audit',
+      description: 'Identification of product deterioration, wastage, and inventory management inefficiencies.',
+      link: '/services/damage-expiry-audit'
     },
     {
       icon: <FaShieldAlt />,
-      title: 'Business Setup & Compliance',
-      description: 'Complete business registration and ongoing compliance management.',
-      link: '/services/business-setup'
+      title: 'Compliance Audit',
+      description: 'Exhaustive examination of adherence to statutory regulations and industry mandates.',
+      link: '/services/compliance-audit'
+    },
+    {
+      icon: <FaBroom />,
+      title: 'Clean & Hygiene Audit',
+      description: 'Assessment of workplace sanitation, safety, and environmental management standards.',
+      link: '/services/clean-hygiene-audit'
+    },
+    {
+      icon: <FaUserSecret />,
+      title: 'Forensic Audit',
+      description: 'Investigation of financial irregularities, fraud, and corporate misconduct with precision.',
+      link: '/services/forensic-audit'
+    },
+    {
+      icon: <FaHandshake />,
+      title: 'Merchant Audit',
+      description: 'Meticulous review of merchant transactions, pricing structures, and operational adherence.',
+      link: '/services/merchant-audit'
     }
   ];
 
   const stats = [
-    { number: '1000+', label: 'Tax Returns Filed' },
+    { number: '10,000+', label: 'Qualified Professionals' },
+    { number: '15+', label: 'Years of Excellence' },
     { number: '500+', label: 'Businesses Served' },
-    { number: '99%', label: 'Client Satisfaction' },
-    { number: '15+', label: 'Years Experience' }
+    { number: '99%', label: 'Client Satisfaction' }
   ];
 
   const testimonials = [
@@ -64,13 +124,14 @@ const Home = () => {
       }}>
         <div className="hero-container">
           <div className="hero-content animate-fade-in">
-            <h1 className="hero-title">
-              Expert Accounting<br />
-              <span className="hero-accent">Services</span>
-            </h1>
-            <p className="hero-subtitle">
-              Professional chartered accounting services including tax planning, audit & assurance, financial advisory, and business compliance. Beyond Audit helps businesses and individuals navigate complex financial landscapes with confidence and expertise.
-            </p>
+        <h1 className="hero-title">
+          India's Leading<br />
+          <span className="hero-accent">Field Verification</span><br />
+          & Audit Intelligence
+        </h1>
+        <p className="hero-subtitle">
+          Redefining the audit and compliance ecosystem through flawless, data-driven field verification powered by precision, integrity, and intelligence. Our pan-India network of 10,000+ qualified professionals delivers unmatched accuracy, transparency, and efficiency across all audit services with complete manpower support.
+        </p>
             <div className="hero-buttons">
               <Link to="/contact" className="btn btn-primary">
                 Let's Connect <FaArrowRight />
@@ -144,19 +205,18 @@ const Home = () => {
       <section className="why-choose-section">
         <div className="why-choose-content">
           <div className="why-choose-text">
-            <span className="section-subtitle">Why Choose Us</span>
-            <h2 className="section-title">Trusted Accounting Expertise</h2>
-            <p>
-              With over 15 years of accounting expertise, we've helped hundreds of businesses 
-              and individuals achieve their financial goals. Our team of qualified chartered 
-              accountants brings deep knowledge of tax laws, financial regulations, and business compliance.
-            </p>
-            <ul className="why-choose-list">
-              <li>✓ Qualified chartered accountants with extensive experience</li>
-              <li>✓ Personalized financial strategies for your unique needs</li>
-              <li>✓ Complete support from setup to ongoing compliance</li>
-              <li>✓ Up-to-date knowledge of changing tax laws and regulations</li>
-            </ul>
+        <span className="section-subtitle">Why Choose Us</span>
+        <h2 className="section-title">India's Pacesetter in Field Verification</h2>
+        <p>
+          Beyond Audit leads India's audit intelligence revolution with our robust pan-India network of 10,000+ qualified professionals. We combine human expertise with digital precision to deliver flawless, data-driven field verification that sets new benchmarks in speed, reliability, and technological integration. We provide complete manpower support for all audit services.
+        </p>
+        <ul className="why-choose-list">
+          <li>✓ Pan-India network of 10,000+ Chartered Accountants, CMAs, and finance specialists</li>
+          <li>✓ Complete manpower provision for all audit services across India</li>
+          <li>✓ Data-driven field verification powered by precision, integrity, and intelligence</li>
+          <li>✓ End-to-end service delivery with dedicated professional teams</li>
+          <li>✓ Technological adoption and intelligence-driven assurance</li>
+        </ul>
             <Link to="/why-choose-us" className="btn btn-primary">
               Learn More About Us
             </Link>

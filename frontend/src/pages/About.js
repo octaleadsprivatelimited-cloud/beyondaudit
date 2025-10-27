@@ -27,7 +27,7 @@ const About = () => {
         <div className="about-hero-container">
           <div className="hero-tagline">ABOUT US</div>
           <h1>About Beyond Audit</h1>
-          <p className="hero-description">Providing expert accounting services and financial excellence for over 15 years</p>
+          <p className="hero-description">Redefining the audit and compliance ecosystem through flawless, data-driven field verification powered by precision, integrity, and intelligence. Our pan-India network of 10,000+ qualified professionals delivers unmatched accuracy, transparency, and efficiency across all audit services with complete manpower support.</p>
         </div>
       </section>
 
@@ -39,34 +39,29 @@ const About = () => {
           <div className="who-we-are-text">
             <h2>Who We Are</h2>
             <p>
-              Founded in 2008, Beyond Audit has grown from a small practice to a 
-              trusted financial services provider. With a team of qualified chartered accountants 
-              and financial experts, we've helped hundreds of businesses and individuals achieve 
-              their financial objectives.
+              Beyond Audit is India's pacesetter in field verification and audit intelligence, setting new benchmarks in speed, reliability, and technological integration. We envision transforming into a holistic data assurance and staffing platform that connects enterprises with verified audit professionals across the nation, providing complete manpower support for all audit services.
             </p>
             <p>
-              Our success is built on deep accounting expertise, innovative financial solutions, and an 
-              unwavering commitment to client success. We don't just provide accounting services – we partner 
-              with you to drive meaningful, measurable financial results.
+              Our robust pan-India network of over 10,000 qualified professionals — including Chartered Accountants, CMAs, and finance specialists — executes audits with unmatched accuracy, transparency, and efficiency. We provide dedicated manpower teams for all audit services, combining human expertise with digital precision to deliver comprehensive field verification solutions.
             </p>
           </div>
         </div>
         <div className="about-stats">
           <div className="stat-box">
-            <h3>15+</h3>
-            <p>Years of Excellence</p>
+            <h3>10,000+</h3>
+            <p>Qualified Professionals</p>
           </div>
           <div className="stat-box">
-            <h3>10+</h3>
-            <p>Chartered Accountants</p>
+            <h3>15+</h3>
+            <p>Years of Excellence</p>
           </div>
           <div className="stat-box">
             <h3>500+</h3>
             <p>Businesses Served</p>
           </div>
           <div className="stat-box">
-            <h3>1000+</h3>
-            <p>Tax Returns Filed</p>
+            <h3>99%</h3>
+            <p>Client Satisfaction</p>
           </div>
         </div>
       </section>
@@ -77,8 +72,8 @@ const About = () => {
           <p>
             Our mission is to redefine the audit and compliance ecosystem by delivering flawless, data-driven field verification powered by precision, integrity, and intelligence.
             Through our robust pan-India network of over 10,000 qualified professionals — including Chartered Accountants, CMAs, and finance specialists — we execute audits with unmatched accuracy, transparency, and efficiency.
-            We are committed to operational excellence, technological adoption, and end-to-end service delivery, ensuring that every asset, stock, and process we verify strengthens our clients' confidence and control.
-            Beyond Audit exists to empower organizations with insights they can trust and professionals who deliver measurable impact.
+            We provide complete manpower support for all audit services, ensuring that every asset, stock, and process we verify strengthens our clients' confidence and control.
+            Beyond Audit exists to empower organizations with insights they can trust and dedicated professional teams who deliver measurable impact.
           </p>
         </div>
         <div className="mv-card">
@@ -86,8 +81,8 @@ const About = () => {
           <p>
             To be India's pacesetter in field verification and audit intelligence — setting new benchmarks in speed, reliability, and technological integration.
             We envision transforming Beyond Audit into a holistic data assurance and staffing platform that connects enterprises with verified audit professionals across the nation.
-            Our vision is to lead the industry's evolution from manpower dependency to intelligence-driven assurance, combining human expertise with digital precision.
-            Beyond Audit aspires to be synonymous with trust, innovation, and excellence in every audit we undertake.
+            Our vision is to provide comprehensive manpower solutions for all audit services, combining human expertise with digital precision to deliver intelligence-driven assurance.
+            Beyond Audit aspires to be synonymous with trust, innovation, and excellence in every audit we undertake with our dedicated professional teams.
           </p>
         </div>
       </section>

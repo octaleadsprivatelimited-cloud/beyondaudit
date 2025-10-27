@@ -124,20 +124,20 @@ const Services = () => {
       <section className="services-hero">
         <div className="hero-background-overlay"></div>
         <div className="services-hero-container">
-          <div className="hero-tagline">OUR SERVICES</div>
-          <h1>Beyond Audit Services</h1>
-          <p className="hero-description">Professional accounting and financial services designed to optimize your business performance</p>
+        <div className="hero-tagline">OUR CORE SERVICES</div>
+        <h1>Comprehensive Audit Solutions</h1>
+        <p className="hero-description">14 specialized audit services delivering flawless, data-driven field verification powered by precision, integrity, and intelligence across India. We provide complete manpower support for all audit services with our pan-India network of 10,000+ qualified professionals.</p>
         </div>
       </section>
 
       <section className="services-overview">
         <div className="section-intro">
-          <h2>Services</h2>
-          <p>
-            Beyond Audit provides comprehensive accounting and financial services across all critical business functions. 
-            Our team of qualified chartered accountants brings deep expertise in tax laws, financial regulations, 
-            and business compliance to help you achieve your financial objectives.
-          </p>
+          <h2>Our Core Services</h2>
+        <p>
+          Beyond Audit delivers comprehensive audit solutions through our pan-India network of 10,000+ qualified professionals. 
+          We specialize in field verification and audit intelligence, setting new benchmarks in speed, reliability, and technological integration. 
+          Our 14 core audit services cover every aspect of business operations, ensuring precision, transparency, and accountability with complete manpower support.
+        </p>
         </div>
 
         <div className="services-list">

@@ -21,11 +21,14 @@ const Footer = () => {
   };
 
   const services = [
-    { name: 'Tax Planning & Compliance', path: '/services/tax-planning', desc: 'Expert tax strategies' },
-    { name: 'Audit & Assurance', path: '/services/audit-assurance', desc: 'Financial audit services' },
-    { name: 'Financial Advisory', path: '/services/financial-advisory', desc: 'Strategic financial planning' },
-    { name: 'Business Setup & Compliance', path: '/services/business-setup', desc: 'Company registration' },
-    { name: 'Additional Services', path: '/services/additional-services', desc: 'Bookkeeping & payroll' }
+    { name: 'Stock Audit', path: '/services/stock-audit', desc: 'Physical inventory verification' },
+    { name: 'Quality Audit', path: '/services/quality-audit', desc: 'Process integrity assessment' },
+    { name: 'Distributor Audit', path: '/services/distributor-audit', desc: 'Operations evaluation' },
+    { name: 'NBFC Audit', path: '/services/nbfc-audit', desc: 'Financial operations review' },
+    { name: 'Retail Audit', path: '/services/retail-audit', desc: 'Store operations assessment' },
+    { name: 'Internal Audit', path: '/services/internal-audit', desc: 'Control framework evaluation' },
+    { name: 'Compliance Audit', path: '/services/compliance-audit', desc: 'Regulatory adherence' },
+    { name: 'Forensic Audit', path: '/services/forensic-audit', desc: 'Fraud investigation' }
   ];
 
   const company = [
@@ -76,8 +79,7 @@ const Footer = () => {
               <span className="footer-logo-text">Beyond Audit</span>
             </div>
             <p className="footer-description">
-              Leading chartered accounting firm specializing in tax planning, audit & assurance, and financial advisory services. 
-              Delivering exceptional results for over 15 years.
+              India's pacesetter in field verification and audit intelligence. Our pan-India network of 10,000+ qualified professionals delivers flawless, data-driven field verification powered by precision, integrity, and intelligence with complete manpower support for all audit services.
             </p>
             
             <div className="footer-contact-cards">
