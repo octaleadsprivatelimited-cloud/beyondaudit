@@ -51,7 +51,6 @@ const Footer = () => {
 
   const quickLinks = [
     { name: 'News & Updates', path: '/news' },
-    { name: 'Events', path: '/events' },
     { name: 'Contact Us', path: '/contact' },
     { name: 'Privacy Policy', path: '/privacy-policy' },
     { name: 'Terms of Service', path: '/terms-of-service' }

@@ -46,7 +46,6 @@ import OurApproach from './pages/OurApproach';
 import WhyChooseUs from './pages/WhyChooseUs';
 import Partners from './pages/Partners';
 import News from './pages/News';
-import Events from './pages/Events';
 
 function App() {
   return (
@@ -96,7 +95,6 @@ function App() {
           <Route path="/why-choose-us" element={<WhyChooseUs />} />
           <Route path="/partners" element={<Partners />} />
           <Route path="/news" element={<News />} />
-          <Route path="/events" element={<Events />} />
         </Routes>
         <Footer />
       </div>
