@@ -43,7 +43,6 @@ const Footer = () => {
   const resources = [
     { name: 'Case Studies', path: '/case-studies' },
     { name: 'Blog & Insights', path: '/blog' },
-    { name: 'Resources', path: '/resources' },
     { name: 'Industries', path: '/industries' },
     { name: 'Testimonials', path: '/testimonials' },
     { name: 'FAQ', path: '/faq' }
