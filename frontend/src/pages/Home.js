@@ -126,8 +126,7 @@ const Home = () => {
           <div className="hero-content animate-fade-in">
         <h1 className="hero-title">
           India's Leading<br />
-          <span className="hero-accent">Field Verification</span><br />
-          & Audit Intelligence
+          <span className="hero-accent">Audit Intelligence</span>
         </h1>
         <p className="hero-subtitle">
           Redefining the audit and compliance ecosystem through flawless, data-driven field verification powered by precision, integrity, and intelligence. Our pan-India network of 10,000+ qualified professionals delivers unmatched accuracy, transparency, and efficiency across all audit services with complete manpower support.

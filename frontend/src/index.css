@@ -33,12 +33,18 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   overflow-x: hidden;
   color: #1d1d1f;
   line-height: 1.47059;
   font-weight: 400;
   letter-spacing: -0.022em;
+}
+
+/* Force Outfit across all common elements */
+body, p, a, span, div, h1, h2, h3, h4, h5, h6,
+button, input, textarea, select, label, li, ul {
+  font-family: 'Outfit', sans-serif !important;
 }
 
 /* Apple Typography System */
