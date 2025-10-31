@@ -95,7 +95,7 @@
 }
 
 .list-icon {
-  color: var(--success-green);
+  color: #2b144d;
   font-size: 1.2rem;
   flex-shrink: 0;
   margin-top: 0.2rem;

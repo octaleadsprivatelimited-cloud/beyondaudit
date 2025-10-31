@@ -30,7 +30,7 @@
 .hero-tagline {
   display: inline-block;
   padding: 0.5rem 1.2rem;
-  background: #86bc25;
+  background: #2b144d;
   color: white;
   font-size: 0.75rem;
   font-weight: 600;
@@ -61,7 +61,8 @@
 
 .careers-intro,
 .benefits-section,
-.positions-section {
+.positions-section,
+.staffing-section {
   max-width: 1400px;
   margin: 0 auto;
   padding: 4rem 8%;
@@ -223,8 +224,80 @@
 
   .careers-intro,
   .benefits-section,
-  .positions-section {
+  .positions-section,
+  .staffing-section {
     padding: 3rem 4%;
+  }
+}
+
+/* Staffing Section Styles */
+.staffing-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.staffing-content h2 {
+  font-size: 2.5rem;
+  color: var(--navy);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.staffing-description {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.staffing-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.staffing-feature {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #2b144d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.staffing-feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.staffing-feature h3 {
+  font-size: 1.3rem;
+  color: var(--navy);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.staffing-feature p {
+  font-size: 1rem;
+  color: var(--text-light);
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .staffing-features {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .staffing-content h2 {
+    font-size: 2rem;
+  }
+
+  .staffing-description {
+    font-size: 1rem;
   }
 }
 

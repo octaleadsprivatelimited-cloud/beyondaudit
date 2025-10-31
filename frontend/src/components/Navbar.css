@@ -36,6 +36,13 @@
   opacity: 0.8;
 }
 
+.logo-text {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.022em;
+}
+
 .logo-image {
   height: 20px;
   width: auto;
@@ -145,7 +152,7 @@
   top: 100%;
   left: 50%;
   transform: translateX(-50%) translateY(-10px);
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.98);
   backdrop-filter: saturate(180%) blur(20px);
   min-width: 240px;
   max-width: 280px;
@@ -272,7 +279,7 @@
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4) !important;
   z-index: 1998 !important;
   overflow: hidden !important;
-  border-top: 2px solid #86bc25 !important;
+  border-top: 2px solid #2b144d !important;
   backdrop-filter: blur(10px) !important;
 }
 
@@ -291,7 +298,7 @@
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, #86bc25, transparent);
+  background: linear-gradient(90deg, transparent, #2b144d, transparent);
 }
 
 .mobile-menu-content {
@@ -303,7 +310,7 @@
   align-items: center !important;
   gap: 0.75rem !important;
   padding: 0.875rem 1.5rem !important;
-  color: #86bc25 !important;
+  color: #2b144d !important;
   font-weight: 400 !important;
   font-size: 0.9rem !important;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
@@ -313,7 +320,7 @@
   border: none !important;
   cursor: pointer !important;
   position: relative !important;
-  border-bottom: 1px solid rgba(134, 188, 37, 0.1) !important;
+  border-bottom: 1px solid rgba(43, 20, 77, 0.1) !important;
   margin: 0 !important;
   overflow: hidden !important;
 }
@@ -325,7 +332,7 @@
   top: 0;
   bottom: 0;
   width: 3px;
-  background: linear-gradient(135deg, #86bc25, #7aa520);
+  background: linear-gradient(135deg, #2b144d, #2b144d);
   transform: scaleY(0);
   transition: transform 0.3s ease;
   transform-origin: bottom;
@@ -336,8 +343,8 @@
 }
 
 .mobile-link:hover {
-  background: linear-gradient(90deg, rgba(134, 188, 37, 0.1) 0%, rgba(134, 188, 37, 0.05) 100%) !important;
-  color: #86bc25 !important;
+  background: linear-gradient(90deg, rgba(43, 20, 77, 0.1) 0%, rgba(43, 20, 77, 0.05) 100%) !important;
+  color: #2b144d !important;
   transform: translateX(4px) !important;
 }
 
@@ -353,12 +360,12 @@
 .mobile-link .chevron {
   margin-left: auto;
   transition: all 0.3s ease;
-  color: rgba(134, 188, 37, 0.7);
+  color: rgba(43, 20, 77, 0.7);
   font-size: 0.8rem;
 }
 
 .mobile-link:hover .chevron {
-  color: #86bc25;
+  color: #2b144d;
   transform: translateX(2px);
 }
 
@@ -375,8 +382,8 @@
   overflow: hidden;
   background: linear-gradient(135deg, rgba(10, 17, 40, 0.8) 0%, rgba(26, 40, 71, 0.6) 100%);
   margin: 0;
-  border-top: 1px solid rgba(134, 188, 37, 0.2);
-  border-left: 3px solid rgba(134, 188, 37, 0.3);
+  border-top: 1px solid rgba(43, 20, 77, 0.2);
+  border-left: 3px solid rgba(43, 20, 77, 0.3);
   position: relative;
 }
 
@@ -387,7 +394,7 @@
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(134, 188, 37, 0.5), transparent);
+  background: linear-gradient(90deg, transparent, rgba(43, 20, 77, 0.5), transparent);
 }
 
 .mobile-dropdown-item {
@@ -395,13 +402,13 @@
   align-items: center;
   gap: 0.75rem;
   padding: 0.75rem 2.5rem;
-  color: rgba(134, 188, 37, 0.8);
+  color: rgba(43, 20, 77, 0.8);
   font-size: 0.85rem;
   font-weight: 400;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   background: transparent;
-  border-bottom: 1px solid rgba(134, 188, 37, 0.08);
+  border-bottom: 1px solid rgba(43, 20, 77, 0.08);
   margin: 0;
   overflow: hidden;
 }
@@ -413,7 +420,7 @@
   top: 0;
   bottom: 0;
   width: 2px;
-  background: linear-gradient(135deg, #86bc25, #7aa520);
+  background: linear-gradient(135deg, #2b144d, #2b144d);
   transform: scaleY(0);
   transition: transform 0.3s ease;
   transform-origin: bottom;
@@ -424,8 +431,8 @@
 }
 
 .mobile-dropdown-item:hover {
-  background: linear-gradient(90deg, rgba(134, 188, 37, 0.08) 0%, rgba(134, 188, 37, 0.03) 100%);
-  color: #86bc25;
+  background: linear-gradient(90deg, rgba(43, 20, 77, 0.08) 0%, rgba(43, 20, 77, 0.03) 100%);
+  color: #2b144d;
   transform: translateX(3px);
 }
 
@@ -447,8 +454,8 @@
 .mobile-menu-footer {
   padding: 1.5rem 1.25rem 1rem;
   margin: 1rem 0.75rem 0;
-  border-top: 2px solid rgba(134, 188, 37, 0.3);
-  background: linear-gradient(135deg, rgba(134, 188, 37, 0.08) 0%, rgba(134, 188, 37, 0.03) 100%);
+  border-top: 2px solid rgba(43, 20, 77, 0.3);
+  background: linear-gradient(135deg, rgba(43, 20, 77, 0.08) 0%, rgba(43, 20, 77, 0.03) 100%);
   border-radius: 12px;
   position: relative;
   overflow: hidden;
@@ -461,7 +468,7 @@
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(134, 188, 37, 0.6), transparent);
+  background: linear-gradient(90deg, transparent, rgba(43, 20, 77, 0.6), transparent);
 }
 
 .mobile-menu-footer::after {
@@ -471,7 +478,7 @@
   right: -50%;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle, rgba(134, 188, 37, 0.05) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(43, 20, 77, 0.05) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -488,24 +495,24 @@
   align-items: center;
   justify-content: flex-start;
   gap: 0.4rem;
-  color: #86bc25;
+  color: #2b144d;
   font-size: 0.7rem;
-  background: rgba(134, 188, 37, 0.1);
+  background: rgba(43, 20, 77, 0.1);
   padding: 0.5rem;
   border-radius: 6px;
-  border: 1px solid rgba(134, 188, 37, 0.2);
+  border: 1px solid rgba(43, 20, 77, 0.2);
   transition: all 0.2s ease;
   text-decoration: none;
 }
 
 .mobile-contact-info p:hover {
-  background: rgba(134, 188, 37, 0.15);
+  background: rgba(43, 20, 77, 0.15);
   transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(134, 188, 37, 0.2);
+  box-shadow: 0 2px 8px rgba(43, 20, 77, 0.2);
 }
 
 .mobile-contact-info p svg {
-  color: #86bc25;
+  color: #2b144d;
   font-size: 0.75rem;
   flex-shrink: 0;
 }
@@ -519,7 +526,7 @@
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  color: #86bc25;
+  color: #2b144d;
   font-size: 0.7rem;
   font-weight: 500;
   margin-bottom: 0.4rem;
@@ -533,7 +540,7 @@
 .maps-embed {
   border-radius: 6px;
   overflow: hidden;
-  border: 1px solid rgba(134, 188, 37, 0.2);
+  border: 1px solid rgba(43, 20, 77, 0.2);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 
