@@ -569,7 +569,7 @@
     font-size: 0.7rem;
     margin-bottom: 0.4rem;
     text-align: center;
-    color: #2b144d;
+    color: #ffffff;
     font-weight: 600;
   }
 
@@ -627,6 +627,7 @@
     text-align: center;
     margin-bottom: 0.2rem;
     font-size: 0.6rem;
+    color: #ffffff;
   }
 
   .newsletter-description {
@@ -766,6 +767,7 @@
   .footer-column-title {
     font-size: 0.7rem;
     margin-bottom: 0.5rem;
+    color: #ffffff;
   }
 
   .footer-links-list {
