@@ -129,7 +129,7 @@ const Home = () => {
           <span className="hero-accent">Audit Intelligence</span>
         </h1>
         <p className="hero-subtitle">
-          Redefining the audit and compliance ecosystem through flawless, data-driven field verification powered by precision, integrity, and intelligence. Our pan-India network of 10,000+ qualified professionals delivers unmatched accuracy, transparency, and efficiency across all audit services with complete manpower support.
+          Redefining the audit and compliance ecosystem through flawless, data-driven audit services powered by precision, integrity, and intelligence. Our pan-India network of 10,000+ qualified professionals delivers unmatched accuracy, transparency, and efficiency across all audit services with complete manpower support.
         </p>
             <div className="hero-buttons">
               <Link to="/contact" className="btn btn-primary">
@@ -205,14 +205,14 @@ const Home = () => {
         <div className="why-choose-content">
           <div className="why-choose-text">
         <span className="section-subtitle">Why Choose Us</span>
-        <h2 className="section-title">India's Pacesetter in Field Verification</h2>
+        <h2 className="section-title">India's Pacesetter in Audit Intelligence</h2>
         <p>
-          Beyond Audit leads India's audit intelligence revolution with our robust pan-India network of 10,000+ qualified professionals. We combine human expertise with digital precision to deliver flawless, data-driven field verification that sets new benchmarks in speed, reliability, and technological integration. We provide complete manpower support for all audit services.
+          Beyond Audit leads India's audit intelligence revolution with our robust pan-India network of 10,000+ qualified professionals. We combine human expertise with digital precision to deliver flawless, data-driven audit services that set new benchmarks in speed, reliability, and technological integration. We provide complete manpower support for all audit services.
         </p>
         <ul className="why-choose-list">
           <li>✓ Pan-India network of 10,000+ Chartered Accountants, CMAs, and finance specialists</li>
           <li>✓ Complete manpower provision for all audit services across India</li>
-          <li>✓ Data-driven field verification powered by precision, integrity, and intelligence</li>
+          <li>✓ Data-driven audit services powered by precision, integrity, and intelligence</li>
           <li>✓ End-to-end service delivery with dedicated professional teams</li>
           <li>✓ Technological adoption and intelligence-driven assurance</li>
         </ul>
