@@ -109,18 +109,18 @@
   background: rgba(255, 255, 255, 0.05);
   padding: 0.75rem;
   border-radius: 0;
-  border-left: 3px solid #2b144d;
+  border-left: 3px solid #ffffff;
   transition: all 0.3s ease;
 }
 
 .contact-card:hover {
   background: rgba(255, 255, 255, 0.08);
-  border-left-color: #2b144d;
+  border-left-color: #ffffff;
   transform: translateX(5px);
 }
 
 .contact-icon {
-  color: #2b144d;
+  color: #ffffff;
   font-size: 1.2rem;
   margin-top: 0.2rem;
 }
@@ -142,7 +142,7 @@
 }
 
 .contact-value:hover {
-  color: #2b144d;
+  color: #ffffff;
 }
 
 /* Social Section */
@@ -237,13 +237,13 @@
 }
 
 .footer-link:hover {
-  color: #2b144d;
+  color: #ffffff;
   padding-left: 1rem;
-  border-left-color: #2b144d;
+  border-left-color: #ffffff;
 }
 
 .link-icon {
-  color: #2b144d;
+  color: #ffffff;
   font-size: 0.65rem;
   margin-top: 0.35rem;
   flex-shrink: 0;
@@ -252,7 +252,7 @@
 
 .footer-link:hover .link-icon {
   transform: translateX(4px);
-  color: #2b144d;
+  color: #ffffff;
 }
 
 .link-name {
