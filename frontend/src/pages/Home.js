@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaBoxes, FaCheckCircle, FaTruck, FaClipboardList, FaUniversity, FaStore, FaSearch, FaBuilding, FaWarehouse, FaExclamationTriangle, FaShieldAlt, FaBroom, FaUserSecret, FaHandshake, FaArrowRight, FaStar, FaCalculator, FaFileInvoice, FaChartBar } from 'react-icons/fa';
+import { FaBoxes, FaCheckCircle, FaTruck, FaClipboardList, FaUniversity, FaStore, FaSearch, FaBuilding, FaWarehouse, FaExclamationTriangle, FaShieldAlt, FaBroom, FaUserSecret, FaHandshake, FaArrowRight, FaStar } from 'react-icons/fa';
 import './Home.css';
 
 const Home = () => {
@@ -141,25 +141,25 @@ const Home = () => {
             </div>
           </div>
           <div className="hero-links">
-            <Link to="/services/tax-planning" className="hero-link">
-              <div className="hero-link-icon"><FaCalculator /></div>
+            <Link to="/services/stock-audit" className="hero-link">
+              <div className="hero-link-icon"><FaBoxes /></div>
               <div>
-                <h3>Tax Planning</h3>
-                <p>Expert tax strategies and compliance</p>
+                <h3>Stock Audit</h3>
+                <p>Physical inventory verification and reconciliation</p>
               </div>
             </Link>
-            <Link to="/services/audit-assurance" className="hero-link">
-              <div className="hero-link-icon"><FaFileInvoice /></div>
+            <Link to="/services/quality-audit" className="hero-link">
+              <div className="hero-link-icon"><FaCheckCircle /></div>
               <div>
-                <h3>Audit & Assurance</h3>
-                <p>Comprehensive financial audits</p>
+                <h3>Quality Audit</h3>
+                <p>Process integrity and product excellence assessment</p>
               </div>
             </Link>
-            <Link to="/services/financial-advisory" className="hero-link">
-              <div className="hero-link-icon"><FaChartBar /></div>
+            <Link to="/services/internal-audit" className="hero-link">
+              <div className="hero-link-icon"><FaSearch /></div>
               <div>
-                <h3>Financial Advisory</h3>
-                <p>Strategic financial planning</p>
+                <h3>Internal Audit</h3>
+                <p>Independent control framework evaluation</p>
               </div>
             </Link>
           </div>
