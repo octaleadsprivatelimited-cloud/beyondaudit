@@ -310,7 +310,7 @@
   align-items: center !important;
   gap: 0.75rem !important;
   padding: 0.875rem 1.5rem !important;
-  color: #2b144d !important;
+  color: #ffffff !important;
   font-weight: 400 !important;
   font-size: 0.9rem !important;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
@@ -320,7 +320,7 @@
   border: none !important;
   cursor: pointer !important;
   position: relative !important;
-  border-bottom: 1px solid rgba(43, 20, 77, 0.1) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
   margin: 0 !important;
   overflow: hidden !important;
 }
@@ -343,8 +343,8 @@
 }
 
 .mobile-link:hover {
-  background: linear-gradient(90deg, rgba(43, 20, 77, 0.1) 0%, rgba(43, 20, 77, 0.05) 100%) !important;
-  color: #2b144d !important;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%) !important;
+  color: #ffffff !important;
   transform: translateX(4px) !important;
 }
 
@@ -360,12 +360,12 @@
 .mobile-link .chevron {
   margin-left: auto;
   transition: all 0.3s ease;
-  color: rgba(43, 20, 77, 0.7);
+  color: rgba(255, 255, 255, 0.7);
   font-size: 0.8rem;
 }
 
 .mobile-link:hover .chevron {
-  color: #2b144d;
+  color: #ffffff;
   transform: translateX(2px);
 }
 
@@ -402,13 +402,13 @@
   align-items: center;
   gap: 0.75rem;
   padding: 0.75rem 2.5rem;
-  color: rgba(43, 20, 77, 0.8);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 0.85rem;
   font-weight: 400;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   background: transparent;
-  border-bottom: 1px solid rgba(43, 20, 77, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   margin: 0;
   overflow: hidden;
 }
@@ -431,8 +431,8 @@
 }
 
 .mobile-dropdown-item:hover {
-  background: linear-gradient(90deg, rgba(43, 20, 77, 0.08) 0%, rgba(43, 20, 77, 0.03) 100%);
-  color: #2b144d;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+  color: #ffffff;
   transform: translateX(3px);
 }
 
@@ -495,24 +495,24 @@
   align-items: center;
   justify-content: flex-start;
   gap: 0.4rem;
-  color: #2b144d;
+  color: #ffffff;
   font-size: 0.7rem;
-  background: rgba(43, 20, 77, 0.1);
+  background: rgba(255, 255, 255, 0.1);
   padding: 0.5rem;
   border-radius: 6px;
-  border: 1px solid rgba(43, 20, 77, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   transition: all 0.2s ease;
   text-decoration: none;
 }
 
 .mobile-contact-info p:hover {
-  background: rgba(43, 20, 77, 0.15);
+  background: rgba(255, 255, 255, 0.15);
   transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(43, 20, 77, 0.2);
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.2);
 }
 
 .mobile-contact-info p svg {
-  color: #2b144d;
+  color: #ffffff;
   font-size: 0.75rem;
   flex-shrink: 0;
 }
@@ -526,7 +526,7 @@
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  color: #2b144d;
+  color: #ffffff;
   font-size: 0.7rem;
   font-weight: 500;
   margin-bottom: 0.4rem;
@@ -535,12 +535,13 @@
 
 .maps-title svg {
   font-size: 0.65rem;
+  color: #ffffff;
 }
 
 .maps-embed {
   border-radius: 6px;
   overflow: hidden;
-  border: 1px solid rgba(43, 20, 77, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 
