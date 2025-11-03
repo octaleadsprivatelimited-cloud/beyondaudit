@@ -30,7 +30,7 @@
 .hero-tagline {
   display: inline-block;
   padding: 0.5rem 1.2rem;
-  background: #2b144d;
+  background: #4f2987;
   color: white;
   font-size: 0.75rem;
   font-weight: 600;
@@ -72,7 +72,7 @@
 }
 
 .btn-hero-primary {
-  background: #2b144d;
+  background: #4f2987;
   color: white;
   padding: 0.875rem 2.5rem;
   font-size: 1rem;
@@ -86,9 +86,9 @@
 }
 
 .btn-hero-primary:hover {
-  background: #2b144d;
+  background: #4f2987;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(43, 20, 77, 0.3);
+  box-shadow: 0 4px 12px rgba(79, 41, 135, 0.3);
   text-decoration: none;
 }
 
@@ -256,7 +256,7 @@
 
 .benefits-list li::before {
   content: "✓";
-  color: #2b144d;
+  color: #4f2987;
   font-size: 1.5rem;
   font-weight: bold;
   flex-shrink: 0;
@@ -271,7 +271,7 @@
 }
 
 .check-icon {
-  color: #2b144d;
+  color: #4f2987;
   font-size: 1.3rem;
   flex-shrink: 0;
 }
@@ -393,7 +393,7 @@
 }
 
 .feature-check {
-  color: #2b144d;
+  color: #4f2987;
   font-size: 1rem;
   flex-shrink: 0;
 }

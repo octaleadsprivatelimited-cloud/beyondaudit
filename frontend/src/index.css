@@ -1,8 +1,8 @@
 :root {
   /* Primary Colors */
-  --primary-blue: #2b144d;
-  --secondary-blue: #2b144d;
-  --accent-gold: #2b144d;
+  --primary-blue: #4f2987;
+  --secondary-blue: #4f2987;
+  --accent-gold: #4f2987;
   
   /* Text Colors */
   --navy: #000000;
@@ -15,9 +15,9 @@
   --medium-gray: #e5e7eb;
   
   /* Status Colors */
-  --success: #2b144d;
-  --warning: #2b144d;
-  --error: #2b144d;
+  --success: #4f2987;
+  --warning: #4f2987;
+  --error: #4f2987;
 }
 
 * {

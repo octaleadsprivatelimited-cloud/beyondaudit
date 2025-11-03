@@ -279,7 +279,7 @@
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4) !important;
   z-index: 1998 !important;
   overflow: hidden !important;
-  border-top: 2px solid #2b144d !important;
+  border-top: 2px solid #4f2987 !important;
   backdrop-filter: blur(10px) !important;
 }
 
@@ -298,7 +298,7 @@
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, #2b144d, transparent);
+  background: linear-gradient(90deg, transparent, #4f2987, transparent);
 }
 
 .mobile-menu-content {
@@ -332,7 +332,7 @@
   top: 0;
   bottom: 0;
   width: 3px;
-  background: linear-gradient(135deg, #2b144d, #2b144d);
+  background: linear-gradient(135deg, #4f2987, #4f2987);
   transform: scaleY(0);
   transition: transform 0.3s ease;
   transform-origin: bottom;
@@ -382,8 +382,8 @@
   overflow: hidden;
   background: linear-gradient(135deg, rgba(10, 17, 40, 0.8) 0%, rgba(26, 40, 71, 0.6) 100%);
   margin: 0;
-  border-top: 1px solid rgba(43, 20, 77, 0.2);
-  border-left: 3px solid rgba(43, 20, 77, 0.3);
+  border-top: 1px solid rgba(79, 41, 135, 0.2);
+  border-left: 3px solid rgba(79, 41, 135, 0.3);
   position: relative;
 }
 
@@ -394,7 +394,7 @@
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(43, 20, 77, 0.5), transparent);
+  background: linear-gradient(90deg, transparent, rgba(79, 41, 135, 0.5), transparent);
 }
 
 .mobile-dropdown-item {
@@ -420,7 +420,7 @@
   top: 0;
   bottom: 0;
   width: 2px;
-  background: linear-gradient(135deg, #2b144d, #2b144d);
+  background: linear-gradient(135deg, #4f2987, #4f2987);
   transform: scaleY(0);
   transition: transform 0.3s ease;
   transform-origin: bottom;
@@ -454,8 +454,8 @@
 .mobile-menu-footer {
   padding: 1.5rem 1.25rem 1rem;
   margin: 1rem 0.75rem 0;
-  border-top: 2px solid rgba(43, 20, 77, 0.3);
-  background: linear-gradient(135deg, rgba(43, 20, 77, 0.08) 0%, rgba(43, 20, 77, 0.03) 100%);
+  border-top: 2px solid rgba(79, 41, 135, 0.3);
+  background: linear-gradient(135deg, rgba(79, 41, 135, 0.08) 0%, rgba(79, 41, 135, 0.03) 100%);
   border-radius: 12px;
   position: relative;
   overflow: hidden;
@@ -468,7 +468,7 @@
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(43, 20, 77, 0.6), transparent);
+  background: linear-gradient(90deg, transparent, rgba(79, 41, 135, 0.6), transparent);
 }
 
 .mobile-menu-footer::after {
@@ -478,7 +478,7 @@
   right: -50%;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle, rgba(43, 20, 77, 0.05) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(79, 41, 135, 0.05) 0%, transparent 70%);
   pointer-events: none;
 }
 
