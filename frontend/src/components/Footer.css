@@ -37,7 +37,7 @@
   align-items: center;
   gap: 0.6rem;
   background: #4f2987;
-  color: white;
+  color: white !important;
   padding: 1rem 2.5rem;
   border-radius: 0;
   font-size: 1rem;
@@ -47,10 +47,20 @@
   text-decoration: none;
 }
 
+.footer-cta-button svg {
+  color: white !important;
+}
+
 .footer-cta-button:hover {
   background: #4f2987;
+  color: white !important;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(79, 41, 135, 0.3);
+  text-decoration: none;
+}
+
+.footer-cta-button:hover svg {
+  color: white !important;
 }
 
 /* Black Mega Menu Section */
@@ -205,7 +215,7 @@
   left: 0;
   width: 25px;
   height: 2px;
-  background: linear-gradient(90deg, #2b144d, transparent);
+  background: linear-gradient(90deg, #4f2987, transparent);
   border-radius: 2px;
 }
 

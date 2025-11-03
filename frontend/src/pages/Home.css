@@ -115,7 +115,7 @@
 
 .hero-link:hover {
   background: rgba(255, 255, 255, 0.06);
-  border-left-color: #2b144d;
+  border-left-color: #4f2987;
   transform: translateX(8px);
 }
 
@@ -133,7 +133,7 @@
 }
 
 .hero-link:hover .hero-link-icon {
-  background: #2b144d;
+  background: #4f2987;
   color: white;
   transform: scale(1.1);
 }
@@ -266,13 +266,13 @@
 }
 
 .btn-primary {
-  background: #2b144d;
+  background: #4f2987;
   color: white;
   box-shadow: none;
   border-radius: 0;
   font-weight: 400;
   padding: 1rem 2.5rem;
-  border: 2px solid #2b144d;
+  border: 2px solid #4f2987;
   font-size: 17px;
   letter-spacing: -0.022em;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
@@ -280,15 +280,15 @@
 
 .btn-primary:hover {
   background: transparent;
-  border: 2px solid #2b144d;
-  color: #ffffff;
+  border: 2px solid #4f2987;
+  color: #4f2987;
   transform: translateY(-2px);
 }
 
 .btn-secondary {
-  background: #2b144d;
+  background: #4f2987;
   color: white;
-  border: 2px solid #2b144d;
+  border: 2px solid #4f2987;
   backdrop-filter: none;
   box-shadow: none;
   border-radius: 0;
@@ -301,8 +301,8 @@
 
 .btn-secondary:hover {
   background: transparent;
-  border-color: #2b144d;
-  color: #ffffff;
+  border-color: #4f2987;
+  color: #4f2987;
   transform: translateY(-2px);
 }
 
@@ -502,7 +502,7 @@
 .service-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-  border-left-color: #2b144d;
+  border-left-color: #4f2987;
 }
 
 .service-icon {
@@ -520,7 +520,7 @@
 }
 
 .service-card:hover .service-icon {
-  background: #2b144d;
+  background: #4f2987;
   color: #ffffff;
 }
 
@@ -539,7 +539,7 @@
 }
 
 .service-link {
-  color: #ffffff;
+  color: #4f2987;
   font-weight: 600;
   display: inline-flex;
   align-items: center;
