@@ -143,9 +143,6 @@ const Services = () => {
         <div className="services-list">
           {services.map((service, index) => (
             <div key={index} className="service-detail-card">
-              <div className="service-image">
-                <img src={service.image} alt={service.title} />
-              </div>
               <div className="service-detail-icon">{service.icon}</div>
               <div className="service-detail-content">
                 <h3>{service.title}</h3>

@@ -60,11 +60,16 @@ const Footer = () => {
       {/* CTA Banner */}
       <div className="footer-cta">
         <div className="footer-cta-content">
-          <h2>Ready to Optimize Your Finances?</h2>
+          <h2>Ready to collaborate</h2>
           <p>Let's discuss how our accounting expertise can drive your financial success</p>
-          <Link to="/contact" className="footer-cta-button">
-            Schedule a Consultation <FaArrowRight />
-          </Link>
+          <div className="footer-cta-actions">
+            <Link to="/contact" className="footer-cta-button">
+              Client Contact <FaArrowRight />
+            </Link>
+            <Link to="/contact?type=jobs" className="footer-cta-button alt">
+              Job Hiring <FaArrowRight />
+            </Link>
+          </div>
         </div>
       </div>
 

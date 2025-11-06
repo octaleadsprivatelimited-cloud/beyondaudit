@@ -1,9 +1,47 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FaBoxes, FaCheckCircle, FaTruck, FaClipboardList, FaUniversity, FaStore, FaSearch, FaBuilding, FaWarehouse, FaExclamationTriangle, FaShieldAlt, FaBroom, FaUserSecret, FaHandshake, FaArrowRight, FaStar } from 'react-icons/fa';
+import { FaBoxes, FaCheckCircle, FaTruck, FaClipboardList, FaUniversity, FaStore, FaSearch, FaBuilding, FaWarehouse, FaExclamationTriangle, FaShieldAlt, FaBroom, FaUserSecret, FaHandshake, FaArrowRight, FaStar, FaUsers } from 'react-icons/fa';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import L from 'leaflet';
+import 'leaflet/dist/leaflet.css';
 import './Home.css';
 
+// Fix for default marker icons in react-leaflet
+delete L.Icon.Default.prototype._getIconUrl;
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon-2x.png',
+  iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon.png',
+  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-shadow.png',
+});
+
+// Create custom red marker icon
+const redIcon = new L.Icon({
+  iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
+  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-shadow.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41]
+});
+
+// Slugify function for logo paths
+const slugify = (text) => text
+  .toString()
+  .toLowerCase()
+  .replace(/&/g, 'and')
+  .replace(/\//g, ' ')
+  .replace(/[^a-z0-9]+/g, '-')
+  .replace(/(^-|-$)+/g, '');
+
 const Home = () => {
+  useEffect(() => {
+    // Ensure map tiles load properly after component mounts
+    const timer = setTimeout(() => {
+      window.dispatchEvent(new Event('resize'));
+    }, 100);
+    return () => clearTimeout(timer);
+  }, []);
+
   const services = [
     {
       icon: <FaBoxes />,
@@ -92,10 +130,70 @@ const Home = () => {
   ];
 
   const stats = [
-    { number: '10,000+', label: 'Qualified Professionals' },
-    { number: '15+', label: 'Years of Excellence' },
-    { number: '500+', label: 'Businesses Served' },
-    { number: '99%', label: 'Client Satisfaction' }
+    { number: '50,000+', label: 'Qualified Professionals' },
+    { number: '5+', label: 'Years of Excellence' },
+    { number: '25,000+', label: 'Locations Covered' },
+    { number: '99.9%', label: 'Client Satisfaction' }
+  ];
+
+  // Top brand logos to display
+  const topBrandLogos = [
+    { name: 'Tata Motors' },
+    { name: 'Maruti Suzuki' },
+    { name: 'HDFC' },
+    { name: 'ICICI' },
+    { name: 'Lenskart' },
+    { name: 'KFC' },
+    { name: 'Apollo' },
+    { name: 'BMW' },
+    { name: 'Audi' },
+    { name: 'Toyota' },
+    { name: 'Hyundai' },
+    { name: 'Honda' }
+  ];
+
+  const getInitialSrc = (name) => `/images/industries/${slugify(name)}.png`;
+  const fallbackExts = ['avif', 'svg', 'jpg', 'jpeg', 'webp'];
+  const onLogoError = (e, name) => {
+    const idxAttr = e.currentTarget.getAttribute('data-src-idx') || '0';
+    const idx = parseInt(idxAttr, 10);
+    if (idx < fallbackExts.length) {
+      e.currentTarget.setAttribute('data-src-idx', String(idx + 1));
+      e.currentTarget.src = `/images/industries/${slugify(name)}.${fallbackExts[idx]}`;
+    } else {
+      e.currentTarget.style.display = 'none';
+      const fallback = e.currentTarget.nextSibling;
+      if (fallback) fallback.style.display = 'flex';
+    }
+  };
+
+  // Major locations across India where we serve
+  const locations = [
+    { name: 'Mumbai', lat: 19.0760, lng: 72.8777 },
+    { name: 'Delhi', lat: 28.6139, lng: 77.2090 },
+    { name: 'Bangalore', lat: 12.9716, lng: 77.5946 },
+    { name: 'Hyderabad', lat: 17.3850, lng: 78.4867 },
+    { name: 'Chennai', lat: 13.0827, lng: 80.2707 },
+    { name: 'Kolkata', lat: 22.5726, lng: 88.3639 },
+    { name: 'Pune', lat: 18.5204, lng: 73.8567 },
+    { name: 'Ahmedabad', lat: 23.0225, lng: 72.5714 },
+    { name: 'Jaipur', lat: 26.9124, lng: 75.7873 },
+    { name: 'Surat', lat: 21.1702, lng: 72.8311 },
+    { name: 'Lucknow', lat: 26.8467, lng: 80.9462 },
+    { name: 'Kanpur', lat: 26.4499, lng: 80.3319 },
+    { name: 'Nagpur', lat: 21.1458, lng: 79.0882 },
+    { name: 'Indore', lat: 22.7196, lng: 75.8577 },
+    { name: 'Thane', lat: 19.2183, lng: 72.9781 },
+    { name: 'Bhopal', lat: 23.2599, lng: 77.4126 },
+    { name: 'Visakhapatnam', lat: 17.6868, lng: 83.2185 },
+    { name: 'Patna', lat: 25.5941, lng: 85.1376 },
+    { name: 'Vadodara', lat: 22.3072, lng: 73.1812 },
+    { name: 'Ghaziabad', lat: 28.6692, lng: 77.4538 },
+    { name: 'Ludhiana', lat: 30.9010, lng: 75.8573 },
+    { name: 'Agra', lat: 27.1767, lng: 78.0081 },
+    { name: 'Nashik', lat: 19.9975, lng: 73.7898 },
+    { name: 'Faridabad', lat: 28.4089, lng: 77.3178 },
+    { name: 'Meerut', lat: 28.9845, lng: 77.7064 }
   ];
 
   const testimonials = [
@@ -126,10 +224,10 @@ const Home = () => {
           <div className="hero-content animate-fade-in">
         <h1 className="hero-title">
           India's Leading<br />
-          <span className="hero-accent">Audit Intelligence</span>
+          <span className="hero-accent">Freelance finance professionals hiring platform</span>
         </h1>
         <p className="hero-subtitle">
-          Redefining the audit and compliance ecosystem through flawless, data-driven audit services powered by precision, integrity, and intelligence. Our pan-India network of 10,000+ qualified professionals delivers unmatched accuracy, transparency, and efficiency across all audit services with complete manpower support.
+          Redefining the audit and compliance ecosystem through flawless, data-driven audit services powered by precision, integrity, and intelligence. Our pan-India network of 50,000+ qualified professionals delivers unmatched accuracy, transparency, and efficiency across all audit services with complete manpower support.
         </p>
             <div className="hero-buttons">
               <Link to="/contact" className="btn btn-primary">
@@ -141,50 +239,60 @@ const Home = () => {
             </div>
           </div>
           <div className="hero-links">
-            <Link to="/services/stock-audit" className="hero-link">
-              <div className="hero-link-icon"><FaBoxes /></div>
+            <Link to="/services" className="hero-link">
+              <div className="hero-link-icon"><FaShieldAlt /></div>
               <div>
-                <h3>Stock Audit</h3>
-                <p>Physical inventory verification and reconciliation</p>
+                <h3>AUDIT / verification services</h3>
+                <p>Comprehensive audit and verification solutions</p>
               </div>
             </Link>
-            <Link to="/services/quality-audit" className="hero-link">
-              <div className="hero-link-icon"><FaCheckCircle /></div>
+            <Link to="/services" className="hero-link">
+              <div className="hero-link-icon"><FaUsers /></div>
               <div>
-                <h3>Quality Audit</h3>
-                <p>Process integrity and product excellence assessment</p>
-              </div>
-            </Link>
-            <Link to="/services/internal-audit" className="hero-link">
-              <div className="hero-link-icon"><FaSearch /></div>
-              <div>
-                <h3>Internal Audit</h3>
-                <p>Independent control framework evaluation</p>
+                <h3>Staff augmentation services</h3>
+                <p>Expert finance professionals on demand</p>
               </div>
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="services-section">
+      {/* Locations Map Section */}
+      <section className="locations-map-section">
         <div className="section-header">
-          <h2 className="section-title">What We Offer</h2>
+          <h2 className="section-title">Our Pan-India Presence</h2>
           <p className="section-description">
-            Comprehensive consulting solutions tailored to your business needs
+            Serving clients across 25,000+ locations nationwide with our extensive network of qualified professionals
           </p>
         </div>
-        <div className="services-grid">
-          {services.map((service, index) => (
-            <div key={index} className="service-card">
-              <div className="service-icon">{service.icon}</div>
-              <h3 className="service-title">{service.title}</h3>
-              <p className="service-description">{service.description}</p>
-              <Link to={service.link} className="service-link">
-                Learn More <FaArrowRight />
-              </Link>
-            </div>
-          ))}
+        <div className="map-container">
+          <MapContainer
+            center={[20.5937, 78.9629]}
+            zoom={5}
+            minZoom={4}
+            maxZoom={10}
+            maxBounds={[[6.5, 68.0], [37.0, 97.0]]}
+            maxBoundsViscosity={1.0}
+            scrollWheelZoom={true}
+          >
+            <TileLayer
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            {locations.map((location, index) => (
+              <Marker
+                key={index}
+                position={[location.lat, location.lng]}
+                icon={redIcon}
+              >
+                <Popup>
+                  <strong>{location.name}</strong>
+                  <br />
+                  Service Location
+                </Popup>
+              </Marker>
+            ))}
+          </MapContainer>
         </div>
       </section>
 
@@ -207,10 +315,10 @@ const Home = () => {
         <span className="section-subtitle">Why Choose Us</span>
         <h2 className="section-title">India's Pacesetter in Audit Intelligence</h2>
         <p>
-          Beyond Audit leads India's audit intelligence revolution with our robust pan-India network of 10,000+ qualified professionals. We combine human expertise with digital precision to deliver flawless, data-driven audit services that set new benchmarks in speed, reliability, and technological integration. We provide complete manpower support for all audit services.
+          Beyond Audit leads India's audit intelligence revolution with our robust pan-India network of 50,000+ qualified professionals. We combine human expertise with digital precision to deliver flawless, data-driven audit services that set new benchmarks in speed, reliability, and technological integration. We provide complete manpower support for all audit services.
         </p>
         <ul className="why-choose-list">
-          <li>✓ Pan-India network of 10,000+ Chartered Accountants, CMAs, and finance specialists</li>
+          <li>✓ Pan-India network of 50,000+ Chartered Accountants, CMAs, and finance specialists</li>
           <li>✓ Complete manpower provision for all audit services across India</li>
           <li>✓ Data-driven audit services powered by precision, integrity, and intelligence</li>
           <li>✓ End-to-end service delivery with dedicated professional teams</li>
@@ -221,17 +329,22 @@ const Home = () => {
             </Link>
           </div>
           <div className="why-choose-visual">
-            <div className="visual-stat">
-              <h3>15+</h3>
-              <p>Years Experience</p>
-            </div>
-            <div className="visual-stat">
-              <h3>10+</h3>
-              <p>Chartered Accountants</p>
-            </div>
-            <div className="visual-stat">
-              <h3>500+</h3>
-              <p>Businesses Served</p>
+            <h3 className="top-industries-title">Trusted by Leading Brands</h3>
+            <div className="top-industries-grid">
+              {topBrandLogos.map((brand, index) => (
+                <div key={index} className="logo-card-home">
+                  <img
+                    src={getInitialSrc(brand.name)}
+                    alt={brand.name + ' logo'}
+                    className="brand-logo-home"
+                    data-src-idx="0"
+                    onError={(e) => onLogoError(e, brand.name)}
+                  />
+                  <div className="logo-fallback-home" aria-hidden="true">
+                    <span>{brand.name.substring(0, 2).toUpperCase()}</span>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>

@@ -1,18 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock } from 'react-icons/fa';
 import './Contact.css';
 
 const Contact = () => {
+  const [formType, setFormType] = useState('client'); // 'client' | 'hiring'
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
     company: '',
     service: '',
+    role: '',
+    resumeUrl: '',
     message: ''
   });
   const [status, setStatus] = useState('');
+
+  // Initialize form type from query param (?type=jobs)
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const type = params.get('type');
+    if (type === 'jobs' || type === 'hiring') {
+      setFormType('hiring');
+    }
+  }, []);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -23,9 +35,9 @@ const Contact = () => {
     setStatus('sending');
     
     try {
-      await axios.post('http://localhost:5000/api/contact', formData);
+      await axios.post('http://localhost:5000/api/contact', { ...formData, formType });
       setStatus('success');
-      setFormData({ name: '', email: '', phone: '', company: '', service: '', message: '' });
+      setFormData({ name: '', email: '', phone: '', company: '', service: '', role: '', resumeUrl: '', message: '' });
       setTimeout(() => setStatus(''), 5000);
     } catch (error) {
       setStatus('error');
@@ -56,6 +68,22 @@ const Contact = () => {
       <section className="contact-content">
         <div className="contact-form-section">
           <h2>Send Us a Message</h2>
+          <div className="contact-form-tabs">
+            <button
+              type="button"
+              className={`contact-tab ${formType === 'client' ? 'active' : ''}`}
+              onClick={() => setFormType('client')}
+            >
+              Client Inquiry
+            </button>
+            <button
+              type="button"
+              className={`contact-tab ${formType === 'hiring' ? 'active' : ''}`}
+              onClick={() => setFormType('hiring')}
+            >
+              Job Hiring
+            </button>
+          </div>
           <form onSubmit={handleSubmit} className="contact-form">
             <div className="form-row">
               <div className="form-group">
@@ -93,30 +121,67 @@ const Contact = () => {
                   placeholder="+1 (555) 000-0000"
                 />
               </div>
-              <div className="form-group">
-                <label>Company</label>
-                <input
-                  type="text"
-                  name="company"
-                  value={formData.company}
-                  onChange={handleChange}
-                  placeholder="Your company"
-                />
-              </div>
+              {formType === 'client' && (
+                <div className="form-group">
+                  <label>Company</label>
+                  <input
+                    type="text"
+                    name="company"
+                    value={formData.company}
+                    onChange={handleChange}
+                    placeholder="Your company"
+                  />
+                </div>
+              )}
+              {formType === 'hiring' && (
+                <div className="form-group">
+                  <label>Desired Role</label>
+                  <input
+                    type="text"
+                    name="role"
+                    value={formData.role}
+                    onChange={handleChange}
+                    placeholder="e.g., Internal Auditor"
+                  />
+                </div>
+              )}
             </div>
 
-            <div className="form-group">
-              <label>Service Interested In</label>
-              <select name="service" value={formData.service} onChange={handleChange}>
-                <option value="">Select a service</option>
-                <option value="tax-planning">Tax Planning & Compliance</option>
-                <option value="audit-assurance">Audit & Assurance</option>
-                <option value="financial-advisory">Financial Advisory</option>
-                <option value="business-setup">Business Setup & Compliance</option>
-                <option value="additional-services">Additional Services</option>
-                <option value="other">Other Services</option>
-              </select>
-            </div>
+            {formType === 'client' && (
+              <div className="form-group">
+                <label>Service Interested In</label>
+                <select name="service" value={formData.service} onChange={handleChange}>
+                  <option value="">Select a service</option>
+                  <option value="stock-audit">Stock Audit</option>
+                  <option value="quality-audit">Quality Audit</option>
+                  <option value="distributor-audit">Distributor Audit</option>
+                  <option value="checklist-audit">Checklist-Based Audit</option>
+                  <option value="nbfc-audit">NBFC Audit</option>
+                  <option value="retail-audit">Retail Audit</option>
+                  <option value="internal-audit">Internal Audit</option>
+                  <option value="fixed-asset-audit">Fixed Asset Audit</option>
+                  <option value="warehouse-audit">Warehouse Audit</option>
+                  <option value="damage-expiry-audit">Damage & Expiry Audit</option>
+                  <option value="compliance-audit">Compliance Audit</option>
+                  <option value="clean-hygiene-audit">Clean and Hygiene Audit</option>
+                  <option value="forensic-audit">Forensic Audit</option>
+                  <option value="merchant-audit">Merchant Audit</option>
+                  <option value="other">Other Services</option>
+                </select>
+              </div>
+            )}
+            {formType === 'hiring' && (
+              <div className="form-group">
+                <label>Resume URL</label>
+                <input
+                  type="url"
+                  name="resumeUrl"
+                  value={formData.resumeUrl}
+                  onChange={handleChange}
+                  placeholder="Link to your resume (Google Drive, etc.)"
+                />
+              </div>
+            )}
 
             <div className="form-group">
               <label>Message *</label>
@@ -126,7 +191,7 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 rows="6"
-                placeholder="Tell us about your needs..."
+                placeholder={formType === 'client' ? 'Tell us about your needs...' : 'Tell us about your experience, location and availability...'}
               />
             </div>
 

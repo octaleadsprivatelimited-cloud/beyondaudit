@@ -87,7 +87,7 @@ const FinancialAdvisory = () => {
       </section>
 
       <section className="service-cta">
-        <h2>Ready to Optimize Your Finances?</h2>
+        <h2>Ready to collaborate</h2>
         <p>Let's discuss how we can help you achieve your financial goals</p>
         <div className="cta-buttons">
           <Link to="/contact" className="btn btn-primary">

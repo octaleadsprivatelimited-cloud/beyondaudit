@@ -64,9 +64,9 @@ const Navbar = () => {
               onMouseEnter={() => setServicesDropdown(true)}
               onMouseLeave={() => setServicesDropdown(false)}
             >
-              <span className="navbar-link dropdown-trigger">
+              <Link to="/services" className="navbar-link dropdown-trigger">
                 Services <FaChevronDown className="dropdown-icon" />
-              </span>
+              </Link>
               <div className={`dropdown-menu ${servicesDropdown ? 'show' : ''}`}>
                 <div className="dropdown-content">
                   <Link to="/services/stock-audit" className="dropdown-item">
@@ -195,6 +195,10 @@ const Navbar = () => {
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.1 }}
                       >
+                        <Link to="/services" className="mobile-dropdown-item view-all-services">
+                          <div className="dropdown-dot"></div>
+                          View All Services
+                        </Link>
                         <Link to="/services/stock-audit" className="mobile-dropdown-item">
                           <div className="dropdown-dot"></div>
                           Stock Audit
