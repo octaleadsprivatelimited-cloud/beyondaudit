@@ -196,7 +196,8 @@
 
 .services-cta p {
   font-size: 1.2rem;
-  opacity: 0.95;
+  color: white;
+  opacity: 1;
   margin-bottom: 2rem;
 }
 
