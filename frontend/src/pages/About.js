@@ -34,33 +34,33 @@ const About = () => {
       <section className="about-intro">
         <div className="about-intro-content">
           <div className="who-we-are-image">
-            <img src="/images/who-we-are-beyond-audit.webp" alt="Who We Are - Beyond Audit Team" />
+            <img src="/images/collaboration.avif" alt="Collaborative team working together" />
           </div>
           <div className="who-we-are-text">
             <h2>Who We Are</h2>
             <p>
-              Beyond Audit is India's pacesetter in field verification and audit intelligence, setting new benchmarks in speed, reliability, and technological integration. We envision transforming into a holistic data assurance and staffing platform that connects enterprises with verified audit professionals across the nation, providing complete manpower support for all audit services.
+              Beyond Audit is India's pacesetter in field verification and audit intelligence, setting new benchmarks in speed, reliability, and technological integration. We envision transforming into a holistic data assurance and staffing platform that connects enterprises with verified audit professionals across 25,000+ locations, providing complete manpower support for all audit services.
             </p>
             <p>
-              Our robust pan-India network of over 10,000 qualified professionals — including Chartered Accountants, CMAs, and finance specialists — executes audits with unmatched accuracy, transparency, and efficiency. We provide dedicated manpower teams for all audit services, combining human expertise with digital precision to deliver comprehensive field verification solutions.
+              Our robust pan-India network of over 50,000 qualified professionals — including Chartered Accountants, CMAs, and finance specialists — executes audits with unmatched accuracy, transparency, and efficiency. We provide dedicated manpower teams for all audit services, combining human expertise with digital precision to deliver comprehensive field verification solutions with 99.9% client satisfaction.
             </p>
           </div>
         </div>
         <div className="about-stats">
           <div className="stat-box">
-            <h3>10,000+</h3>
+            <h3>50,000+</h3>
             <p>Qualified Professionals</p>
           </div>
           <div className="stat-box">
-            <h3>15+</h3>
+            <h3>5+</h3>
             <p>Years of Excellence</p>
           </div>
           <div className="stat-box">
-            <h3>500+</h3>
-            <p>Businesses Served</p>
+            <h3>25,000+</h3>
+            <p>Locations Covered</p>
           </div>
           <div className="stat-box">
-            <h3>99%</h3>
+            <h3>99.9%</h3>
             <p>Client Satisfaction</p>
           </div>
         </div>
