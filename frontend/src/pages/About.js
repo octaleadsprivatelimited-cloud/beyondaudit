@@ -12,12 +12,12 @@ const About = () => {
   ];
 
   const milestones = [
-    { year: '2008', event: 'Founded as a chartered accounting firm' },
-    { year: '2012', event: 'Expanded to multiple cities' },
-    { year: '2015', event: 'Reached 100+ clients milestone' },
-    { year: '2018', event: 'Launched digital accounting services' },
-    { year: '2020', event: 'Celebrated 12 years of excellence' },
-    { year: '2025', event: 'Leading digital accounting transformation' }
+    { year: '2020', event: 'Launched collaborative audit pods to support rapid nationwide rollouts' },
+    { year: '2021', event: 'Expanded manpower network to 6,000+ on-ground professionals across India' },
+    { year: '2022', event: 'Introduced real-time audit dashboards for enterprise clients' },
+    { year: '2023', event: 'Opened South India command centre to coordinate multi-city engagements' },
+    { year: '2024', event: 'Crossed 10,000 qualified collaborators and 400+ enterprise audits' },
+    { year: '2025', event: 'Pioneering data-driven assurance across India & South Asia' }
   ];
 
   return (

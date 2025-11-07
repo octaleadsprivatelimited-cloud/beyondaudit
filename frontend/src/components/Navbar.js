@@ -107,7 +107,7 @@ const Navbar = () => {
 
             <Link to="/industries" className="navbar-link">Industries</Link>
             <Link to="/case-studies" className="navbar-link">Our thinking</Link>
-            <Link to="/team" className="navbar-link">Team</Link>
+            <Link to="/team" className="navbar-link">Collaborate</Link>
             <Link to="/blog" className="navbar-link">Blog</Link>
             <Link to="/contact" className="navbar-link navbar-cta">
               <span className="cta-emoji">👤</span>
@@ -266,7 +266,7 @@ const Navbar = () => {
               >
                 <Link to="/team" className="mobile-link">
                   <div className="link-dot"></div>
-                  <span>Team</span>
+                  <span>Collaborate</span>
                 </Link>
               </motion.div>
 

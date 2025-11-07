@@ -186,6 +186,7 @@ const Home = () => {
     { name: 'Thane', lat: 19.2183, lng: 72.9781 },
     { name: 'Bhopal', lat: 23.2599, lng: 77.4126 },
     { name: 'Visakhapatnam', lat: 17.6868, lng: 83.2185 },
+    { name: 'Vijayawada', lat: 16.5062, lng: 80.6480 },
     { name: 'Patna', lat: 25.5941, lng: 85.1376 },
     { name: 'Vadodara', lat: 22.3072, lng: 73.1812 },
     { name: 'Ghaziabad', lat: 28.6692, lng: 77.4538 },
@@ -193,7 +194,16 @@ const Home = () => {
     { name: 'Agra', lat: 27.1767, lng: 78.0081 },
     { name: 'Nashik', lat: 19.9975, lng: 73.7898 },
     { name: 'Faridabad', lat: 28.4089, lng: 77.3178 },
-    { name: 'Meerut', lat: 28.9845, lng: 77.7064 }
+    { name: 'Meerut', lat: 28.9845, lng: 77.7064 },
+    { name: 'Coimbatore', lat: 11.0168, lng: 76.9558 },
+    { name: 'Kochi', lat: 9.9312, lng: 76.2673 },
+    { name: 'Thiruvananthapuram', lat: 8.5241, lng: 76.9366 },
+    { name: 'Madurai', lat: 9.9252, lng: 78.1198 },
+    { name: 'Mangalore', lat: 12.9141, lng: 74.8560 },
+    { name: 'Puducherry', lat: 11.9139, lng: 79.8145 },
+    { name: 'Mysuru', lat: 12.2958, lng: 76.6394 },
+    { name: 'Colombo, Sri Lanka', lat: 6.9271, lng: 79.8612 },
+    { name: 'Kandy, Sri Lanka', lat: 7.2906, lng: 80.6337 }
   ];
 
   const testimonials = [
