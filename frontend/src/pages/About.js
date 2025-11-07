@@ -33,9 +33,6 @@ const About = () => {
 
       <section className="about-intro">
         <div className="about-intro-content">
-          <div className="who-we-are-image">
-            <img src="/images/collaboration.avif" alt="Collaborative team working together" />
-          </div>
           <div className="who-we-are-text">
             <h2>Who We Are</h2>
             <p>
@@ -45,23 +42,23 @@ const About = () => {
               Our robust pan-India network of over 50,000 qualified professionals — including Chartered Accountants, CMAs, and finance specialists — executes audits with unmatched accuracy, transparency, and efficiency. We provide dedicated manpower teams for all audit services, combining human expertise with digital precision to deliver comprehensive field verification solutions with 99.9% client satisfaction.
             </p>
           </div>
-        </div>
-        <div className="about-stats">
-          <div className="stat-box">
-            <h3>50,000+</h3>
-            <p>Qualified Professionals</p>
-          </div>
-          <div className="stat-box">
-            <h3>5+</h3>
-            <p>Years of Excellence</p>
-          </div>
-          <div className="stat-box">
-            <h3>25,000+</h3>
-            <p>Locations Covered</p>
-          </div>
-          <div className="stat-box">
-            <h3>99.9%</h3>
-            <p>Client Satisfaction</p>
+          <div className="who-we-are-stats-grid">
+            <div className="who-stat-card">
+              <h3>50,000+</h3>
+              <span>Qualified Professionals</span>
+            </div>
+            <div className="who-stat-card">
+              <h3>5+</h3>
+              <span>Years of Excellence</span>
+            </div>
+            <div className="who-stat-card">
+              <h3>25,000+</h3>
+              <span>Locations Covered</span>
+            </div>
+            <div className="who-stat-card">
+              <h3>99.9%</h3>
+              <span>Client Satisfaction</span>
+            </div>
           </div>
         </div>
       </section>

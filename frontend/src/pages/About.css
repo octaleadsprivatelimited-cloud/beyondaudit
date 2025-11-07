@@ -63,6 +63,9 @@
   max-width: 1400px;
   margin: 0 auto;
   padding: 5rem 8%;
+  background: var(--light-gray);
+  border-radius: 28px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
@@ -75,6 +78,33 @@
   gap: 3rem;
   align-items: center;
   grid-column: 1 / -1;
+}
+
+.who-we-are-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.who-stat-card {
+  background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+  border-radius: 16px;
+  padding: 2rem 1.75rem;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(79, 41, 135, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.who-stat-card h3 {
+  font-size: 2.3rem;
+  color: white;
+  margin-bottom: 0.4rem;
+}
+
+.who-stat-card span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .about-intro-content h2 {
@@ -342,6 +372,7 @@
   .about-intro {
     grid-template-columns: 1fr;
     padding: 4rem 5%;
+    border-radius: 20px;
   }
 
 
@@ -373,6 +404,10 @@
   .timeline-content {
     text-align: left;
   }
+
+  .who-we-are-stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 768px) {
@@ -402,6 +437,10 @@
     gap: 2rem;
   }
 
+  .who-we-are-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
   .who-we-are-image {
     margin-bottom: 1.5rem;
   }
@@ -414,6 +453,7 @@
   .values-section,
   .timeline-section {
     padding: 3rem 4%;
+    border-radius: 16px;
   }
 
 }
