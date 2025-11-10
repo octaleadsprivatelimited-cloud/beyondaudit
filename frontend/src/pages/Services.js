@@ -161,11 +161,6 @@ const Services = () => {
         </div>
       </section>
 
-      <section className="services-cta">
-        <h2>Need Professional Accounting Services?</h2>
-        <p>Let's discuss your financial needs and find the right accounting solution for your business</p>
-        <Link to="/contact" className="btn btn-white">Contact Us Today</Link>
-      </section>
     </div>
   );
 };

@@ -58,56 +58,9 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <div className="navbar-menu-desktop">
             <Link to="/about" className="navbar-link">Who we are</Link>
-            
-            <div 
-              className="navbar-dropdown"
-              onMouseEnter={() => setServicesDropdown(true)}
-              onMouseLeave={() => setServicesDropdown(false)}
-            >
-              <Link to="/services" className="navbar-link dropdown-trigger">
-                Services <FaChevronDown className="dropdown-icon" />
-              </Link>
-              <div className={`dropdown-menu ${servicesDropdown ? 'show' : ''}`}>
-                <div className="dropdown-content">
-                  <Link to="/services/stock-audit" className="dropdown-item">
-                    <strong>Stock Audit</strong>
-                    <span className="item-desc">Physical inventory verification</span>
-                  </Link>
-                  <Link to="/services/quality-audit" className="dropdown-item">
-                    <strong>Quality Audit</strong>
-                    <span className="item-desc">Process integrity assessment</span>
-                  </Link>
-                  <Link to="/services/distributor-audit" className="dropdown-item">
-                    <strong>Distributor Audit</strong>
-                    <span className="item-desc">Operations & compliance evaluation</span>
-                  </Link>
-                  <Link to="/services/nbfc-audit" className="dropdown-item">
-                    <strong>NBFC Audit</strong>
-                    <span className="item-desc">Financial operations review</span>
-                  </Link>
-                  <Link to="/services/retail-audit" className="dropdown-item">
-                    <strong>Retail Audit</strong>
-                    <span className="item-desc">Store operations assessment</span>
-                  </Link>
-                  <Link to="/services/internal-audit" className="dropdown-item">
-                    <strong>Internal Audit</strong>
-                    <span className="item-desc">Control framework evaluation</span>
-                  </Link>
-                  <Link to="/services/compliance-audit" className="dropdown-item">
-                    <strong>Compliance Audit</strong>
-                    <span className="item-desc">Regulatory adherence review</span>
-                  </Link>
-                  <Link to="/services/forensic-audit" className="dropdown-item">
-                    <strong>Forensic Audit</strong>
-                    <span className="item-desc">Fraud investigation</span>
-                  </Link>
-                </div>
-              </div>
-            </div>
-
+            <Link to="/services" className="navbar-link">Services</Link>
             <Link to="/industries" className="navbar-link">Industries</Link>
             <Link to="/case-studies" className="navbar-link">Our thinking</Link>
-            <Link to="/team" className="navbar-link">Collaborate</Link>
             <Link to="/blog" className="navbar-link">Blog</Link>
             <Link to="/contact" className="navbar-link navbar-cta">
               <span className="cta-emoji">👤</span>
@@ -165,79 +118,6 @@ const Navbar = () => {
               </motion.div>
               
               <motion.div
-                className="mobile-dropdown"
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.15, type: 'spring', stiffness: 100 }}
-              >
-                <button className="mobile-link dropdown-trigger" onClick={toggleMobileServices}>
-                  <div className="link-dot"></div>
-                  <span>Services</span>
-                  <motion.div
-                    animate={{ rotate: mobileServicesOpen ? 180 : 0 }}
-                    transition={{ duration: 0.3, ease: 'easeInOut' }}
-                    className="dropdown-icon-wrapper"
-                  >
-                    <FaChevronDown className="dropdown-icon" />
-                  </motion.div>
-                </button>
-                <AnimatePresence>
-                  {mobileServicesOpen && (
-                    <motion.div
-                      className="mobile-dropdown-content"
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: 'auto', opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.3, ease: 'easeInOut' }}
-                    >
-                      <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ delay: 0.1 }}
-                      >
-                        <Link to="/services" className="mobile-dropdown-item view-all-services">
-                          <div className="dropdown-dot"></div>
-                          View All Services
-                        </Link>
-                        <Link to="/services/stock-audit" className="mobile-dropdown-item">
-                          <div className="dropdown-dot"></div>
-                          Stock Audit
-                        </Link>
-                        <Link to="/services/quality-audit" className="mobile-dropdown-item">
-                          <div className="dropdown-dot"></div>
-                          Quality Audit
-                        </Link>
-                        <Link to="/services/distributor-audit" className="mobile-dropdown-item">
-                          <div className="dropdown-dot"></div>
-                          Distributor Audit
-                        </Link>
-                        <Link to="/services/nbfc-audit" className="mobile-dropdown-item">
-                          <div className="dropdown-dot"></div>
-                          NBFC Audit
-                        </Link>
-                        <Link to="/services/retail-audit" className="mobile-dropdown-item">
-                          <div className="dropdown-dot"></div>
-                          Retail Audit
-                        </Link>
-                        <Link to="/services/internal-audit" className="mobile-dropdown-item">
-                          <div className="dropdown-dot"></div>
-                          Internal Audit
-                        </Link>
-                        <Link to="/services/compliance-audit" className="mobile-dropdown-item">
-                          <div className="dropdown-dot"></div>
-                          Compliance Audit
-                        </Link>
-                        <Link to="/services/forensic-audit" className="mobile-dropdown-item">
-                          <div className="dropdown-dot"></div>
-                          Forensic Audit
-                        </Link>
-                      </motion.div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </motion.div>
-
-              <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.2, type: 'spring', stiffness: 100 }}
@@ -256,17 +136,6 @@ const Navbar = () => {
                 <Link to="/case-studies" className="mobile-link">
                   <div className="link-dot"></div>
                   <span>Our thinking</span>
-                </Link>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.3, type: 'spring', stiffness: 100 }}
-              >
-                <Link to="/team" className="mobile-link">
-                  <div className="link-dot"></div>
-                  <span>Collaborate</span>
                 </Link>
               </motion.div>
 
