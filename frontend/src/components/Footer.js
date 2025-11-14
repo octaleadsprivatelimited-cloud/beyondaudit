@@ -60,8 +60,7 @@ const Footer = () => {
       {/* CTA Banner */}
       <div className="footer-cta">
         <div className="footer-cta-content">
-          <h2>Ready to collaborate</h2>
-          <p>Let's discuss how our accounting expertise can drive your financial success</p>
+          <h2>Ready to Engage Our Expertise</h2>
           <div className="footer-cta-actions">
             <Link to="/contact" className="footer-cta-button">
               Client Contact <FaArrowRight />

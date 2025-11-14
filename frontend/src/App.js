@@ -14,6 +14,7 @@ import AuditAssurance from './pages/services/AuditAssurance';
 import FinancialAdvisory from './pages/services/FinancialAdvisory';
 import BusinessSetup from './pages/services/BusinessSetup';
 import AdditionalServices from './pages/services/AdditionalServices';
+import StaffAugmentation from './pages/services/StaffAugmentation';
 // New Core Audit Services
 import StockAudit from './pages/services/StockAudit';
 import QualityAudit from './pages/services/QualityAudit';
@@ -63,6 +64,7 @@ function App() {
           <Route path="/services/financial-advisory" element={<FinancialAdvisory />} />
           <Route path="/services/business-setup" element={<BusinessSetup />} />
           <Route path="/services/additional-services" element={<AdditionalServices />} />
+          <Route path="/services/staff-augmentation" element={<StaffAugmentation />} />
           {/* New Core Audit Services */}
           <Route path="/services/stock-audit" element={<StockAudit />} />
           <Route path="/services/quality-audit" element={<QualityAudit />} />

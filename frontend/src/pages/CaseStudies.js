@@ -67,16 +67,15 @@ const CaseStudies = () => {
         <div className="hero-background-overlay"></div>
         <div className="case-studies-hero-container">
           <div className="hero-tagline">CASE STUDIES</div>
-          <h1>Real Results from Real Clients</h1>
-          <p className="hero-description">Real results from real clients across industries</p>
+          <h1>Insights That Drive Impact</h1>
+          <p className="hero-description">Turning experience into strategies that help businesses thrive across industries.</p>
         </div>
       </section>
 
       <section className="case-studies-intro">
-        <h2>Proven Track Record of Success</h2>
+        <h2>Delivering Quality Through People and Process</h2>
         <p>
-          Our work speaks for itself. Explore how we've helped clients achieve 
-          remarkable results through expert tax planning, comprehensive audit services, financial advisory, and business compliance solutions.
+          We focus on delivering high-quality audit and assurance services. From comprehensive audits to providing qualified finance personnel, we ensure that every client receives tailored, high-quality support designed to meet their operational and compliance goals. Our staffing services provide additional support where needed, complementing our core audit and assurance offerings.
         </p>
       </section>
 
