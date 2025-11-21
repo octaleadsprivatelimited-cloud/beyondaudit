@@ -249,14 +249,14 @@ const Home = () => {
             </div>
           </div>
           <div className="hero-links">
-            <Link to="/services/audit-assurance" className="hero-link">
+            <Link to="/services#assurance-services" className="hero-link">
               <div className="hero-link-icon"><FaShieldAlt /></div>
               <div>
                 <h3>Assurance Services</h3>
                 <p>Comprehensive audit and verification solutions</p>
               </div>
             </Link>
-            <Link to="/services/staff-augmentation" className="hero-link">
+            <Link to="/services#staff-augmentation" className="hero-link">
               <div className="hero-link-icon"><FaUsers /></div>
               <div>
                 <h3>Staff Augmentation Services</h3>

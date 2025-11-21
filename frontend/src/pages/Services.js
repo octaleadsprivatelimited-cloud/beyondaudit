@@ -1,9 +1,23 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { FaBoxes, FaCheckCircle, FaTruck, FaClipboardList, FaUniversity, FaStore, FaSearch, FaBuilding, FaWarehouse, FaExclamationTriangle, FaShieldAlt, FaBroom, FaUserSecret, FaHandshake, FaArrowRight } from 'react-icons/fa';
+import React, { useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { FaBoxes, FaCheckCircle, FaTruck, FaClipboardList, FaUniversity, FaStore, FaSearch, FaBuilding, FaWarehouse, FaExclamationTriangle, FaShieldAlt, FaBroom, FaUserSecret, FaHandshake, FaArrowRight, FaUsers, FaUserTie, FaChartLine, FaHandshake as FaHandshakeIcon } from 'react-icons/fa';
 import './Services.css';
 
 const Services = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      setTimeout(() => {
+        const hash = location.hash.substring(1); // Remove the # symbol
+        const element = document.getElementById(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 100);
+    }
+  }, [location]);
+
   const services = [
     {
       icon: <FaBoxes />,
@@ -119,6 +133,41 @@ const Services = () => {
     }
   ];
 
+  const staffAugmentationServices = [
+    {
+      icon: <FaUsers />,
+      title: 'Audit Staff Augmentation',
+      description: 'Deploy qualified auditors and audit assistants for stock audits, quality audits, compliance audits, and other field verification services.',
+      features: ['Chartered Accountants and CMAs', 'Field audit professionals', 'Compliance specialists', 'Quality assurance experts'],
+      link: '/services/staff-augmentation',
+      image: '/images/staff-augmentation.png'
+    },
+    {
+      icon: <FaUserTie />,
+      title: 'Finance & Accounting Staff',
+      description: 'Access experienced finance professionals for bookkeeping, financial reporting, tax planning, and accounting operations.',
+      features: ['Financial analysts', 'Accountants and bookkeepers', 'Tax consultants', 'Financial reporting specialists'],
+      link: '/services/staff-augmentation',
+      image: '/images/staff-augmentation.png'
+    },
+    {
+      icon: <FaChartLine />,
+      title: 'Compliance & Regulatory Staff',
+      description: 'Hire compliance professionals well-versed in statutory requirements, regulatory frameworks, and industry-specific mandates.',
+      features: ['Compliance officers', 'Regulatory affairs specialists', 'Internal audit professionals', 'Risk management experts'],
+      link: '/services/staff-augmentation',
+      image: '/images/staff-augmentation.png'
+    },
+    {
+      icon: <FaHandshakeIcon />,
+      title: 'Project-Based Finance Teams',
+      description: 'Assemble dedicated finance teams for specific projects, mergers, acquisitions, or special financial initiatives.',
+      features: ['M&A specialists', 'Due diligence teams', 'Financial modeling experts', 'Project finance consultants'],
+      link: '/services/staff-augmentation',
+      image: '/images/staff-augmentation.png'
+    }
+  ];
+
   return (
     <div className="services-page">
       <section className="services-hero">
@@ -130,9 +179,9 @@ const Services = () => {
         </div>
       </section>
 
-      <section className="services-overview">
+      <section id="assurance-services" className="services-overview">
         <div className="section-intro">
-          <h2>Our Core Services</h2>
+          <h2>Assurance services</h2>
         <p>
           Beyond Audit delivers comprehensive audit solutions through our pan-India network of 10,000+ qualified professionals. 
           We specialize in field verification and audit intelligence, setting new benchmarks in speed, reliability, and technological integration. 
@@ -142,6 +191,37 @@ const Services = () => {
 
         <div className="services-list">
           {services.map((service, index) => (
+            <div key={index} className="service-detail-card">
+              <div className="service-detail-icon">{service.icon}</div>
+              <div className="service-detail-content">
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
+                <div className="service-features-list">
+                  {service.features.map((feature, idx) => (
+                    <span key={idx} className="feature-tag">{feature}</span>
+                  ))}
+                </div>
+                <Link to={service.link} className="service-detail-link">
+                  Learn More <FaArrowRight />
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section id="staff-augmentation" className="services-overview">
+        <div className="section-intro">
+          <h2>Staff Augmentation Services</h2>
+          <p>
+            Access India's largest network of 50,000+ qualified finance professionals. Hire Chartered Accountants, CMAs, 
+            and finance specialists on demand for your audit, compliance, and financial operations needs. Our flexible engagement 
+            models allow you to scale your finance team based on project requirements with rapid deployment within 48-72 hours.
+          </p>
+        </div>
+
+        <div className="services-list">
+          {staffAugmentationServices.map((service, index) => (
             <div key={index} className="service-detail-card">
               <div className="service-detail-icon">{service.icon}</div>
               <div className="service-detail-content">
