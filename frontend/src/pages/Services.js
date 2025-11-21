@@ -60,14 +60,6 @@ const Services = () => {
       image: '/images/nbfc-audit.png'
     },
     {
-      icon: <FaStore />,
-      title: 'Retail Audit',
-      description: 'The Retail Audit offers a granular assessment of store operations, merchandising effectiveness, and policy compliance across retail locations. We evaluate visual display standards, customer interaction, billing accuracy, and operational efficiency.',
-      features: ['Store Operations Assessment', 'Merchandising Effectiveness Review', 'Visual Display Standards Check', 'Customer Interaction Analysis'],
-      link: '/services/retail-audit',
-      image: '/images/retail-audit.png'
-    },
-    {
       icon: <FaSearch />,
       title: 'Internal Audit',
       description: 'Our Internal Audit provides an independent and systematic evaluation of internal control frameworks, governance processes, and risk mitigation strategies. By analyzing key financial and operational activities, we identify inefficiencies and opportunities.',
@@ -98,14 +90,6 @@ const Services = () => {
       features: ['Product Deterioration Assessment', 'Wastage Analysis', 'Root Cause Identification', 'Preventive Control Evaluation'],
       link: '/services/damage-expiry-audit',
       image: '/images/damage-expiry-audit.png'
-    },
-    {
-      icon: <FaShieldAlt />,
-      title: 'Compliance Audit',
-      description: 'Our Compliance Audit is an exhaustive examination of adherence to statutory regulations, internal policies, and industry-specific mandates. We evaluate systems, procedures, and documentation to ensure full legal conformity and risk mitigation.',
-      features: ['Statutory Regulation Compliance', 'Internal Policy Adherence', 'Industry Mandate Verification', 'Risk Mitigation Assessment'],
-      link: '/services/compliance-audit',
-      image: '/images/compliance-audit.png'
     },
     {
       icon: <FaBroom />,
@@ -151,14 +135,6 @@ const Services = () => {
       image: '/images/staff-augmentation.png'
     },
     {
-      icon: <FaChartLine />,
-      title: 'Compliance & Regulatory Staff',
-      description: 'Hire compliance professionals well-versed in statutory requirements, regulatory frameworks, and industry-specific mandates.',
-      features: ['Compliance officers', 'Regulatory affairs specialists', 'Internal audit professionals', 'Risk management experts'],
-      link: '/services/staff-augmentation',
-      image: '/images/staff-augmentation.png'
-    },
-    {
       icon: <FaHandshakeIcon />,
       title: 'Project-Based Finance Teams',
       description: 'Assemble dedicated finance teams for specific projects, mergers, acquisitions, or special financial initiatives.',
@@ -175,7 +151,7 @@ const Services = () => {
         <div className="services-hero-container">
         <div className="hero-tagline">OUR CORE SERVICES</div>
         <h1>Comprehensive Audit Solutions</h1>
-        <p className="hero-description">14 specialized audit services delivering flawless, data-driven field verification powered by precision, integrity, and intelligence across India. We provide complete manpower support for all audit services with our pan-India network of 10,000+ qualified professionals.</p>
+        <p className="hero-description">12 specialized audit services delivering flawless, data-driven field verification powered by precision, integrity, and intelligence across India. We provide complete manpower support for all audit services with our pan-India network of 10,000+ qualified professionals.</p>
         </div>
       </section>
 
@@ -185,7 +161,7 @@ const Services = () => {
         <p>
           Beyond Audit delivers comprehensive audit solutions through our pan-India network of 10,000+ qualified professionals. 
           We specialize in field verification and audit intelligence, setting new benchmarks in speed, reliability, and technological integration. 
-          Our 14 core audit services cover every aspect of business operations, ensuring precision, transparency, and accountability with complete manpower support.
+          Our 12 core audit services cover every aspect of business operations, ensuring precision, transparency, and accountability with complete manpower support.
         </p>
         </div>
 
@@ -238,6 +214,47 @@ const Services = () => {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="services-process">
+        <div className="services-overview">
+          <div className="section-intro">
+            <h2>How We Do</h2>
+            <p>
+              Our systematic approach ensures precision, transparency, and accountability in every audit engagement. 
+              We follow a structured process that combines industry expertise with technological innovation to deliver 
+              flawless, data-driven results.
+            </p>
+          </div>
+
+          <div className="process-steps">
+            <div className="process-step">
+              <div className="process-step-number">01</div>
+              <h3>Planning & Preparation</h3>
+              <p>We begin by understanding your business requirements, audit scope, and specific objectives to develop a comprehensive audit plan tailored to your needs.</p>
+            </div>
+            <div className="process-step">
+              <div className="process-step-number">02</div>
+              <h3>Field Verification</h3>
+              <p>Our qualified professionals conduct systematic on-site verification, data collection, and documentation using standardized processes and digital tools.</p>
+            </div>
+            <div className="process-step">
+              <div className="process-step-number">03</div>
+              <h3>Analysis & Reconciliation</h3>
+              <p>We analyze collected data, reconcile findings with records, identify discrepancies, and evaluate root causes using advanced analytical tools.</p>
+            </div>
+            <div className="process-step">
+              <div className="process-step-number">04</div>
+              <h3>Reporting & Recommendations</h3>
+              <p>We provide detailed reports with actionable insights, recommendations for improvement, and strategic guidance to strengthen your operations.</p>
+            </div>
+            <div className="process-step">
+              <div className="process-step-number">05</div>
+              <h3>Ongoing Support</h3>
+              <p>We offer continuous support, follow-up audits, and consultation to ensure implementation of recommendations and sustained improvement.</p>
+            </div>
+          </div>
         </div>
       </section>
 
