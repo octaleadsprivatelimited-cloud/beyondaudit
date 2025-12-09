@@ -63,10 +63,10 @@ const Footer = () => {
           <h2>Ready to Engage Our Expertise</h2>
           <div className="footer-cta-actions">
             <Link to="/contact" className="footer-cta-button">
-              Client Contact <FaArrowRight />
+              Client Contact ?
             </Link>
             <Link to="/contact?type=jobs" className="footer-cta-button alt">
-              Job Hiring <FaArrowRight />
+              Job Hiring ?
             </Link>
           </div>
         </div>

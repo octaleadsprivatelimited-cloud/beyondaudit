@@ -14,14 +14,13 @@ L.Icon.Default.mergeOptions({
   shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-shadow.png',
 });
 
-// Create custom red marker icon
-const redIcon = new L.Icon({
-  iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
-  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-shadow.png',
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-  popupAnchor: [1, -34],
-  shadowSize: [41, 41]
+// Create custom dot icon instead of pin marker
+const dotIcon = new L.DivIcon({
+  className: 'custom-dot-icon',
+  html: '<div style="background-color: #dc2626; width: 12px; height: 12px; border-radius: 50%; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3);"></div>',
+  iconSize: [12, 12],
+  iconAnchor: [6, 6],
+  popupAnchor: [0, -6]
 });
 
 // Slugify function for logo paths
@@ -149,7 +148,10 @@ const Home = () => {
     { name: 'Audi' },
     { name: 'Toyota' },
     { name: 'Hyundai' },
-    { name: 'Honda' }
+    { name: 'Honda' },
+    { name: 'MG Motors' },
+    { name: 'Airtel' },
+    { name: 'HFCL' }
   ];
 
   const getInitialSrc = (name) => `/images/industries/${slugify(name)}.png`;
@@ -202,6 +204,51 @@ const Home = () => {
     { name: 'Mangalore', lat: 12.9141, lng: 74.8560 },
     { name: 'Puducherry', lat: 11.9139, lng: 79.8145 },
     { name: 'Mysuru', lat: 12.2958, lng: 76.6394 },
+    // Additional South Indian cities - Karnataka
+    { name: 'Hubli', lat: 15.3647, lng: 75.1240 },
+    { name: 'Belagavi', lat: 15.8497, lng: 74.4977 },
+    { name: 'Davanagere', lat: 14.4644, lng: 75.9218 },
+    { name: 'Gulbarga', lat: 17.3297, lng: 76.8343 },
+    { name: 'Tumkur', lat: 13.3409, lng: 77.1010 },
+    { name: 'Udupi', lat: 13.3409, lng: 74.7421 },
+    { name: 'Shimoga', lat: 13.9299, lng: 75.5681 },
+    { name: 'Bellary', lat: 15.1394, lng: 76.9214 },
+    // Additional South Indian cities - Tamil Nadu
+    { name: 'Tiruchirappalli', lat: 10.7905, lng: 78.7047 },
+    { name: 'Salem', lat: 11.6643, lng: 78.1460 },
+    { name: 'Tirunelveli', lat: 8.7139, lng: 77.7567 },
+    { name: 'Erode', lat: 11.3410, lng: 77.7172 },
+    { name: 'Vellore', lat: 12.9166, lng: 79.1325 },
+    { name: 'Tiruppur', lat: 11.1085, lng: 77.3411 },
+    { name: 'Thanjavur', lat: 10.7870, lng: 79.1378 },
+    { name: 'Dindigul', lat: 10.3689, lng: 77.9804 },
+    { name: 'Karur', lat: 10.9600, lng: 78.0760 },
+    { name: 'Namakkal', lat: 11.2226, lng: 78.1687 },
+    // Additional South Indian cities - Kerala
+    { name: 'Kozhikode', lat: 11.2588, lng: 75.7804 },
+    { name: 'Thrissur', lat: 10.5276, lng: 76.2144 },
+    { name: 'Kannur', lat: 11.8745, lng: 75.3704 },
+    { name: 'Kollam', lat: 8.8932, lng: 76.6141 },
+    { name: 'Alappuzha', lat: 9.4981, lng: 76.3388 },
+    { name: 'Palakkad', lat: 10.7867, lng: 76.6548 },
+    { name: 'Kottayam', lat: 9.5916, lng: 76.5222 },
+    // Additional South Indian cities - Andhra Pradesh
+    { name: 'Guntur', lat: 16.3067, lng: 80.4365 },
+    { name: 'Nellore', lat: 14.4426, lng: 79.9865 },
+    { name: 'Tirupati', lat: 13.6288, lng: 79.4192 },
+    { name: 'Kurnool', lat: 15.8281, lng: 78.0373 },
+    { name: 'Kakinada', lat: 16.9891, lng: 82.2475 },
+    { name: 'Rajahmundry', lat: 17.0005, lng: 81.8040 },
+    { name: 'Anantapur', lat: 14.6819, lng: 77.6006 },
+    { name: 'Eluru', lat: 16.7050, lng: 81.1000 },
+    // Additional South Indian cities - Telangana
+    { name: 'Warangal', lat: 17.9689, lng: 79.5941 },
+    { name: 'Nizamabad', lat: 18.6715, lng: 78.0948 },
+    { name: 'Karimnagar', lat: 18.4386, lng: 79.1288 },
+    { name: 'Khammam', lat: 17.2473, lng: 80.1514 },
+    // Additional South Indian cities - Goa
+    { name: 'Panaji', lat: 15.4909, lng: 73.8278 },
+    { name: 'Vasco da Gama', lat: 15.3860, lng: 73.8265 },
     { name: 'Colombo, Sri Lanka', lat: 6.9271, lng: 79.8612 },
     { name: 'Kandy, Sri Lanka', lat: 7.2906, lng: 80.6337 }
   ];
@@ -293,7 +340,7 @@ const Home = () => {
               <Marker
                 key={index}
                 position={[location.lat, location.lng]}
-                icon={redIcon}
+                icon={dotIcon}
               >
                 <Popup>
                   <strong>{location.name}</strong>
@@ -308,6 +355,9 @@ const Home = () => {
 
       {/* Stats Section */}
       <section className="stats-section">
+        <div className="section-header">
+          <h2 className="section-title">End to End Verification</h2>
+        </div>
         <div className="stats-grid">
           {stats.map((stat, index) => (
             <div key={index} className="stat-card animate-fade-in">

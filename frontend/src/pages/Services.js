@@ -150,8 +150,8 @@ const Services = () => {
         <div className="hero-background-overlay"></div>
         <div className="services-hero-container">
         <div className="hero-tagline">OUR CORE SERVICES</div>
-        <h1>Comprehensive Audit Solutions</h1>
-        <p className="hero-description">12 specialized audit services delivering flawless, data-driven field verification powered by precision, integrity, and intelligence across India. We provide complete manpower support for all audit services with our pan-India network of 10,000+ qualified professionals.</p>
+        <h1>Assurance Services & Staff Augmentation</h1>
+        <p className="hero-description">Beyond Audit offers two comprehensive service categories: Assurance Services with 12 specialized audit solutions for flawless, data-driven field verification, and Staff Augmentation Services connecting you with India's largest network of 50,000+ qualified finance professionals. Powered by precision, integrity, and intelligence, we deliver complete audit solutions and flexible manpower support across India.</p>
         </div>
       </section>
 
