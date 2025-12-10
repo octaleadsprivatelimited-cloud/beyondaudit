@@ -32,27 +32,17 @@ const Footer = () => {
   ];
 
   const company = [
-    { name: 'About Us', path: '/about' },
-    { name: 'Our Team', path: '/team' },
-    { name: 'Our Approach', path: '/our-approach' },
-    { name: 'Why Choose Us', path: '/why-choose-us' },
-    { name: 'Careers', path: '/careers' },
-    { name: 'Partners', path: '/partners' }
+    { name: 'About Us', path: '/about' }
   ];
 
   const resources = [
     { name: 'Case Studies', path: '/case-studies' },
     { name: 'Blog & Insights', path: '/blog' },
-    { name: 'Industries', path: '/industries' },
-    { name: 'Testimonials', path: '/testimonials' },
-    { name: 'FAQ', path: '/faq' }
+    { name: 'Industries', path: '/industries' }
   ];
 
   const quickLinks = [
-    { name: 'News & Updates', path: '/news' },
-    { name: 'Contact Us', path: '/contact' },
-    { name: 'Privacy Policy', path: '/privacy-policy' },
-    { name: 'Terms of Service', path: '/terms-of-service' }
+    { name: 'Contact Us', path: '/contact' }
   ];
 
   return (
@@ -81,7 +71,7 @@ const Footer = () => {
               <span className="footer-logo-text">BEY<span className="infinity-symbol">{'\u221E'}</span>ND AUDIT</span>
             </div>
             <p className="footer-description">
-              India's pacesetter in field verification and audit intelligence. Our pan-India network of 10,000+ qualified professionals delivers flawless, data-driven field verification powered by precision, integrity, and intelligence with complete manpower support for all audit services.
+              Beyond Audit is India's leading provider of audit and verification services. Our pan-India network of 10,000+ qualified professionals delivers flawless, data-driven field verification powered by precision, integrity, and intelligence.
             </p>
             
             <div className="footer-contact-cards">
