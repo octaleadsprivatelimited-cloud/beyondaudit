@@ -100,6 +100,41 @@
   margin-bottom: 1.5rem;
 }
 
+.footer-logo-text {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.022em;
+  text-transform: uppercase;
+}
+
+.footer-logo-text .infinity-symbol {
+  font-size: 1.1em;
+  font-weight: 400;
+  vertical-align: middle;
+}
+
+.footer-logo-text .audit-text {
+  display: inline-block;
+}
+
+.footer-logo-text .audit-a {
+  position: relative;
+  display: inline-block;
+}
+
+.footer-logo-text .audit-a::after {
+  content: '';
+  position: absolute;
+  top: -0.3em;
+  left: 0;
+  width: 80%;
+  height: 2.5px;
+  background-color: currentColor;
+  transform: rotate(-10deg) translateX(0.1em);
+  transform-origin: left center;
+}
+
 .footer-logo-image {
   height: 60px;
   width: auto;

@@ -63,10 +63,10 @@ const Footer = () => {
           <h2>Ready to Engage Our Expertise</h2>
           <div className="footer-cta-actions">
             <Link to="/contact" className="footer-cta-button">
-              Client Contact ?
+              Client Contact ? <FaArrowRight />
             </Link>
             <Link to="/contact?type=jobs" className="footer-cta-button alt">
-              Job Hiring ?
+              Job Hiring ? <FaArrowRight />
             </Link>
           </div>
         </div>
@@ -78,7 +78,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="footer-brand-section">
             <div className="footer-logo">
-              <span className="footer-logo-text">Beyond Audit</span>
+              <span className="footer-logo-text">BEY<span className="infinity-symbol">{'\u221E'}</span>ND AUDIT</span>
             </div>
             <p className="footer-description">
               India's pacesetter in field verification and audit intelligence. Our pan-India network of 10,000+ qualified professionals delivers flawless, data-driven field verification powered by precision, integrity, and intelligence with complete manpower support for all audit services.
