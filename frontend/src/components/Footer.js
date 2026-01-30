@@ -53,10 +53,10 @@ const Footer = () => {
           <h2>Ready to Engage Our Expertise</h2>
           <div className="footer-cta-actions">
             <Link to="/contact" className="footer-cta-button">
-              Client Contact ? <FaArrowRight />
+              Client ? <FaArrowRight />
             </Link>
             <Link to="/contact?type=jobs" className="footer-cta-button alt">
-              Job Hiring ? <FaArrowRight />
+              freelancer ? <FaArrowRight />
             </Link>
           </div>
         </div>
@@ -68,7 +68,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="footer-brand-section">
             <div className="footer-logo">
-              <span className="footer-logo-text">BEY<span className="infinity-symbol">{'\u221E'}</span>ND AUDIT</span>
+              <span className="footer-logo-text">BEYOND AUDIT</span>
             </div>
             <p className="footer-description">
               Beyond Audit is India's leading provider of audit and verification services. Our pan-India network of 10,000+ qualified professionals delivers flawless, data-driven field verification powered by precision, integrity, and intelligence.

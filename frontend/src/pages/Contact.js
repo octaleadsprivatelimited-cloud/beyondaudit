@@ -81,7 +81,7 @@ const Contact = () => {
               className={`contact-tab ${formType === 'hiring' ? 'active' : ''}`}
               onClick={() => setFormType('hiring')}
             >
-              Job Hiring
+              freelancer
             </button>
           </div>
           <form onSubmit={handleSubmit} className="contact-form">

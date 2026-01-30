@@ -52,7 +52,7 @@ const Navbar = () => {
       <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
         <div className="navbar-container">
           <Link to="/" className="navbar-logo">
-            <span className="logo-text">BEY<span className="infinity-symbol">{'\u221E'}</span>ND AUDIT</span>
+            <span className="logo-text">BEYOND AUDIT</span>
           </Link>
 
           {/* Desktop Menu */}

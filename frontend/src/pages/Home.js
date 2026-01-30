@@ -14,13 +14,15 @@ L.Icon.Default.mergeOptions({
   shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-shadow.png',
 });
 
-// Create custom dot icon instead of pin marker
-const dotIcon = new L.DivIcon({
-  className: 'custom-dot-icon',
-  html: '<div style="background-color: #dc2626; width: 12px; height: 12px; border-radius: 50%; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3);"></div>',
-  iconSize: [12, 12],
-  iconAnchor: [6, 6],
-  popupAnchor: [0, -6]
+// Red pin icon for map markers
+const redPinIcon = new L.Icon({
+  iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
+  iconRetinaUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-shadow.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41],
 });
 
 // Slugify function for logo paths
@@ -169,16 +171,18 @@ const Home = () => {
     }
   };
 
-  // Major locations across India where we serve
+  // Major locations across India where we serve (Odisha, Mumbai, Kolkata, Ahmedabad, Delhi, Visakhapatnam highlighted)
   const locations = [
+    { name: 'Bhubaneswar, Odisha', lat: 20.2961, lng: 85.8245 },
     { name: 'Mumbai', lat: 19.0760, lng: 72.8777 },
+    { name: 'Kolkata', lat: 22.5726, lng: 88.3639 },
+    { name: 'Ahmedabad', lat: 23.0225, lng: 72.5714 },
     { name: 'Delhi', lat: 28.6139, lng: 77.2090 },
+    { name: 'Visakhapatnam', lat: 17.6868, lng: 83.2185 },
     { name: 'Bangalore', lat: 12.9716, lng: 77.5946 },
     { name: 'Hyderabad', lat: 17.3850, lng: 78.4867 },
     { name: 'Chennai', lat: 13.0827, lng: 80.2707 },
-    { name: 'Kolkata', lat: 22.5726, lng: 88.3639 },
     { name: 'Pune', lat: 18.5204, lng: 73.8567 },
-    { name: 'Ahmedabad', lat: 23.0225, lng: 72.5714 },
     { name: 'Jaipur', lat: 26.9124, lng: 75.7873 },
     { name: 'Surat', lat: 21.1702, lng: 72.8311 },
     { name: 'Lucknow', lat: 26.8467, lng: 80.9462 },
@@ -187,7 +191,6 @@ const Home = () => {
     { name: 'Indore', lat: 22.7196, lng: 75.8577 },
     { name: 'Thane', lat: 19.2183, lng: 72.9781 },
     { name: 'Bhopal', lat: 23.2599, lng: 77.4126 },
-    { name: 'Visakhapatnam', lat: 17.6868, lng: 83.2185 },
     { name: 'Vijayawada', lat: 16.5062, lng: 80.6480 },
     { name: 'Patna', lat: 25.5941, lng: 85.1376 },
     { name: 'Vadodara', lat: 22.3072, lng: 73.1812 },
@@ -340,7 +343,7 @@ const Home = () => {
               <Marker
                 key={index}
                 position={[location.lat, location.lng]}
-                icon={dotIcon}
+                icon={redPinIcon}
               >
                 <Popup>
                   <strong>{location.name}</strong>
@@ -378,11 +381,11 @@ const Home = () => {
           Beyond Audit leads India's audit intelligence revolution with our robust pan-India network of 50,000+ qualified professionals. We combine human expertise with digital precision to deliver flawless, data-driven audit services that set new benchmarks in speed, reliability, and technological integration. We provide complete manpower support for all audit services.
         </p>
         <ul className="why-choose-list">
-          <li>✓ Pan-India network of 50,000+ Chartered Accountants, CMAs, and finance specialists</li>
-          <li>✓ Complete manpower provision for all audit services across India</li>
-          <li>✓ Data-driven audit services powered by precision, integrity, and intelligence</li>
-          <li>✓ End-to-end service delivery with dedicated professional teams</li>
-          <li>✓ Technological adoption and intelligence-driven assurance</li>
+          <li>Pan-India network of 50,000+ Chartered Accountants, CMAs, and finance specialists</li>
+          <li>Complete manpower provision for all audit services across India</li>
+          <li>Data-driven audit services powered by precision, integrity, and intelligence</li>
+          <li>End-to-end service delivery with dedicated professional teams</li>
+          <li>Technological adoption and intelligence-driven assurance</li>
         </ul>
             <Link to="/why-choose-us" className="btn btn-primary">
               Learn More About Us

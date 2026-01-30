@@ -24,14 +24,16 @@
   height: 44px;
 }
 
-/* Clean Logo */
+/* Clean Logo - left-aligned, normal text */
 .navbar-logo {
   display: flex;
   align-items: center;
   z-index: 1001;
   transition: opacity 0.3s ease;
-  margin-left: -35px;
-  margin-right: 40px;
+  margin-right: auto;
+  margin-left: 0;
+  padding-right: 56px;
+  flex-shrink: 0;
 }
 
 .navbar-logo:hover {
@@ -44,12 +46,7 @@
   font-weight: 600;
   letter-spacing: -0.022em;
   text-transform: uppercase;
-}
-
-.infinity-symbol {
-  font-size: 1.1em;
-  font-weight: 400;
-  vertical-align: middle;
+  white-space: nowrap;
 }
 
 .audit-text {
@@ -92,8 +89,7 @@
   object-fit: contain;
 }
 
-/* Desktop Menu */
-/* Desktop Menu - White Text on Black */
+/* Desktop Menu - more space from logo, bold larger text */
 .navbar-menu-desktop {
   display: flex;
   gap: 0;
@@ -101,12 +97,13 @@
   flex: 1;
   justify-content: center;
   height: 44px;
+  margin-left: 24px;
 }
 
 .navbar-link {
   color: rgba(255, 255, 255, 0.8);
-  font-weight: 400;
-  font-size: 12px;
+  font-weight: 700;
+  font-size: 14px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   transition: color 0.2s ease;
   position: relative;
@@ -140,9 +137,9 @@
   justify-content: center;
   border: none;
   height: 44px;
-  font-size: 12px;
+  font-size: 14px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .navbar-cta:hover {
@@ -630,6 +627,14 @@
     justify-content: space-between;
   }
 
+  .navbar-logo {
+    min-width: 0;
+  }
+
+  .logo-text {
+    font-size: 16px;
+  }
+
   .logo-image {
     height: 24px;
     max-width: 140px;
@@ -655,6 +660,15 @@
   .navbar-container {
     padding: 0 16px;
     height: 52px;
+  }
+
+  .logo-text {
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    white-space: normal;
+    word-break: keep-all;
+    max-width: 140px;
+    line-height: 1.2;
   }
 
   .logo-image {
