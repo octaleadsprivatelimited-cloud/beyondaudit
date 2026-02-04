@@ -113,6 +113,42 @@
   color: var(--navy);
 }
 
+.who-we-are-content p {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.who-we-are-content p:last-child {
+  margin-bottom: 0;
+}
+
+.read-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--primary-blue, #4f2987);
+  background: transparent;
+  border: 2px solid var(--primary-blue, #4f2987);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.read-more-btn:hover {
+  background: var(--primary-blue, #4f2987);
+  color: white;
+}
+
+.read-more-btn svg {
+  font-size: 0.85rem;
+}
+
 .about-intro-content p {
   font-size: 1.1rem;
   color: var(--text-light);
@@ -176,6 +212,62 @@
   font-size: 1rem;
   opacity: 0.95;
   color: white;
+}
+
+/* Founder's Note */
+.founders-note {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 8% 5rem;
+}
+
+.founders-note-inner {
+  background: linear-gradient(135deg, rgba(79, 41, 135, 0.06), rgba(79, 41, 135, 0.02));
+  border: 1px solid rgba(79, 41, 135, 0.15);
+  border-radius: 20px;
+  padding: 3rem 3.5rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.founders-note h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--navy);
+}
+
+.founders-note-content p {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+.founders-note-content p:first-child {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.founders-note-content p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .founders-note-inner {
+    padding: 2rem 1.5rem;
+  }
+
+  .founders-note h2 {
+    font-size: 1.65rem;
+  }
+
+  .founders-note-content p {
+    font-size: 1rem;
+  }
+
+  .founders-note-content p:first-child {
+    font-size: 1.1rem;
+  }
 }
 
 .mission-vision {
@@ -348,7 +440,12 @@
 .timeline-content p {
   font-size: 1.05rem;
   color: var(--text-dark);
-  margin: 0;
+  margin: 0 0 0.75rem 0;
+  line-height: 1.65;
+}
+
+.timeline-content p:last-child {
+  margin-bottom: 0;
 }
 
 

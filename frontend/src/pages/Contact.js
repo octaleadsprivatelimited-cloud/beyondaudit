@@ -74,14 +74,14 @@ const Contact = () => {
               className={`contact-tab ${formType === 'client' ? 'active' : ''}`}
               onClick={() => setFormType('client')}
             >
-              Client Inquiry
+              Client
             </button>
             <button
               type="button"
               className={`contact-tab ${formType === 'hiring' ? 'active' : ''}`}
               onClick={() => setFormType('hiring')}
             >
-              freelancer
+              Freelancer
             </button>
           </div>
           <form onSubmit={handleSubmit} className="contact-form">

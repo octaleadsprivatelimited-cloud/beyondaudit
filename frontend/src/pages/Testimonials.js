@@ -5,45 +5,45 @@ import './Testimonials.css';
 const Testimonials = () => {
   const testimonials = [
     {
-      name: 'Michael Chen',
-      company: 'Tech Innovations Inc.',
-      position: 'CEO',
-      text: 'Outstanding consulting services that helped us close our largest acquisition to date. The team was professional, knowledgeable, and delivered results beyond our expectations.',
+      name: 'Deepak Saxena',
+      position: 'Partner – Risk Advisory Services',
+      company: 'Big 4',
+      text: 'Beyond Audit delivered exactly what was committed. The assignments were executed across multiple locations with consistent quality and timely reporting. Their ability to manage last-mile audit execution stood out.',
       rating: 5
     },
     {
-      name: 'Emily Rodriguez',
-      company: 'Global Ventures',
-      position: 'CFO',
-      text: 'Their expertise in fundraising was instrumental in securing our Series B funding. They connected us with the right investors and guided us through every step.',
+      name: 'Neha Patil',
+      position: 'Senior Manager – Risk Advisory Services',
+      company: 'Big 6',
+      text: 'We engaged Beyond Audit for large-scale field and stock audits across several states. The coordination, auditor availability, and completion discipline were impressive, even in difficult locations.',
       rating: 5
     },
     {
-      name: 'James Williams',
-      company: 'Manufacturing Corp',
-      position: 'COO',
-      text: 'The digital transformation strategy they developed completely changed how we operate. We saw immediate improvements in efficiency and cost savings.',
+      name: 'Rahul Mittal',
+      position: 'Finance Controller',
+      company: 'National Retail & Distribution Company',
+      text: 'Finding reliable auditors at short notice has always been a challenge. Beyond Audit solved this efficiently with verified professionals and structured execution. Once assigned, the work was completed without follow-ups.',
       rating: 5
     },
     {
-      name: 'Sarah Thompson',
-      company: 'Healthcare Partners',
-      position: 'CEO',
-      text: 'Exceptional team that really understood our business. They helped us navigate a complex merger and the integration was seamless.',
+      name: 'Akshay Gupta',
+      position: 'Senior Manager – Assurance & Risk Advisory',
+      company: 'Mid-sized CA Firm',
+      text: 'Beyond Audit supported us with multi-city audit execution where consistency was critical. Reporting was standardised, timelines were met, and communication remained clear throughout the engagement.',
       rating: 5
     },
     {
-      name: 'David Park',
-      company: 'FinTech Solutions',
-      position: 'Founder',
-      text: 'Best consulting experience we\'ve had. They helped us build our entire executive team and the candidates they found have been phenomenal.',
+      name: 'Suresh Kumar',
+      position: 'Head – Compliance & Internal Audit',
+      company: 'Manufacturing Group',
+      text: 'We required audit coverage across remote and non-metro locations. Beyond Audit demonstrated strong on-ground capability and ownership, ensuring assignments were completed as planned.',
       rating: 5
     },
     {
-      name: 'Lisa Anderson',
-      company: 'Retail Group',
-      position: 'VP Strategy',
-      text: 'Their market research and expansion strategy enabled us to successfully enter three new markets. Highly recommend their services.',
+      name: 'Arjun Malhotra',
+      position: 'Director – Finance & Risk',
+      company: 'Financial Services Group',
+      text: 'The Beyond Audit team understands audit realities very well. Their freelancer network, verification standards, and execution discipline make them a dependable partner for large audit requirements.',
       rating: 5
     }
   ];

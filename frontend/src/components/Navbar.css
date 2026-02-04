@@ -1,13 +1,14 @@
-/* Black Header with White Text */
+/* Black Header with White Text - solid background for sharp, clear content */
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  backdrop-filter: saturate(180%) blur(20px);
+  background: #0a0a0a;
   z-index: 2000;
   transition: all 0.3s ease;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .navbar.scrolled {
@@ -22,6 +23,7 @@
   justify-content: space-between;
   align-items: center;
   height: 44px;
+  isolation: isolate;
 }
 
 /* Clean Logo - left-aligned, normal text */
@@ -71,15 +73,19 @@
 }
 
 .logo-image {
-  height: 20px;
+  height: 36px;
   width: auto;
-  max-width: 120px;
+  max-width: 180px;
   object-fit: contain;
-  filter: grayscale(100%) brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 .navbar-logo:hover .logo-image {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .logo-image-mobile {
@@ -101,7 +107,7 @@
 }
 
 .navbar-link {
-  color: rgba(255, 255, 255, 0.8);
+  color: #ffffff;
   font-weight: 700;
   font-size: 14px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -115,10 +121,12 @@
   align-items: center;
   text-transform: none;
   letter-spacing: 0;
+  text-rendering: optimizeLegibility;
 }
 
 .navbar-link:hover {
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
+  opacity: 0.9;
 }
 
 .navbar-link:hover::before {
@@ -127,7 +135,7 @@
 
 .navbar-cta {
   background: transparent;
-  color: rgba(255, 255, 255, 0.8) !important;
+  color: #ffffff !important;
   padding: 0 20px !important;
   border-radius: 0;
   transition: color 0.2s ease;
@@ -143,7 +151,8 @@
 }
 
 .navbar-cta:hover {
-  color: rgba(255, 255, 255, 1) !important;
+  color: #ffffff !important;
+  opacity: 0.9;
   transform: none;
 }
 
@@ -614,8 +623,7 @@
 
 @media (max-width: 768px) {
   .navbar {
-    background: rgba(0, 0, 0, 0.95);
-    backdrop-filter: saturate(180%) blur(20px);
+    background: #0a0a0a;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
   }
@@ -636,8 +644,8 @@
   }
 
   .logo-image {
-    height: 24px;
-    max-width: 140px;
+    height: 32px;
+    max-width: 160px;
   }
 
   .navbar-toggle {
@@ -672,13 +680,13 @@
   }
 
   .logo-image {
-    height: 22px;
-    max-width: 120px;
+    height: 28px;
+    max-width: 140px;
   }
 
   .logo-image-mobile {
-    height: 22px;
-    max-width: 120px;
+    height: 28px;
+    max-width: 140px;
   }
 
   .navbar-toggle {

@@ -258,15 +258,45 @@ const Home = () => {
 
   const testimonials = [
     {
-      name: 'Rajesh Kumar',
-      company: 'Kumar Industries',
-      text: 'Professional tax planning that saved us significant money and ensured full compliance.',
+      name: 'Deepak Saxena',
+      position: 'Partner – Risk Advisory Services',
+      company: 'Big 4',
+      text: 'Beyond Audit delivered exactly what was committed. The assignments were executed across multiple locations with consistent quality and timely reporting. Their ability to manage last-mile audit execution stood out.',
       rating: 5
     },
     {
-      name: 'Priya Sharma',
-      company: 'Sharma & Associates',
-      text: 'Their audit services helped us streamline our financial processes and improve efficiency.',
+      name: 'Neha Patil',
+      position: 'Senior Manager – Risk Advisory Services',
+      company: 'Big 6',
+      text: 'We engaged Beyond Audit for large-scale field and stock audits across several states. The coordination, auditor availability, and completion discipline were impressive, even in difficult locations.',
+      rating: 5
+    },
+    {
+      name: 'Rahul Mittal',
+      position: 'Finance Controller',
+      company: 'National Retail & Distribution Company',
+      text: 'Finding reliable auditors at short notice has always been a challenge. Beyond Audit solved this efficiently with verified professionals and structured execution. Once assigned, the work was completed without follow-ups.',
+      rating: 5
+    },
+    {
+      name: 'Akshay Gupta',
+      position: 'Senior Manager – Assurance & Risk Advisory',
+      company: 'Mid-sized CA Firm',
+      text: 'Beyond Audit supported us with multi-city audit execution where consistency was critical. Reporting was standardised, timelines were met, and communication remained clear throughout the engagement.',
+      rating: 5
+    },
+    {
+      name: 'Suresh Kumar',
+      position: 'Head – Compliance & Internal Audit',
+      company: 'Manufacturing Group',
+      text: 'We required audit coverage across remote and non-metro locations. Beyond Audit demonstrated strong on-ground capability and ownership, ensuring assignments were completed as planned.',
+      rating: 5
+    },
+    {
+      name: 'Arjun Malhotra',
+      position: 'Director – Finance & Risk',
+      company: 'Financial Services Group',
+      text: 'The Beyond Audit team understands audit realities very well. Their freelancer network, verification standards, and execution discipline make them a dependable partner for large audit requirements.',
       rating: 5
     }
   ];
@@ -381,13 +411,13 @@ const Home = () => {
           Beyond Audit leads India's audit intelligence revolution with our robust pan-India network of 50,000+ qualified professionals. We combine human expertise with digital precision to deliver flawless, data-driven audit services that set new benchmarks in speed, reliability, and technological integration. We provide complete manpower support for all audit services.
         </p>
         <ul className="why-choose-list">
-          <li>Pan-India network of 50,000+ Chartered Accountants, CMAs, and finance specialists</li>
-          <li>Complete manpower provision for all audit services across India</li>
-          <li>Data-driven audit services powered by precision, integrity, and intelligence</li>
-          <li>End-to-end service delivery with dedicated professional teams</li>
-          <li>Technological adoption and intelligence-driven assurance</li>
+          <li>Pan-India network of 50,000+ Chartered Accountants, CMAs, and finance specialists.</li>
+          <li>Complete manpower provision for all audit services across India.</li>
+          <li>Data-driven audit services powered by precision, integrity, and intelligence.</li>
+          <li>End-to-end service delivery with dedicated professional teams.</li>
+          <li>Technological adoption and intelligence-driven assurance.</li>
         </ul>
-            <Link to="/why-choose-us" className="btn btn-primary">
+            <Link to="/about" className="btn btn-primary">
               Learn More About Us
             </Link>
           </div>
@@ -430,7 +460,7 @@ const Home = () => {
               <p className="testimonial-text">"{testimonial.text}"</p>
               <div className="testimonial-author">
                 <h4>{testimonial.name}</h4>
-                <p>{testimonial.company}</p>
+                <p>{testimonial.position}{testimonial.position && testimonial.company ? ' · ' : ''}{testimonial.company}</p>
               </div>
             </div>
           ))}

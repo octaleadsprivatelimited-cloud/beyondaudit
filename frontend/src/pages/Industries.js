@@ -35,7 +35,7 @@ const Industries = () => {
     { name: 'Lenskart' },
     { name: 'MakeMyTrip' },
     { name: 'OYO' },
-    { name: 'TCPL / TATA' },
+    { name: 'Instamart (Swiggy Instamart)', image: 'instamart' },
     { name: 'MTR' },
     { name: 'Eastern' },
     { name: 'Blinkit' },
@@ -70,14 +70,16 @@ const Industries = () => {
     { name: 'Ecom' }
   ];
 
-  const getInitialSrc = (name) => `/images/industries/${slugify(name)}.png`;
+  const getImageBase = (brand) => (brand.image != null ? brand.image : slugify(brand.name));
+  const getInitialSrc = (brand) => `/images/industries/${getImageBase(brand)}.png`;
   const fallbackExts = ['avif', 'svg', 'jpg', 'jpeg', 'webp'];
-  const onLogoError = (e, name) => {
+  const onLogoError = (e, brand) => {
+    const base = getImageBase(brand);
     const idxAttr = e.currentTarget.getAttribute('data-src-idx') || '0';
     const idx = parseInt(idxAttr, 10);
     if (idx < fallbackExts.length) {
       e.currentTarget.setAttribute('data-src-idx', String(idx + 1));
-      e.currentTarget.src = `/images/industries/${slugify(name)}.${fallbackExts[idx]}`;
+      e.currentTarget.src = `/images/industries/${base}.${fallbackExts[idx]}`;
     } else {
       e.currentTarget.style.display = 'none';
       const fallback = e.currentTarget.nextSibling;
@@ -109,11 +111,11 @@ const Industries = () => {
           {brandLogos.map((brand, idx) => (
             <div key={idx} className="logo-card" title={brand.name}>
               <img
-                src={getInitialSrc(brand.name)}
+                src={getInitialSrc(brand)}
                 alt={brand.name + ' logo'}
                 className="brand-logo"
                 data-src-idx="0"
-                onError={(e) => onLogoError(e, brand.name)}
+                onError={(e) => onLogoError(e, brand)}
               />
               <div className="logo-fallback" aria-hidden="true">
                 <span>{brand.name.substring(0, 2).toUpperCase()}</span>

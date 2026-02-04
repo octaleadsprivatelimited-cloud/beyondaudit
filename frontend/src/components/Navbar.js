@@ -52,7 +52,11 @@ const Navbar = () => {
       <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
         <div className="navbar-container">
           <Link to="/" className="navbar-logo">
-            <span className="logo-text">BEYOND AUDIT</span>
+            <img
+              src="/images/BEYOND_AUDITT-removebg-preview.png"
+              alt="Beyond Audit"
+              className="logo-image"
+            />
           </Link>
 
           {/* Desktop Menu */}
