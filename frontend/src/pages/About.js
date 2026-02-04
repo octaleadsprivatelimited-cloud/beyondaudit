@@ -81,7 +81,7 @@ const About = () => {
         <div className="about-hero-container">
           <div className="hero-tagline">ABOUT US</div>
           <h1>About Beyond Audit</h1>
-          <p className="hero-description">Our pan-India network of 50,000+ and growing.</p>
+          <p className="hero-description">Redefining the audit and compliance ecosystem through flawless, data-driven field verification powered by precision, integrity, and intelligence. Our pan-India network of 50,000+ qualified professionals delivers unmatched accuracy, transparency, and efficiency across all audit services with complete manpower support.</p>
         </div>
       </section>
 

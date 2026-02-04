@@ -450,7 +450,7 @@ const Home = () => {
           <h2 className="section-title">What Our Clients Say</h2>
         </div>
         <div className="testimonials-grid">
-          {testimonials.map((testimonial, index) => (
+          {testimonials.slice(0, 3).map((testimonial, index) => (
             <div key={index} className="testimonial-card">
               <div className="testimonial-stars">
                 {[...Array(testimonial.rating)].map((_, i) => (

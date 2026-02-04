@@ -35,7 +35,7 @@ const Industries = () => {
     { name: 'Lenskart' },
     { name: 'MakeMyTrip' },
     { name: 'OYO' },
-    { name: 'Instamart (Swiggy Instamart)', image: 'instamart' },
+    { name: 'Instamart', image: 'instamart' },
     { name: 'MTR' },
     { name: 'Eastern' },
     { name: 'Blinkit' },
