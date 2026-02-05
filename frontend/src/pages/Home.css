@@ -740,6 +740,63 @@
   font-size: 0.9rem;
 }
 
+/* Founder's Note - Home */
+.home-founders-note {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3rem 8% 4rem;
+}
+
+.home-founders-note .founders-note-inner {
+  background: linear-gradient(135deg, rgba(79, 41, 135, 0.06), rgba(79, 41, 135, 0.02));
+  border: 1px solid rgba(79, 41, 135, 0.15);
+  border-radius: 20px;
+  padding: 2.5rem 3rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.home-founders-note .founders-note-inner h2 {
+  font-size: 1.85rem;
+  margin-bottom: 1.25rem;
+  color: #0a1128;
+}
+
+.home-founders-note .founders-note-content p {
+  font-size: 1.05rem;
+  color: #374151;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+.home-founders-note .founders-note-content p:first-child {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #0a1128;
+}
+
+.home-founders-note .founders-note-content p:last-child {
+  margin-bottom: 0;
+}
+
+.home-founders-note .founders-note-cta {
+  display: inline-block;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .home-founders-note .founders-note-inner {
+    padding: 1.75rem 1.5rem;
+  }
+
+  .home-founders-note .founders-note-inner h2 {
+    font-size: 1.5rem;
+  }
+
+  .home-founders-note .founders-note-content p {
+    font-size: 1rem;
+  }
+}
+
 /* Deloitte-Style Testimonials Section */
 .testimonials-section {
   padding: 2rem 8%;
