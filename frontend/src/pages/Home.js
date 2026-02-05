@@ -453,7 +453,6 @@ const Home = () => {
             <p>At Beyond Audit, every assignment is approached with clear ownership. Once an engagement is accepted, it is carried through with consistency, accountability, and discipline until completion. Our processes and auditor verification standards are designed to anticipate challenges and ensure continuity, even in operationally demanding locations.</p>
             <p>Beyond Audit exists to give enterprises confidence — confidence that audits will be executed with integrity, resilience, and certainty, wherever they are required.</p>
           </div>
-          <Link to="/about" className="btn btn-outline founders-note-cta">Read full story</Link>
         </div>
       </section>
 

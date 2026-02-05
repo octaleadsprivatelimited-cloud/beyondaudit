@@ -778,11 +778,6 @@
   margin-bottom: 0;
 }
 
-.home-founders-note .founders-note-cta {
-  display: inline-block;
-  margin-top: 1.5rem;
-}
-
 @media (max-width: 768px) {
   .home-founders-note .founders-note-inner {
     padding: 1.75rem 1.5rem;
