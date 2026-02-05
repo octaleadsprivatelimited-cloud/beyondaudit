@@ -69,7 +69,7 @@ const Footer = () => {
           <div className="footer-brand-section">
             <div className="footer-logo">
               <img
-                src="/images/BEYOND_AUDITT-removebg-preview.png"
+                src="/images/1-removebg-preview.png"
                 alt="Beyond Audit"
                 className="footer-logo-image"
               />

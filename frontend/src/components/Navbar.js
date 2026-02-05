@@ -53,7 +53,7 @@ const Navbar = () => {
         <div className="navbar-container">
           <Link to="/" className="navbar-logo">
             <img
-              src="/images/BEYOND_AUDITT-removebg-preview.png"
+              src="/images/1-removebg-preview.png"
               alt="Beyond Audit"
               className="logo-image"
             />

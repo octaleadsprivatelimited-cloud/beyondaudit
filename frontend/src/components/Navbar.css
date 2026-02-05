@@ -38,10 +38,6 @@
   flex-shrink: 0;
 }
 
-.navbar-logo:hover {
-  opacity: 0.8;
-}
-
 .logo-text {
   color: #ffffff;
   font-size: 18px;
@@ -82,10 +78,6 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transform: translateZ(0) scale(1);
-}
-
-.navbar-logo:hover .logo-image {
-  opacity: 0.9;
 }
 
 .logo-image-mobile {
