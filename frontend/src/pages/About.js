@@ -132,26 +132,6 @@ const About = () => {
         </div>
       </section>
 
-      <section className="founders-note">
-        <div className="founders-note-inner">
-          <h2>Founder's Note</h2>
-          <div className="founders-note-content">
-            <p>
-              Audits are not just about numbers — they are about trust.
-            </p>
-            <p>
-              Over the years, our work has taken us beyond city limits and conventional environments, exposing us to the real challenges of audit execution on the ground. These experiences shaped Beyond Audit's core philosophy — audits must be dependable, regardless of location or complexity.
-            </p>
-            <p>
-              At Beyond Audit, every assignment is approached with clear ownership. Once an engagement is accepted, it is carried through with consistency, accountability, and discipline until completion. Our processes and auditor verification standards are designed to anticipate challenges and ensure continuity, even in operationally demanding locations.
-            </p>
-            <p>
-              Beyond Audit exists to give enterprises confidence — confidence that audits will be executed with integrity, resilience, and certainty, wherever they are required.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section className="mission-vision">
         <div className="mv-card">
           <h2>Our Mission</h2>

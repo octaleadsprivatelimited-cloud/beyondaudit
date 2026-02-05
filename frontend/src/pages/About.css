@@ -214,62 +214,6 @@
   color: white;
 }
 
-/* Founder's Note */
-.founders-note {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 8% 5rem;
-}
-
-.founders-note-inner {
-  background: linear-gradient(135deg, rgba(79, 41, 135, 0.06), rgba(79, 41, 135, 0.02));
-  border: 1px solid rgba(79, 41, 135, 0.15);
-  border-radius: 20px;
-  padding: 3rem 3.5rem;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
-}
-
-.founders-note h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  color: var(--navy);
-}
-
-.founders-note-content p {
-  font-size: 1.1rem;
-  color: var(--text-light);
-  line-height: 1.8;
-  margin-bottom: 1.25rem;
-}
-
-.founders-note-content p:first-child {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--navy);
-}
-
-.founders-note-content p:last-child {
-  margin-bottom: 0;
-}
-
-@media (max-width: 768px) {
-  .founders-note-inner {
-    padding: 2rem 1.5rem;
-  }
-
-  .founders-note h2 {
-    font-size: 1.65rem;
-  }
-
-  .founders-note-content p {
-    font-size: 1rem;
-  }
-
-  .founders-note-content p:first-child {
-    font-size: 1.1rem;
-  }
-}
-
 .mission-vision {
   background: var(--light-gray);
   padding: 5rem 8%;
