@@ -148,10 +148,17 @@ const Footer = () => {
             <ul className="footer-links-list">
               {company.map((item, index) => (
                 <li key={index}>
-                  <Link to={item.path} className="footer-link">
-                    <FaChevronRight className="link-icon" />
-                    <span className="link-name">{item.name}</span>
-                  </Link>
+                  {item.path === '/sitemap.xml' ? (
+                    <a href="/sitemap.xml" className="footer-link" target="_blank" rel="noopener noreferrer">
+                      <FaChevronRight className="link-icon" />
+                      <span className="link-name">{item.name}</span>
+                    </a>
+                  ) : (
+                    <Link to={item.path} className="footer-link">
+                      <FaChevronRight className="link-icon" />
+                      <span className="link-name">{item.name}</span>
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
