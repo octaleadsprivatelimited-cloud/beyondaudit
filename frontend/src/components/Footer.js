@@ -34,7 +34,8 @@ const Footer = () => {
   const company = [
     { name: 'About Us', path: '/about' },
     { name: "Founder's Note", path: '/#founders-note' },
-    { name: 'Testimonials', path: '/testimonials' }
+    { name: 'Testimonials', path: '/testimonials' },
+    { name: 'Sitemap', path: '/sitemap.xml' }
   ];
 
   const resources = [

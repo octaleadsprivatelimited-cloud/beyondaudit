@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://exigoconsulting.in/sitemap.xml
+Sitemap: https://beyondaudit.in/sitemap.xml
 
