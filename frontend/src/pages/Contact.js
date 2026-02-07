@@ -47,9 +47,9 @@ const Contact = () => {
 
   const offices = [
     {
-      city: 'Hyderabad',
-      address: 'Hyderabad, Telangana, India - 500016',
-      phone: '+91 90193 72711',
+      city: 'Visakhapatnam',
+      address: '50-80-7/A, 2nd floor Anjana Enclave, Gurudwara, Visakhapatnam, Andhra Pradesh 530016',
+      phone: '+91-9019372711',
       email: 'mail@beyondaudit.in'
     }
   ];
@@ -212,7 +212,7 @@ const Contact = () => {
           <div className="info-card">
             <FaPhone className="info-icon" />
             <h3>Phone</h3>
-            <p>+91 90193 72711</p>
+            <p>+91-9019372711</p>
             <p className="info-detail">Mon-Fri, 9am-6pm IST</p>
           </div>
 

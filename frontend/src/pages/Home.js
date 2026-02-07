@@ -43,6 +43,13 @@ const Home = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    if (window.location.hash === '#founders-note') {
+      const el = document.getElementById('founders-note');
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, []);
+
   const services = [
     {
       icon: <FaBoxes />,
@@ -444,7 +451,7 @@ const Home = () => {
       </section>
 
       {/* Founder's Note */}
-      <section className="founders-note home-founders-note">
+      <section id="founders-note" className="founders-note home-founders-note">
         <div className="founders-note-inner">
           <h2>Founder's Note</h2>
           <div className="founders-note-content">

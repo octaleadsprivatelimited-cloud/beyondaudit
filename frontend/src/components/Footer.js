@@ -32,7 +32,9 @@ const Footer = () => {
   ];
 
   const company = [
-    { name: 'About Us', path: '/about' }
+    { name: 'About Us', path: '/about' },
+    { name: "Founder's Note", path: '/#founders-note' },
+    { name: 'Testimonials', path: '/testimonials' }
   ];
 
   const resources = [
@@ -83,7 +85,7 @@ const Footer = () => {
                 <FaPhone className="contact-icon" />
                 <div>
                   <span className="contact-label">Call Us</span>
-                  <a href="tel:+919019372711" className="contact-value">+91 90193 72711</a>
+                  <a href="tel:+919019372711" className="contact-value">+91-9019372711</a>
                 </div>
               </div>
               <div className="contact-card">
@@ -97,7 +99,7 @@ const Footer = () => {
                 <FaMapMarkerAlt className="contact-icon" />
                 <div>
                   <span className="contact-label">Visit Us</span>
-                  <span className="contact-value">Hyderabad, Telangana, India - 500016</span>
+                  <span className="contact-value">50-80-7/A, 2nd floor Anjana Enclave, Gurudwara, Visakhapatnam, Andhra Pradesh 530016</span>
                 </div>
               </div>
             </div>

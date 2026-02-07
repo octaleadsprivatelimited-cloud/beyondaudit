@@ -166,7 +166,7 @@ const Navbar = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.5 }}
                   >
-                    <FaPhone /> +91 90193 72711
+                    <FaPhone /> +91-9019372711
                   </motion.p>
                   <motion.p
                     initial={{ opacity: 0, y: 10 }}
@@ -180,14 +180,7 @@ const Navbar = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.6 }}
                   >
-                    <FaMapMarkerAlt /> Vishakapatnam
-                  </motion.p>
-                  <motion.p
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.65 }}
-                  >
-                    <FaMapMarkerAlt /> Andhra Pradesh, India
+                    <FaMapMarkerAlt /> 50-80-7/A, 2nd floor Anjana Enclave, Gurudwara, Visakhapatnam, Andhra Pradesh 530016
                   </motion.p>
                 </div>
                 <motion.div
