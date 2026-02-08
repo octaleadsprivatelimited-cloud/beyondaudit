@@ -159,7 +159,7 @@ const Services = () => {
         <div className="section-intro">
           <h2>Assurance services</h2>
         <p>
-          Beyond Audit delivers comprehensive audit solutions through our pan-India network of 10,000+ qualified professionals. 
+          Beyond Audit delivers comprehensive audit solutions through our pan-India network of 50,000+ qualified professionals. 
           We specialize in field verification and audit intelligence, setting new benchmarks in speed, reliability, and technological integration. 
           Our 12 core audit services cover every aspect of business operations, ensuring precision, transparency, and accountability with complete manpower support.
         </p>

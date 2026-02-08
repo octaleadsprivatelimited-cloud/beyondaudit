@@ -90,7 +90,7 @@ const Careers = () => {
           <h2>Staffing & Augmentation Services</h2>
           <p className="staffing-description">
             Beyond Audit provides comprehensive staffing and augmentation services to businesses across India. 
-            Our pan-India network of 10,000+ qualified professionals enables us to deliver skilled manpower 
+            Our pan-India network of 50,000+ qualified professionals enables us to deliver skilled manpower 
             for all audit and compliance needs.
           </p>
           <div className="staffing-features">

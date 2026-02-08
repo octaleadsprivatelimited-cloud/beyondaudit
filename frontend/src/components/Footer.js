@@ -78,7 +78,7 @@ const Footer = () => {
               />
             </div>
             <p className="footer-description">
-              Beyond Audit is India's leading provider of audit and verification services. Our pan-India network of 10,000+ qualified professionals delivers flawless, data-driven field verification powered by precision, integrity, and intelligence.
+              Beyond Audit is India's leading provider of audit and verification services. Our pan-India network of 50,000+ qualified professionals delivers flawless, data-driven field verification powered by precision, integrity, and intelligence.
             </p>
             
             <div className="footer-contact-cards">

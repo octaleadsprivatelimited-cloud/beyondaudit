@@ -418,7 +418,7 @@ const Home = () => {
           Beyond Audit leads India's audit intelligence revolution with our robust pan-India network of 50,000+ qualified professionals. We combine human expertise with digital precision to deliver flawless, data-driven audit services that set new benchmarks in speed, reliability, and technological integration. We provide complete manpower support for all audit services.
         </p>
         <ul className="why-choose-list">
-          <li>Pan-India network of 50,000+ Chartered Accountants, CMAs, and finance specialists.</li>
+          <li>Pan-India network of 50,000+ Chartered Accountants, CMAs, and Finance Specialists.</li>
           <li>Complete manpower provision for all audit services across India.</li>
           <li>Data-driven audit services powered by precision, integrity, and intelligence.</li>
           <li>End-to-end service delivery with dedicated professional teams.</li>

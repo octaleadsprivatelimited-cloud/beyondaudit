@@ -137,7 +137,7 @@ const About = () => {
           <h2>Our Mission</h2>
           <p>
             Our mission is to redefine the audit and compliance ecosystem by delivering flawless, data-driven field verification powered by precision, integrity, and intelligence.
-            Through our robust pan-India network of over 10,000 qualified professionals — including Chartered Accountants, CMAs, and finance specialists — we execute audits with unmatched accuracy, transparency, and efficiency.
+            Through our robust pan-India network of 50,000+ qualified professionals — including Chartered Accountants, CMAs, and finance specialists — we execute audits with unmatched accuracy, transparency, and efficiency.
             We provide complete manpower support for all audit services, ensuring that every asset, stock, and process we verify strengthens our clients' confidence and control.
             Beyond Audit exists to empower organizations with insights they can trust and dedicated professional teams who deliver measurable impact.
           </p>
