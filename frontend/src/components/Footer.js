@@ -100,7 +100,7 @@ const Footer = () => {
                 <FaMapMarkerAlt className="contact-icon" />
                 <div>
                   <span className="contact-label">Visit Us</span>
-                  <span className="contact-value">50-80-7/A, 2nd floor Anjana Enclave, Gurudwara, Visakhapatnam, Andhra Pradesh 530016</span>
+                  <span className="contact-value">50-80-7/A, 2nd floor, Anjana Enclave, Gurudwara, Visakhapatnam, Andhra Pradesh 530016</span>
                 </div>
               </div>
             </div>

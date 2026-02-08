@@ -180,7 +180,7 @@ const Navbar = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.6 }}
                   >
-                    <FaMapMarkerAlt /> 50-80-7/A, 2nd floor Anjana Enclave, Gurudwara, Visakhapatnam, Andhra Pradesh 530016
+                    <FaMapMarkerAlt /> 50-80-7/A, 2nd floor, Anjana Enclave, Gurudwara, Visakhapatnam, Andhra Pradesh 530016
                   </motion.p>
                 </div>
                 <motion.div

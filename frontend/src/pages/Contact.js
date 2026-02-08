@@ -48,7 +48,7 @@ const Contact = () => {
   const offices = [
     {
       city: 'Visakhapatnam',
-      address: '50-80-7/A, 2nd floor Anjana Enclave, Gurudwara, Visakhapatnam, Andhra Pradesh 530016',
+      address: '50-80-7/A, 2nd floor, Anjana Enclave, Gurudwara, Visakhapatnam, Andhra Pradesh 530016',
       phone: '+91-9019372711',
       email: 'mail@beyondaudit.in'
     }
