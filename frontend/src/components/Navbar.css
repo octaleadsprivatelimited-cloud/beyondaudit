@@ -625,10 +625,23 @@
     height: 56px;
     gap: 0;
     justify-content: space-between;
+    align-items: center;
   }
 
   .navbar-logo {
     min-width: 0;
+    max-width: calc(100% - 52px);
+    padding-right: 12px;
+    flex: 1 1 auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-logo .logo-image {
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
   }
 
   .logo-text {
@@ -636,12 +649,17 @@
   }
 
   .logo-image {
-    height: 32px;
-    max-width: 160px;
+    height: 20px;
+    max-width: 100px;
   }
 
   .navbar-toggle {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    min-width: 44px;
+    min-height: 44px;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -654,12 +672,30 @@
   .navbar-toggle:hover {
     background: rgba(255, 255, 255, 0.1);
   }
+
+  .mobile-menu-overlay {
+    top: 56px;
+  }
+
+  .mobile-menu {
+    top: 56px !important;
+  }
+
+  .mobile-menu-inner {
+    max-height: calc(100vh - 56px);
+  }
 }
 
 @media (max-width: 480px) {
   .navbar-container {
     padding: 0 16px;
     height: 52px;
+    align-items: center;
+  }
+
+  .navbar-logo {
+    padding-right: 8px;
+    max-width: calc(100% - 48px);
   }
 
   .logo-text {
@@ -672,36 +708,31 @@
   }
 
   .logo-image {
-    height: 28px;
-    max-width: 140px;
+    height: 18px;
+    max-width: 90px;
   }
 
   .logo-image-mobile {
-    height: 28px;
-    max-width: 140px;
+    height: 18px;
+    max-width: 90px;
   }
 
   .navbar-toggle {
     padding: 6px;
+    min-width: 40px;
+    min-height: 40px;
   }
 
-  .mobile-menu {
-    width: 100%;
-    background: #ffffff;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  .mobile-menu-overlay {
     top: 52px;
   }
 
-  .mobile-link {
-    font-size: 1rem;
-    padding: 1rem 1.2rem;
-    color: #000000;
-    font-weight: 600;
+  .mobile-menu {
+    top: 52px !important;
   }
 
-  .mobile-link:hover {
-    background: rgba(0, 0, 0, 0.05);
-    color: #000000;
+  .mobile-menu-inner {
+    max-height: calc(100vh - 52px);
   }
 }
 

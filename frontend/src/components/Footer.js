@@ -8,10 +8,15 @@ const Footer = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
+  const FORMSPREE_URL = 'https://formspree.io/f/maqdelab';
+
   const handleNewsletter = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/newsletter', { email });
+      await axios.post(FORMSPREE_URL, {
+        email,
+        _subject: 'Beyond Audit - Newsletter signup'
+      }, { headers: { 'Content-Type': 'application/json' } });
       setMessage('Successfully subscribed!');
       setEmail('');
       setTimeout(() => setMessage(''), 3000);

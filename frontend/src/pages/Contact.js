@@ -30,12 +30,18 @@ const Contact = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  const FORMSPREE_URL = 'https://formspree.io/f/maqdelab';
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('sending');
     
     try {
-      await axios.post('http://localhost:5000/api/contact', { ...formData, formType });
+      await axios.post(FORMSPREE_URL, {
+        ...formData,
+        formType,
+        _subject: `Beyond Audit - ${formType === 'client' ? 'Client' : 'Freelancer'} inquiry`
+      }, { headers: { 'Content-Type': 'application/json' } });
       setStatus('success');
       setFormData({ name: '', email: '', phone: '', company: '', service: '', role: '', resumeUrl: '', message: '' });
       setTimeout(() => setStatus(''), 5000);
